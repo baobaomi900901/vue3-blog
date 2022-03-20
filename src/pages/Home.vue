@@ -284,7 +284,7 @@
                 class="elContentTwo1 text-base font-bold"
                 >02</span
               >
-              <div ref="elContentTwo2" class="elContentTwo2 mb-4 ">
+              <div ref="elContentTwo2" class="elContentTwo2 mb-4">
                 Looking forward to work
               </div>
               <div
@@ -328,7 +328,7 @@
               >
                 <span
                   ref="elContentTwo6"
-                  class="elContentTwo6 text-4xl font-bold text-dark-blue "
+                  class="elContentTwo6 text-4xl font-bold text-dark-blue"
                   >Workplace</span
                 >
                 <span
@@ -747,7 +747,7 @@
                   ref="blueBallBox"
                   class="flex justify-center z-50 relative takeToMeBox flex"
                 >
-                  <div class="takeToMeHot absolute"></div>
+                  <div class="takeToMeHot absolute" @click="mailto"></div>
                   <div
                     class="
                       absolute
@@ -974,6 +974,11 @@ export default {
       } else {
         pageMenuClass.value = 4;
       }
+    }
+
+    function mailto() {
+      console.log(123);
+      
     }
 
     onMounted(() => {
@@ -1440,7 +1445,7 @@ export default {
         container: document.querySelector(".lottie"), //渲染位置
         renderer: "svg", // 形式 svg or cavans
         loop: false, // 是否重复
-        path: "./src/pages/data.json", // 动画资源
+        path: "/data.json", // 动画资源
         autoplay: false, // 初始化播放 or 停止
       });
 
