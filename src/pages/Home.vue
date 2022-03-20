@@ -747,7 +747,7 @@
                   ref="blueBallBox"
                   class="flex justify-center z-50 relative takeToMeBox flex"
                 >
-                  <div class="takeToMeHot absolute" @click="mailto"></div>
+                  <div class="takeToMeHot absolute cursor-pointer" @click="mailto"></div>
                   <div
                     class="
                       absolute
@@ -978,7 +978,7 @@ export default {
 
     function mailto() {
       console.log(123);
-      
+      window.open("mailto:baobaomi900901@icloud.com");
     }
 
     onMounted(() => {
@@ -1587,6 +1587,7 @@ export default {
       elContent44,
       elContent45,
       elContent46,
+      mailto,
     };
   },
 };
