@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "YouSheBiaoTiHei";
+  src: url(../assets/YouSheBiaoTiHei.ttf);
+}
+
+body {
+  font-family: "YouSheBiaoTiHei", "" sans-serif;
+}
+
+/* "Titillium Web", */

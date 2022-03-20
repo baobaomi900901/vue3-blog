@@ -1,0 +1,8 @@
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="s" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ctrl-right">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <path d="M5.44399524,16 L4,14.7614744 L9.79595719,8 L4,1.23852556 L5.44399524,0 L11.7707491,7.38168847 C12.0760999,7.73745541 12.0760999,8.26349584 11.7707491,8.61926278 L5.44399524,16 Z" id="road" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

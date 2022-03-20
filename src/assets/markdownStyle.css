@@ -1,0 +1,248 @@
+.markdown-body {
+  @apply flex flex-col max-w-5xl w-11/12 px-6 mt-40 overflow-auto overflow-hidden;
+}
+
+.markdown-body h1 {
+  @apply text-5xl font-bold my-2;
+}
+
+.markdown-body h2 {
+  @apply text-4xl font-bold my-2;
+}
+
+.markdown-body h3 {
+  @apply text-3xl font-bold my-2;
+}
+
+.markdown-body h4 {
+  @apply text-2xl font-bold my-2;
+}
+
+.markdown-body h5 {
+  @apply text-xl font-bold my-2;
+}
+
+.markdown-body h6 {
+  @apply text-lg  font-bold my-2;
+}
+
+.markdown-body p {
+  @apply text-lg my-2 text-inherit font-light;
+  text-indent: 2.25rem;
+}
+
+.markdown-body blockquote {
+  @apply border-l-8 border-gray-100;
+}
+
+.markdown-body blockquote blockquote {
+  margin-left: 2.25rem;
+}
+
+.markdown-body blockquote p {
+  text-indent: 0;
+  margin-left: 2.25rem;
+}
+
+.markdown-body .video-play iframe {
+  min-height: 32rem;
+}
+
+.markdown-body strong {
+  font-weight: 500;
+}
+
+.markdown-body img {
+  /* @apply shadow-sm; */
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+}
+
+.markdown-body pre {
+  @apply mx-9 py-1 bg-gray-100 px-12;
+}
+
+.markdown-body pre > code {
+}
+
+.markdown-body video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+.markdown-body video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+.markdown-body video::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+.markdown-body video::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+.markdown-body video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+.markdown-body video::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+.markdown-body video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-play-button {
+  display: unset;
+}
+
+.markdown-body a {
+  @apply text-dark-blue font-semibold underline hover:text-orange-500;
+}
+
+.before-button:hover span {
+  @apply text-dark-blue;
+}
+
+.before-button:hover svg #lsvg {
+  animation: 0.2s svgtr forwards;
+}
+
+.before-button:hover svg #lsvg circle {
+  animation: 0.2s svgtr2;
+}
+
+.after-button:hover span {
+  @apply text-dark-blue;
+}
+
+.after-button:hover svg #rsvg {
+  animation: 0.2s svgtr forwards;
+}
+
+.after-button:hover svg #rsvg circle {
+  animation: 0.2s svgtr2;
+}
+
+@keyframes svgtr {
+  0% {
+  }
+  100% {
+    /* fill: #0042f6;
+    stroke: #fff; */
+
+    stroke: #0042f6;
+
+    stroke-width: 2;
+  }
+}
+
+@keyframes svgtr2 {
+  0% {
+    r: 36;
+  }
+  50% {
+    r: 34;
+  }
+  100% {
+    r: 36;
+  }
+}
+
+ul.slides {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  list-style: none;
+  background-color: #0042f6;
+  overflow: hidden;
+}
+
+.slides {
+  /* padding: 10px 40px; */
+}
+
+li.slide {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 120px;
+  color: #fff;
+  transition: 0.5s transform ease-in-out;
+}
+
+li.slide > span {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+
+.navigator {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: none;
+}
+
+.fas {
+  width: 16px;
+  height: 16px;
+  transform-origin: center;
+}
+
+.fa-chevron-left {
+  background: url("../assets/ctrl-left.svg") no-repeat;
+  transform: scale(2);
+  transition: 0.2s;
+}
+
+.fa-chevron-left:hover {
+  background: url("../assets/ctrl-left-2.svg") no-repeat;
+  transform: translateX(-4px) scale(2.2);
+}
+
+.fa-chevron-right {
+  background: url("../assets/ctrl-right.svg") no-repeat;
+  transform: scale(2);
+  transition: 0.2s;
+}
+
+.fa-chevron-right:hover {
+  background: url("../assets/ctrl-right-2.svg") no-repeat;
+  transform: translateX(4px) scale(2.2);
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.controls-visible label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid #fff;
+}

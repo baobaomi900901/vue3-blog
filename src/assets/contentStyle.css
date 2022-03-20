@@ -1,0 +1,66 @@
+.before-button:hover span {
+  @apply text-dark-blue;
+}
+
+.before-button:hover svg #lsvg {
+  animation: 0.2s svgtr forwards;
+}
+
+.before-button:hover svg #lsvg circle {
+  animation: 0.2s svgtr2;
+}
+
+.before-button div {
+  transition: all 0.4s;
+}
+
+.before-button:hover div {
+  transition: 0.2s;
+  transform: translateX(-4px);
+}
+
+.after-button:hover span {
+  @apply text-dark-blue;
+}
+
+.after-button:hover svg #rsvg {
+  animation: 0.2s svgtr forwards;
+}
+
+.after-button:hover svg #rsvg circle {
+  animation: 0.2s svgtr2;
+}
+
+.after-button div {
+  transition: all 0.4s;
+}
+
+.after-button:hover div {
+  transition: 0.2s;
+  transform: translateX(4px);
+}
+
+@keyframes svgtr {
+  0% {
+  }
+  100% {
+    /* fill: #0042f6;
+      stroke: #fff; */
+
+    stroke: #0042f6;
+
+    stroke-width: 2;
+  }
+}
+
+@keyframes svgtr2 {
+  0% {
+    r: 36;
+  }
+  50% {
+    r: 34;
+  }
+  100% {
+    r: 36;
+  }
+}
