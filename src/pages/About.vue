@@ -127,9 +127,18 @@ export default {
   setup() {
     let box = ref(null);
     onMounted(() => {
-      console.log("document.body :>> ", document.body);
+      // console.log("document.body :>> ", document.body);
       document.body.classList.remove("overflow-hidden");
-      document.body.classList.add("scrollbar-hide", "overflow-scroll");
+      // document.body.classList.add("scrollbar-hide", "overflow-scroll");
+
+      let scrollTop = document.body.scrollTop;
+      scrollTop = 0;
+      gsap.set("body", {
+        scrollTop: 0,
+        onComplete: () => {
+          document.body.classList.add("scrollbar-hide", "overflow-scroll");
+        },
+      });
     });
     return {
       box,
