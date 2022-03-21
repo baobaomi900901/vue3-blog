@@ -19,7 +19,7 @@
           class="mt-10 h-80 rounded-full border-4 border-gray-300"
         />
       </div>
-      <div class="flex flex-col justify-center w-full mb-20 items-center">
+      <div class="flex flex-col justify-center w-full mb-10 items-center">
         <div class="aboutbox">
           <h3>联系</h3>
           <div class="border-b pb-16 border-gray-300">
@@ -41,19 +41,19 @@
 
           <h3>我会什么?</h3>
           <div class="border-b pb-16 border-gray-300">
-            <p class="font-bold">界面设计:</p>
-            <p>Adobe / Sketch / Figma / Axure</p>
+            <p class="font-bold">界面设计与交互:</p>
+            <p>Adobe、Sketch、Figma、Axure</p>
             <br />
-            <p class="font-bold">动效/3D设计:</p>
-            <p>After Effects / Blender / Spine</p>
-            <br />
-            <p class="font-bold">前端开发:</p>
-            <p>设计冲刺 / 原子设计 / 精益设计</p>
+            <p class="font-bold">动效&3D设计:</p>
+            <p>After Effects、Blender、Spine</p>
             <br />
             <p class="font-bold">DesignThink:</p>
+            <p>原子设计、设计冲刺、精益设计</p>
+            <br />
+            <p class="font-bold">Code:</p>
             <p>
-              HTML / CSS(熟练) / Javascript(初级) / Vue / WordPress /
-              动画库(GSAP, Anime.js, Lottie)
+              HTML、Javascript(初级)、 CSS(熟练)、SASS、LESS、 Vue、WordPress、
+              动画库( GSAP、Anime.js、Lottie )
             </p>
           </div>
 
@@ -72,36 +72,46 @@
 
           <h3>经验</h3>
           <div class="">
-            <p>2020 年 ~ 至今</p>
             <p class="font-bold mt-2">深圳市四格互联信息技术有限公司</p>
-            <p class="mt-2 font-light">产品设计部 | 交互组组长</p>
+            <p class="mt-2 font-light">
+              2020.03 ~ 至今 | 产品设计部 - 交互组组长
+            </p>
             <br />
-            <p>2016 年 ~ 2020 年</p>
             <p class="font-bold mt-2">
               深圳软通动力信息技术有限公司 | 华为 UCD 驻场
             </p>
-            <p class="mt-2 font-light">软通高级主任工程师 7 级</p>
+            <p class="mt-2 font-light">
+              2016 年 ~ 2020 年 | 交互设计师 ( 高级主任工程师 7 级 )
+            </p>
             <br />
-            <p>2015 年 ~ 2016 年</p>
             <p class="font-bold mt-2">深圳市蘑菇财富技术有限公司</p>
-            <p class="mt-2 font-light">交互设计师</p>
+            <p class="mt-2 font-light">2015 年 ~ 2016 年 | 交互设计师</p>
             <br />
-            <p>2013 年 ~ 2015 年</p>
             <p class="font-bold mt-2">深圳市点视科技有限公司</p>
-            <p class="mt-2 font-light">UI 设计师</p>
+            <p class="mt-2 font-light">2012 年 ~ 2015 年 | UI 设计师</p>
           </div>
         </div>
 
         <div
           class="
+            mt-20
             w-full
-            text-center
-            border-t
-            pt-16
-            border-gray-300
-            mt-40
-            text-gray-300
+            text-xl text-center
+            flex flex-col
+            justify-center
+            items-center
           "
+        >
+          <div class="w-2/3 border-t border-gray-300 pt-10 mb-10">
+            Feel free to say hi!
+          </div>
+          <div>
+            <button @click="contact">contact me</button>
+            <button @click="resume">view resume</button>
+          </div>
+        </div>
+        <div
+          class="w-full text-center pt-10 border-gray-300 my-20 text-gray-300"
         >
           All information in the projects are my own and does not necessarily
           reflect the views of respective companies. <br />
@@ -126,6 +136,14 @@ export default {
   },
   setup() {
     let box = ref(null);
+    function contact() {
+      // console.log("contact");
+      window.location.href="mailto:baobaomi900901@icloud.com";
+    }
+    function resume() {
+      // console.log("resume");
+      window.open("https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf")
+    }
     onMounted(() => {
       // console.log("document.body :>> ", document.body);
       document.body.classList.remove("overflow-hidden");
@@ -142,6 +160,8 @@ export default {
     });
     return {
       box,
+      contact,
+      resume,
     };
   },
 };
@@ -172,5 +192,18 @@ body {
 .imgbox {
   @apply bg-gray-200 flex justify-center items-center mt-10;
   height: 720px;
+}
+
+button {
+  @apply border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5;
+  transition: 0.25s;
+}
+
+button:hover {
+  @apply bg-dark-blue text-white;
+}
+
+button + button {
+  @apply ml-20;
 }
 </style>
