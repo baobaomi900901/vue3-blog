@@ -472,6 +472,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -647,6 +653,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -743,6 +753,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-1\/6 {
   width: 16.666667%;
 }
@@ -768,13 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-.select-text {
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
 }
 
 .resize {
@@ -877,12 +884,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.125rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -1151,11 +1158,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1195,6 +1197,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .italic {
   font-style: italic;
+}
+
+.not-italic {
+  font-style: normal;
 }
 
 .leading-tight {
@@ -1259,9 +1265,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.text-stone-600 {
-  --tw-text-opacity: 1;
-  color: rgb(87 83 78 / var(--tw-text-opacity));
+.opacity-30 {
+  opacity: 0.3;
 }
 
 .opacity-80 {
@@ -1274,14 +1279,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-10 {
-  opacity: 0.1;
-}
-
-.opacity-30 {
-  opacity: 0.3;
 }
 
 .mix-blend-difference {
@@ -1350,6 +1347,18 @@ body {
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 375px) {
+  .mobile\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mobile\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1447,10 +1456,5 @@ body {
   .\32xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }

@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 // createWebHashHistory, 带哈希值 #
 import HelloLoading from "../pages/HelloLoading";
 import Home from "../pages/Home";
+import Prompt from "../pages/Prompt";
 import About from "../pages/About";
 import ContentOld1 from "../pages/ContentOld1"; // vodafone-conceptual-design
 import ContentOld2 from "../pages/ContentOld2"; // agile-ui
@@ -24,6 +25,12 @@ const routes = [
     path: "/Home",
     name: "Homex",
     component: Home,
+  },
+  {
+
+    path: "/prompt",
+    name: "prompt",
+    component: Prompt
   },
   {
     path: "/About",

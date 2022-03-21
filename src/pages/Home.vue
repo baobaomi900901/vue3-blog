@@ -262,40 +262,39 @@
             >
               Maosusu.😾
             </div>
-            <div class="text-xl break-all italic" style="max-width: 640px">
+            <div class="text-xl font-normal break-all italic" style="max-width: 640px">
               <div ref="elContentOne3" class="elContentOne3">
-                猫叔叔是一个是灵活的多功能设计师，
+                猫叔叔是一个灵活的多功能设计师，
               </div>
               <div ref="elContentOne4" class="elContentOne4 mt-2">
-                注重灵活、速度和质量，
+                注重设计的便捷、速度和高质量；
               </div>
-              <div ref="elContentOne5" class="elContentOne5 mt-2">
-                喜欢挖掘设计背后的商业价值，思
+              <div ref="elContentOne5" class="elContentOne5 mt-6">
+                喜欢挖掘设计背后的商业价值，
               </div>
-
               <div ref="elContentOne6" class="elContentOne6 mt-2">
-                考"Why"和"How"，
+                思考“Why”和“How"；
               </div>
-              <div ref="elContentOne7" class="elContentOne7 mt-2">
-                渴望与挑战合作，探索设计策略,
+              <div ref="elContentOne7" class="elContentOne7 mt-6">
+                愿意不断挑战自我，同时也希望与团队合作，
               </div>
               <div ref="elContentOne8" class="elContentOne8 mt-2">
-                维护以用户为中心的设计方法，
+                去探索设计策略，维护以用户为中心的设计方法；
               </div>
-              <div ref="elContentOne9" class="elContentOne9 mt-2">
-                渴望新的知识并持续学习，
+              <div ref="elContentOne9" class="elContentOne9 mt-6">
+                渴望探索新的知识，并能持续学习，
               </div>
               <div ref="elContentOne10" class="elContentOne10 mt-2">
-                熟悉 VUE、WordPress、PHP等，
+                现已自学并熟悉VUE、WordPress、PHP等；
               </div>
-              <div ref="elContentOne11" class="elContentOne11 mt-2">
-                帮助团队设计落地，乐于团队交流分享
+              <div ref="elContentOne11" class="elContentOne11 mt-6">
+                能帮助团队设计落地，并乐于团队间的
               </div>
               <div ref="elContentOne12" class="elContentOne12 mt-2">
-                知识以提升团队效率。
+                交流和知识分享，以提升团队效率；
               </div>
-              <div ref="elContentOne13" class="elContentOne13 mt-2">
-                同时也是 'Jack of all trades' 😁
+              <div ref="elContentOne13" class="elContentOne13 mt-6">
+                我是"Jack of all trades”
               </div>
             </div>
           </div>
@@ -752,9 +751,9 @@
               >
                 Contact Me
               </div>
-              <div class="text-xl break-all italic" style="max-width: 640px">
+              <div class="text-xl font-normal break-all italic" style="max-width: 640px">
                 <div ref="elContent43" class="elContent43 italic">
-                  需要我和成为团队中的一员吗? 😼
+                  需要我成为团队中的一员吗? 😼
                 </div>
                 <div ref="elContent44" class="elContent44 mt-4 italic">
                   我们可以共同努力, 用工程思维建造
@@ -815,8 +814,8 @@
                   </div>
                   <div class="lottie takeToMe w-80 h-80 z-50"></div>
                 </div>
-                <p class="text-sm text-center">
-                  🤔 Wondering what this green circles is for? <br />
+                <p class="text-sm text-center italic">
+                  🤔 Wondering what this blue circles is for? <br />
                   Try clicking it and see what it does.
                 </p>
               </div>

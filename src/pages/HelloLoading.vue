@@ -1,36 +1,56 @@
 <template>
   <div
     ref="HelloLoading"
-    class="HelloLoading StartPage absolute w-screen h-screen bg-gray-900 z-50 select-none z-50"
+    class="
+      HelloLoading
+      StartPage
+      absolute
+      w-screen
+      h-screen
+      bg-gray-900
+      z-50
+      select-none
+      z-50
+    "
     style="z-index: 99"
   >
     <div
-      class="StartAnimation w-full h-full relative z-50 text-white flex flex-col justify-center items-center"
+      class="
+        StartAnimation
+        w-full
+        h-full
+        relative
+        z-50
+        text-white
+        flex flex-col
+        justify-center
+        items-center
+      "
     >
-      <div ref="SATextHead" class="SATextHead text-base mb-16">
+      <div ref="SATextHead" class="SATextHead text-base mobile:text-sm mb-16">
         MobyTang™ 😼 Portfolio
       </div>
       <div class="SATextBox font-semibold mb-32 w-full text-center">
-        <div class="t1 SATextItem absolute w-full text-6xl t-1" ref="t1">
+        <div class="t1 SATextItem absolute w-full text-6xl mobile:text-3xl t-1" ref="t1">
           We're
         </div>
-        <div class="t2 SATextItem absolute w-full text-6xl t-2" ref="t2">
+        <div class="t2 SATextItem absolute w-full text-6x mobile:text-3xl t-2" ref="t2">
           3D
         </div>
-        <div class="t3 SATextItem absolute w-full text-6xl t-3" ref="t3">
+        <div class="t3 SATextItem absolute w-full text-6xl mobile:text-3xl t-3" ref="t3">
           Motion
         </div>
-        <div class="t4 SATextItem absolute w-full text-6xl t-4" ref="t4">
+        <div class="t4 SATextItem absolute w-full text-6xl mobile:text-3xl t-4" ref="t4">
           Interaction
         </div>
-        <div class="t5 SATextItem absolute w-full text-6xl t-5" ref="t5">
+        <div class="t5 SATextItem absolute w-full text-6xl mobile:text-3xl t-5" ref="t5">
           UI&UE
         </div>
-        <div class="t6 SATextItem absolute w-full text-6xl t-6" ref="t6">
+        <div class="t6 SATextItem absolute w-full text-6xl mobile:text-3xl t-6" ref="t6">
           Webflow Developer
         </div>
       </div>
-      <div ref="SATextFooter" class="SATextFooter opacity-80">
+      <div ref="SATextFooter" class="SATextFooter opacity-80 mobile:text-sm">
         ©2021 Mading😼&🤡™ studio
       </div>
     </div>
@@ -45,6 +65,9 @@ import { gsap } from "gsap";
 import useTextEnterAnime from "../hooks/useTextEnterAnime";
 import useTextOutAnime from "../hooks/useTextOutAnime";
 import { useRouter } from "vue-router";
+// using es modules
+import device from "current-device";
+
 
 export default {
   name: "HelloLoading",
@@ -59,8 +82,8 @@ export default {
     let t5 = ref(null);
     let t6 = ref(null);
     let HelloLoading = ref(null);
-    let duration = 0.5
-    let stagger = 0.05
+    let duration = 0.5;
+    let stagger = 0.05;
     onMounted(() => {
       // start animation
       let SATextHeadEnt = useTextEnterAnime(SATextHead, 0.4);
@@ -85,26 +108,35 @@ export default {
       });
       let StartPageLine = gsap.timeline({
         delay: 1,
+        onStart: () => {
+          console.log("device.mobile() === %s", device.desktop());
+        },
         onComplete: () => {
-          router.push({ path: "home" });
-          // console.log("loading-end");
+          // router.push({ path: "home" });
+          console.log("device.mobile() === %s", device.desktop());
+          if (device.desktop()) {
+            router.push({ path: "home" });
+            return;
+          } else {
+            router.push({ path: "Prompt" });
+          }
         },
       });
       StartPageLine.add(SATextHeadEnt);
       StartPageLine.add(SATextFooterEnt, 0.2);
       StartPageLine.add(t1Ent);
       StartPageLine.add(t1Out);
-      StartPageLine.add(t2Ent,"-=0.7");
+      StartPageLine.add(t2Ent, "-=0.7");
       StartPageLine.add(t2Out);
-      StartPageLine.add(t3Ent,"-=0.6");
+      StartPageLine.add(t3Ent, "-=0.6");
       StartPageLine.add(t3Out);
-      StartPageLine.add(t4Ent,"-=0.8");
+      StartPageLine.add(t4Ent, "-=0.8");
       StartPageLine.add(t4Out);
-      StartPageLine.add(t5Ent,"-=0.8");
+      StartPageLine.add(t5Ent, "-=0.8");
       StartPageLine.add(t5Out);
-      StartPageLine.add(t6Ent,"-=0.8");
+      StartPageLine.add(t6Ent, "-=0.8");
       StartPageLine.add(t6Out);
-      StartPageLine.add(SATextHeadOut,"-=1");
+      StartPageLine.add(SATextHeadOut, "-=1");
       StartPageLine.add(SATextFooterOut, "-=0.8");
       StartPageLine.add(HelloLoadingOut);
     });
@@ -118,6 +150,7 @@ export default {
       t5,
       t6,
       HelloLoading,
+      device,
     };
   },
 };

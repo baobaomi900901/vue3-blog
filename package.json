@@ -8,6 +8,7 @@
     "watch": "npx tailwindcss -i ./src/assets/index.css -o ./src/assets/output.css --watch"
   },
   "dependencies": {
+    "current-device": "^0.10.2",
     "tailwind-scrollbar-hide": "^1.1.7",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
