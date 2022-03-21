@@ -264,15 +264,37 @@
             </div>
             <div class="text-xl break-all italic" style="max-width: 640px">
               <div ref="elContentOne3" class="elContentOne3">
-                猫叔叔是一个注重灵活性、速度和质量,
+                猫叔叔是一个是灵活的多功能设计师，
               </div>
               <div ref="elContentOne4" class="elContentOne4 mt-2">
-                多才多艺的交互设计师,
+                注重灵活、速度和质量，
               </div>
               <div ref="elContentOne5" class="elContentOne5 mt-2">
-                喜欢研究设计落地时需要的技术,
+                喜欢挖掘设计背后的商业价值，思
               </div>
+
               <div ref="elContentOne6" class="elContentOne6 mt-2">
+                考"Why"和"How"，
+              </div>
+              <div ref="elContentOne7" class="elContentOne7 mt-2">
+                渴望与挑战合作，探索设计策略,
+              </div>
+              <div ref="elContentOne8" class="elContentOne8 mt-2">
+                维护以用户为中心的设计方法，
+              </div>
+              <div ref="elContentOne9" class="elContentOne9 mt-2">
+                渴望新的知识并持续学习，
+              </div>
+              <div ref="elContentOne10" class="elContentOne10 mt-2">
+                熟悉 VUE、WordPress、PHP等，
+              </div>
+              <div ref="elContentOne11" class="elContentOne11 mt-2">
+                帮助团队设计落地，乐于团队交流分享
+              </div>
+              <div ref="elContentOne12" class="elContentOne12 mt-2">
+                知识以提升团队效率。
+              </div>
+              <div ref="elContentOne13" class="elContentOne13 mt-2">
                 同时也是 'Jack of all trades' 😁
               </div>
             </div>
@@ -851,6 +873,14 @@ export default {
     let elContentOne5 = ref(null);
     let elContentOne6 = ref(null);
 
+    let elContentOne7 = ref(null);
+    let elContentOne8 = ref(null);
+    let elContentOne9 = ref(null);
+    let elContentOne10 = ref(null);
+    let elContentOne11 = ref(null);
+    let elContentOne12 = ref(null);
+    let elContentOne13 = ref(null);
+
     let elContentTwo1 = ref(null);
     let elContentTwo2 = ref(null);
     let elContentTwo3 = ref(null);
@@ -1218,10 +1248,18 @@ export default {
       });
       contentOneTimeLine.add(useTextEnterAnime(elContentOne1));
       contentOneTimeLine.add(useTextEnterAnime(elContentOne2));
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne3, 0.2), "-=0.5");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne4, 0.2), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne5, 0.2), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne3, 0.4), "-=0.5");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne4, 0.3), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne5, 0.4), "-=0.1");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne6, 0.2), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne7, 0.4), "-=0.1");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne8, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne9, 0.3), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne10, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne11, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne12, 0.2), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne13, 0.4), "-=0.1");
+
       //#endregion
 
       // 02-1 EA
@@ -1531,6 +1569,13 @@ export default {
       elContentOne4,
       elContentOne5,
       elContentOne6,
+      elContentOne7,
+      elContentOne8,
+      elContentOne9,
+      elContentOne10,
+      elContentOne11,
+      elContentOne12,
+      elContentOne13,
       elContentTwo1,
       elContentTwo2,
       elContentTwo3,
