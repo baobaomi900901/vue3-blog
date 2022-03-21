@@ -11,7 +11,18 @@
     class="Prompt bg-white w-screen h-screen flex justify-center items-center"
   >
     <div
-      class="w-3/4 text-md leading-loose text-center italic mt-20 font-light flex flex-col justify-center items-center "
+      class="
+        w-3/4
+        text-md
+        leading-loose
+        text-center
+        italic
+        mt-20
+        font-light
+        flex flex-col
+        justify-center
+        items-center
+      "
     >
       <p class="cat-text">
         <span class="text-2xl not-italic">😼</span> : "为了更好的阅读, 请移步<br />到
@@ -41,6 +52,7 @@ export default {
         },
         {
           backgroundColor: "#fff",
+          delay: 1,
           duration: 1,
         }
       );
