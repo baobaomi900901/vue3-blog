@@ -83,7 +83,7 @@ SEGI 创立于 2013 年, 主营智慧园区不动产数字化平台, 产品大�
 
 落地设计是权重最高的任务, 任务优先级如下:
 
-> 1.Sketch 组件库;
+> 1.Sketch 设计系统规范;
 >
 > 2.Axure 元件库;
 >
@@ -153,7 +153,7 @@ SEGI 创立于 2013 年, 主营智慧园区不动产数字化平台, 产品大�
 
   <li class="slide">
     <img src="../assets/segi/SEGI-Component.png" class=" absolute w-10/12">
-    <span class="text-sm text-white">Sketch 组件库与规范</span>
+    <span class="text-sm text-white">Sketch 设计系统规范</span>
   </li>
   <li class="slide">
     <img src="../assets/segi/SEGI-storybook.png" class=" absolute w-10/12">
@@ -175,27 +175,3 @@ SEGI 创立于 2013 年, 主营智慧园区不动产数字化平台, 产品大�
     <label for="control-4"></label>
   </div>
 </ul>
-
-<!-- <div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="../assets/segi/SEGI-Component.png">
-</div>
-<center class="text-sm text-gray-400 mt-4">Sketch 组件库与规范</center>
-<br>
-
-<div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="../assets/segi/SEGI-storybook.png">
-</div>
-<center class="text-sm text-gray-400 mt-4">Storybook 组件开发工具</center>
-<br>
-
-<div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="../assets/segi/SEGI-design-studio.png">
-</div>
-<center class="text-sm text-gray-400 mt-4">设计部门对内门户网站</center>
-<br>
-
-<div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="../assets/segi/SEGI-Markdown.png">
-</div>
-<center class="text-sm text-gray-400 mt-4">Markdown 文档</center>
-<br> -->

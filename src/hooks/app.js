@@ -188,15 +188,15 @@ export default class WebGL {
     // set uAlpha when list is hovered / unhovered
     this.linkHovered
       ? (this.uniforms.uAlpha.value = lerp(
-          this.uniforms.uAlpha.value,
-          1.0,
-          0.1
-        ))
+        this.uniforms.uAlpha.value,
+        1.0,
+        0.1
+      ))
       : (this.uniforms.uAlpha.value = lerp(
-          this.uniforms.uAlpha.value,
-          0.0,
-          0.1
-        ));
+        this.uniforms.uAlpha.value,
+        0.0,
+        0.1
+      ));
 
     //     for(let i = 0; i< this.links.length; i++){
     //         if(this.linkHovered){

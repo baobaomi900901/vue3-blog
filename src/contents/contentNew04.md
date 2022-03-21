@@ -31,7 +31,7 @@ name: 文档系统
 
 <br>
 
-<img src="../assets/wordpress/wordpress-01.png" class=" w-full">
-<center class="text-sm text-gray-400 mt-2">按照客户价值提供差异性内容</center>
+<img src="../assets/vdp/vdp-02.png" class=" w-full">
+<center class="text-sm text-gray-400 mt-2">低代码数据可视化平台</center>
 
 <br>

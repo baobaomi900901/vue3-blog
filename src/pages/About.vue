@@ -9,8 +9,8 @@
   <div class="AboutPage bg-gray-100 h-full flex justify-center">
     <div class="w-11/12 mt-40">
       <h1 class="font-bold text-5xl">Hi, I'm Maosusu</h1>
-      <h2 class="font-bold text-3xl text-gray-400 mt-2">
-        交互设计师 / 动效设计师 / 前端动画开发
+      <h2 class="font-bold text-3xl text-gray-400 mt-4">
+        交互设计师 / 动效设计师 / 前端动画开发 / 宅
       </h2>
       <div class="imgbox rounded-md">
         <img
@@ -24,8 +24,8 @@
           <h3>联系</h3>
           <div class="border-b pb-16 border-gray-300">
             <p>我叫唐清伟, 朋友能称呼猫叔叔</p>
-            <p class="mt-2">📱:13922832244</p>
-            <p class="mt-2">📧:baobaomi900901@icloud.com</p>
+            <p class="mt-2">Phone: 13922832244</p>
+            <p class="mt-2">Email: baobaomi900901@icloud.com</p>
           </div>
 
           <h3>教育</h3>

@@ -210,6 +210,7 @@
                   id="dribbbleLink"
                   href="https://dribbble.com/MobyTang"
                   class="dribbbleLink"
+                  data-text=""
                   >dribbble</a
                 >
                 <p ref="myCoords" id="myCoords" class="about-coord">
@@ -645,8 +646,8 @@
                           ref="elContentFour9"
                           class="elContentFour9 content-title font-yk text-5xl"
                           :class="{ cyberpunk: class4 }"
-                          data-text="自建文档系统"
-                          >自建文档系统</span
+                          data-text="CMS 系统"
+                          >CMS系统</span
                         >
                       </RouterLink>
                       <span
@@ -679,14 +680,19 @@
                         class="elContentFour14 line"
                       ></div>
                     </li>
-                    <li>
-                      <span
-                        ref="elContentFour15"
-                        class="elContentFour15 content-title font-yk text-5xl"
-                        :class="{ cyberpunk: class4 }"
-                        data-text="重新设计算费中心"
-                        >重新设计算费中心</span
+                    <li class="pointer-events-none">
+                      <RouterLink
+                        :to="{ name: 'billing-center' }"
+                        class="pointer-events-none"
                       >
+                        <span
+                          ref="elContentFour15"
+                          class="elContentFour15 content-title font-yk text-5xl"
+                          :class="{ cyberpunk: false }"
+                          data-text="重新设计算费中心"
+                          >重新设计算费中心</span
+                        >
+                      </RouterLink>
                       <span
                         ref="elContentFour16"
                         class="elContentFour16 subtitle"
@@ -747,7 +753,10 @@
                   ref="blueBallBox"
                   class="flex justify-center z-50 relative takeToMeBox flex"
                 >
-                  <div class="takeToMeHot absolute cursor-pointer" @click="mailto"></div>
+                  <div
+                    class="takeToMeHot absolute cursor-pointer"
+                    @click="mailto"
+                  ></div>
                   <div
                     class="
                       absolute
@@ -982,6 +991,7 @@ export default {
     }
 
     onMounted(() => {
+      new WebGL();
       // initialize menu
       scrollToTopMemu();
       window.addEventListener("scroll", scrollToTopMemu, true);
@@ -1164,6 +1174,9 @@ export default {
             .querySelector(".HomePage_content")
             .classList.remove("overflow-hidden");
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
+          document
+            .querySelector("#dribbbleLink")
+            .setAttribute("data-text", "dribbble");
         },
       });
 
@@ -1269,7 +1282,6 @@ export default {
           toggleActions: "play play resume pause",
         },
         onStart: () => {
-          new WebGL();
           class3.value = true;
         },
       });
@@ -1985,7 +1997,7 @@ canvas {
 }
 
 #dribbbleLink::before {
-  content: "DRIBBBLE";
+  content: attr(data-text);
   position: absolute;
   top: 0;
   transform: translateY(16px);
@@ -1994,7 +2006,7 @@ canvas {
 }
 
 #dribbbleLink::after {
-  content: "DRIBBBLE";
+  content: attr(data-text);
   position: absolute;
   left: 0;
   transform: translateY(0px);

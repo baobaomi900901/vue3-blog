@@ -2,7 +2,7 @@
 name: 文档系统
 ---
 
-# <center>**<span class=" font-bold ">SEGI</span> 文档系统**</center>
+# <center>**<span class=" font-bold ">CMS</span> 系统**</center>
 
 ##### <center class="text-gary-500 font-light">基于 WordPress 文档系统</center>
 
@@ -15,7 +15,7 @@ name: 文档系统
 
 ##### 项目背景
 
-这是个土味项目, 因为实现产品文档有更多好的方式, 但是领导要求:
+这是个土味项目, 因为实现产品文档的 CMS (内容管理)有更多好的方式, 但是领导要求:
 
 > **1.不能第三方平台产品**
 >
@@ -23,7 +23,7 @@ name: 文档系统
 >
 > **3.在线文档录入**
 >
-> **4.录入权限用公司 API**
+> **4.查阅&录入权限必须使用公司 API**
 >
 > **5.土味设计需求**
 >

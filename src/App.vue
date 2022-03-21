@@ -34,4 +34,3 @@ body {
   @apply bg-black relative select-text ;
 }
 </style>
-¡
