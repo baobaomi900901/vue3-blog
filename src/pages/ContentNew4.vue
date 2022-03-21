@@ -51,7 +51,7 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">SEGI 文档系统</span>
+            <span class="font-normal">CMS 系统</span>
           </div>
         </RouterLink>
 

@@ -96,7 +96,7 @@
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
             <span class="font-normal text-right"
-              >SEGI 产品文档系统</span
+              >CMS 系统</span
             >
           </div>
         </RouterLink>
