@@ -2,54 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/output.css" />
-    <title>demo</title>
-    <style></style>
+    <title>Document</title>
   </head>
-  <body class="w-screen h-screen">
-    <div class="page w-full h-full flex flex-row bg-red-500">
-      <SG-filter
-        class="w-1/6 SG-filter page-tab h-full bg-blue-500"
-      ></SG-filter>
-      <div class="page-header w-full flex flex-col">
-        <div
-          class="page-header-first w-full flex px-9 py-4 justify-between bg-blue-400"
-        >
-          <div class="page-title">
-            <SG-title>{{title}}</SG-title>
-            <SG-button icon="sg-icon-pin" class="ml-2.5">123</SG-button>
-          </div>
+  <body>
+    <div id="bbm"></div>
+    <script>
+      var arr = [3, 4, 2, 4, 3, 2, 7, 5];
+      var arr2 = [...new Set(arr)];
+      console.log(arr2);
 
-          <div class="page-control">
-            <SG-button type="primary" icon="sg-icon-add">新增</SG-button>
-            <SG-button icon="sg-icon-import" class="ml-4">导入</SG-button>
-            <SG-button icon="sg-icon-export" class="ml-4">导出</SG-button>
-          </div>
-        </div>
+      // 1.统计次数
+      var str = "abdgdbcaethbganmugthaesqszaphfdvwd";
+      var obj = {};
+      // 创建了一个空的对象，存储字符串中的每个字符。属性：每个字符，属性值：该字符出现的次数
+      for (var i = 0; i < str.length; i++) {
+        // // 遍历字符串
+        var chars = str.charAt(i);
+        // // chars代表字符串的每一个字符
+        if (obj[chars]) {
+          obj[chars]++;
+        } else {
+          obj[chars] = 1;
+        }
+        // // obj[chars]属性值：该字符出现的次数
+        // // 如果已经存在，那么次数+1；否则赋值为1
+      }
+      console.log(obj);
 
-        <div
-          class="page-header-second w-full flex px-9 py-4 justify-between bg-blue-400"
-        >
-          <div class="page-total">
-            <SG-title>{{pageTotal}}</SG-title>
-          </div>
+      let el = document.querySelector("#bbm");
 
-          <div class="page-control">
-            <SG-input
-              placeholder="请输入内容"
-              prefix-icon="sg-icon-search"
-              v-model="input4"
-            >
-            </SG-input>
-            <SG-button icon="sg-icon-refresh">1</SG-button>
-            <SG-button icon="sg-icon-field" class="ml-4">2</SG-button>
-            <SG-button icon="sg-icon-filter" class="ml-4">3</SG-button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script></script>
+      let bbm = 123;
+      let vvn = 456;
+
+      console.log(el);
+      console.log(bbm);
+      console.log();
+      console.log(vvn);
+    </script>
   </body>
 </html>
