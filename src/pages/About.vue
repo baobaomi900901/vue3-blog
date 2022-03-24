@@ -12,11 +12,11 @@
       <h2 class="font-bold text-3xl text-gray-400 mt-4">
         交互设计师 / 动效设计师 / 前端动画开发 / 宅
       </h2>
-      <div class="imgbox rounded-md">
+      <div class="imgbox rounded-md bg-dark-blue">
         <img
-          src="../assets/me.png"
+          id="me"
           alt=""
-          class="mt-10 h-80 rounded-full border-4 border-gray-300"
+          class="mt-10 h-80 rounded-full border-4 border-gray-300 z-10 hidden"
         />
       </div>
       <div class="flex flex-col justify-center w-full mb-10 items-center">
@@ -138,11 +138,13 @@ export default {
     let box = ref(null);
     function contact() {
       // console.log("contact");
-      window.location.href="mailto:baobaomi900901@icloud.com";
+      window.location.href = "mailto:baobaomi900901@icloud.com";
     }
     function resume() {
       // console.log("resume");
-      window.open("https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf")
+      window.open(
+        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf"
+      );
     }
     onMounted(() => {
       // console.log("document.body :>> ", document.body);
@@ -158,6 +160,74 @@ export default {
         },
       });
     });
+
+    onMounted(() => {
+      const container = document.querySelector(".imgbox");
+      for (let i = 0; i <= 100; i++) {
+        const cards = document.createElement("div");
+        cards.classList.add("card", "w-24", "h-40", "bg-dark-blue", "absolute");
+        container.appendChild(cards);
+      }
+
+      function anime() {
+        gsap.to(".card", {
+          boxShadow: "0 10px 20px 0 rgba(0, 0, 0, 0.15)",
+          x: () => {
+            return gsap.utils.random(-window.innerWidth, window.innerWidth);
+          },
+          y: () => {
+            return gsap.utils.random(
+              -window.innerHeight / 2,
+              window.innerHeight / 2
+            );
+          },
+          scale: () => {
+            return gsap.utils.random(0.8, 2.4);
+          },
+          delay: 0,
+          stagger: {
+            amount: 1,
+          },
+          ease: "power2.inOut",
+          duration: () => {
+            // return gsap.utils.random(5, 10);
+            return 5;
+          },
+          onComplete: () => {
+            setTimeout(() => {
+              console.log(1);
+              anime();
+            }, 1000);
+          },
+        });
+      }
+
+      const img = document.querySelector("#me");
+      img.src =
+        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/me.png";
+      img.onload = () => {
+        img?.classList.remove("hidden");
+        gsap.fromTo(
+          img,
+          {
+            y: 10,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+          }
+        );
+        gsap.to(".card", {
+          boxShadow: "0 10px 20px 0 rgba(0, 0, 0, 0.001)",
+          onComplete: () => {
+            anime();
+          },
+        });
+      };
+    });
+
     return {
       box,
       contact,
@@ -190,7 +260,7 @@ body {
 }
 
 .imgbox {
-  @apply bg-gray-200 flex justify-center items-center mt-10;
+  @apply flex justify-center items-center mt-10 relative overflow-hidden;
   height: 720px;
 }
 
