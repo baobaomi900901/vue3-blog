@@ -12,3 +12,5 @@
 
 1. npm install vue-router@next
 2. 在 router/index.js 中引入, import { createRouter, createWebHashHistory } from "vue-router";
+
+test
