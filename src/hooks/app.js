@@ -23,6 +23,7 @@ const textureEight = new THREE.TextureLoader().load(images.imageEight);
 const textureNine = new THREE.TextureLoader().load(images.imageNine);
 const textureTen = new THREE.TextureLoader().load(images.imageTen);
 
+
 export default class WebGL {
   constructor() {
     this.container = document.querySelector(".caView");
