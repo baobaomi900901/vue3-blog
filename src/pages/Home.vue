@@ -1804,7 +1804,7 @@ canvas {
   bottom: 0;
   z-index: 0;
   /* display: none;  */
-  background-image: url(../assets/img/luckphoto.jpg);
+  background-image: url(https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/home-big-image.png);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1820,13 +1820,13 @@ canvas {
       from(rgba(0, 0, 0, 0.34)),
       to(rgba(0, 0, 0, 0.34))
     ),
-    url(../assets/img/luckphoto.jpg);
+    url(https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/home-big-image.png);
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.95),
       rgba(0, 0, 0, 0.75)
     ),
-    url(../assets/img/luckphoto.jpg);
+    url(https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/home-big-image.png);
   background-position: 0 0, 0% 100%;
   background-size: 240%;
   background-repeat: repeat, no-repeat;
