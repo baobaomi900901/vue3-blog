@@ -23,7 +23,7 @@
         <div class="aboutbox">
           <h3>联系</h3>
           <div class="border-b pb-16 border-gray-300">
-            <p>我叫唐清伟, 朋友能称呼猫叔叔</p>
+            <p>我叫唐清伟, 朋友们都称呼猫叔叔</p>
             <p class="mt-2">Phone: 13922832244</p>
             <p class="mt-2">Email: baobaomi900901@icloud.com</p>
           </div>
