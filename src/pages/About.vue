@@ -1,27 +1,24 @@
-<!--
-* @description  参数1
-* @fileName  About
-* @author userName
-* @date 2022-01-30 21:38:11
-* @version V3.0.0
-!-->
 <template>
-  <div class="AboutPage bg-gray-100 h-full flex justify-center">
+  <div class="flex justify-center bg-gray-100">
     <div class="w-11/12 mt-40">
       <h1 class="font-bold text-5xl">Hi, I'm Maosusu</h1>
       <h2 class="font-bold text-3xl text-gray-400 mt-4">
         交互设计师 / 动效设计师 / 前端动画开发 / 宅
       </h2>
-      <div class="imgbox rounded-md bg-dark-blue">
+
+      <div class="avatarContainer flex justify-center items-center mt-10 relative overflow-hidden rounded-md bg-dark-blue" style="height: 720px">
         <img
-          id="me"
+          ref="avatar"
+          id="avatar"
+          src="https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/me.png"
           alt=""
           class="mt-10 h-80 rounded-full border-4 border-gray-300 z-10 hidden"
         />
       </div>
+
       <div class="flex flex-col justify-center w-full mb-10 items-center">
-        <div class="aboutbox">
-          <h3>联系</h3>
+        <ul class="infoBox">
+          <h3 class="font-bold text-dark-blue text-xl">联系</h3>
           <div class="border-b pb-16 border-gray-300">
             <p>我叫唐清伟, 朋友们都称呼猫叔叔</p>
             <p class="mt-2">Phone: 13922832244</p>
@@ -71,51 +68,39 @@
           </div>
 
           <h3>经验</h3>
-          <div class="">
-            <p class="font-bold mt-2">深圳市四格互联信息技术有限公司</p>
-            <p class="mt-2 font-light">
+          <div class="space-y-2">
+            <p class="font-bold">深圳市四格互联信息技术有限公司</p>
+            <p class="font-light">
               2020.03 ~ 至今 | 产品设计部 - 交互组组长
             </p>
             <br />
-            <p class="font-bold mt-2">
+            <p class="font-bold">
               深圳软通动力信息技术有限公司 | 华为 UCD 驻场
             </p>
-            <p class="mt-2 font-light">
+            <p class="font-light">
               2016 年 ~ 2020 年 | 交互设计师 ( 高级主任工程师 7 级 )
             </p>
             <br />
-            <p class="font-bold mt-2">深圳市蘑菇财富技术有限公司</p>
-            <p class="mt-2 font-light">2015 年 ~ 2016 年 | 交互设计师</p>
+            <p class="font-bold">深圳市蘑菇财富技术有限公司</p>
+            <p class="font-light">2015 年 ~ 2016 年 | 交互设计师</p>
             <br />
-            <p class="font-bold mt-2">深圳市点视科技有限公司</p>
-            <p class="mt-2 font-light">2012 年 ~ 2015 年 | UI 设计师</p>
+            <p class="font-bold">深圳市点视科技有限公司</p>
+            <p class="font-light">2012 年 ~ 2015 年 | UI 设计师</p>
           </div>
-        </div>
+        </ul>
 
-        <div
-          class="
-            mt-20
-            w-full
-            text-xl text-center
-            flex flex-col
-            justify-center
-            items-center
-          "
-        >
-          <div class="w-2/3 border-t border-gray-300 pt-10 mb-10">
+        <div class="mt-20 w-full flex flex-col justify-center items-center text-center text-xl">
+          <p class="w-2/3 border-t border-gray-300 pt-10 mb-10">
             Feel free to say hi!
-          </div>
-          <div>
-            <button @click="contact">contact me</button>
-            <button @click="resume">view resume</button>
+          </p>
+          <div class="space-x-8">
+            <button class="border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear" @click="contact">contact me</button>
+            <button class="border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear" @click="resume">view resume</button>
           </div>
         </div>
-        <div
-          class="w-full text-center pt-10 border-gray-300 my-20 text-gray-300"
-        >
-          All information in the projects are my own and does not necessarily
-          reflect the views of respective companies. <br />
-          All the projects complies to the NDA
+        <div class="w-full my-20 pt-10 text-center text-gray-300 border-gray-300">
+          <p>All information in the projects are my own and does not necessarily reflect the views of respective companies.</p>
+          <p>All the projects complies to the NDA</p>
         </div>
       </div>
     </div>
@@ -123,50 +108,35 @@
 </template>
 
 <script lang="ts">
-import { ref, reactive, onMounted } from "vue";
+import { ref, onMounted, defineComponent, nextTick } from "vue";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
-// import NavigationBar from "../components/NavigationBar";
-export default {
+
+export default defineComponent({
   name: "About",
-  components: {
-    // NavigationBar,
-  },
-  setup() {
-    let box = ref(null);
-    function contact() {
-      // console.log("contact");
-      window.location.href = "mailto:baobaomi900901@icloud.com";
-    }
-    function resume() {
-      // console.log("resume");
-      window.open(
-        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf"
-      );
-    }
-    onMounted(() => {
-      // console.log("document.body :>> ", document.body);
-      document.body.classList.remove("overflow-hidden");
-      // document.body.classList.add("scrollbar-hide", "overflow-scroll");
 
-      let scrollTop = document.body.scrollTop;
-      scrollTop = 0;
+  setup() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const box = ref(null);
+    const avatar = ref<HTMLImageElement>();
+
+    onMounted(() => {
+      document.body.classList.remove("overflow-hidden");
+
       gsap.set("body", {
         scrollTop: 0,
         onComplete: () => {
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
         },
       });
-    });
 
-    onMounted(() => {
-      const container = document.querySelector(".imgbox");
       for (let i = 0; i <= 100; i++) {
         const cards = document.createElement("div");
         cards.classList.add("card", "w-24", "h-40", "bg-dark-blue", "absolute");
-        container.appendChild(cards);
+        document.querySelector(".avatarContainer")?.appendChild(cards);
       }
 
       function anime() {
@@ -190,7 +160,6 @@ export default {
           },
           ease: "power2.inOut",
           duration: () => {
-            // return gsap.utils.random(5, 10);
             return 5;
           },
           onComplete: () => {
@@ -202,39 +171,51 @@ export default {
         });
       }
 
-      const img = document.querySelector("#me");
-      img.src =
-        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/me.png";
-      img.onload = () => {
-        img?.classList.remove("hidden");
-        gsap.fromTo(
-          img,
-          {
-            y: 10,
-            opacity: 0,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.5,
-          }
-        );
-        gsap.to(".card", {
-          boxShadow: "0 10px 20px 0 rgba(0, 0, 0, 0.001)",
-          onComplete: () => {
-            anime();
-          },
-        });
-      };
+      nextTick(() => {
+        if (avatar.value) {
+          avatar.value.onload = () => {
+            avatar.value?.classList.remove("hidden");
+            gsap.fromTo(
+              avatar.value || {},
+              {
+                y: 10,
+                opacity: 0,
+              },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+              }
+            );
+            gsap.to(".card", {
+              boxShadow: "0 10px 20px 0 rgba(0, 0, 0, 0.001)",
+              onComplete: () => {
+                anime();
+              },
+            });
+          };
+        }
+      })
     });
 
+    function contact() {
+      window.location.href = "mailto:baobaomi900901@icloud.com";
+    }
+
+    function resume() {
+      window.open(
+        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf"
+      );
+    }
+
     return {
+      avatar,
       box,
       contact,
       resume,
     };
   },
-};
+});
 </script>
 <style scoped>
 * {
@@ -248,32 +229,10 @@ body {
   overflow: auto;
 }
 
-.aboutbox {
+.infoBox {
   @apply mt-20 grid text-lg;
   width: 960px;
   grid-row-gap: 4rem;
   grid-template-columns: 360px auto;
-}
-
-.aboutbox h3 {
-  @apply font-bold text-dark-blue text-xl;
-}
-
-.imgbox {
-  @apply flex justify-center items-center mt-10 relative overflow-hidden;
-  height: 720px;
-}
-
-button {
-  @apply border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5;
-  transition: 0.25s;
-}
-
-button:hover {
-  @apply bg-dark-blue text-white;
-}
-
-button + button {
-  @apply ml-20;
 }
 </style>
