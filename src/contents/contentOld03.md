@@ -21,7 +21,7 @@ name: HKT
 
 ##### 我做了什么?
 
-> 1.协助主创设 <a href="https://www.linkedin.cn/injobs/in/kevin-wong-957342126/" target="_blank">Kevin Wong</a> 设计其中的 Motion Graphics;
+> 1.协助主创设 <a href="https://digitalk.myportfolio.com/next-gen-carrier-experience" target="_blank">Kevin Wong</a> 设计其中的 Motion Graphics;
 >
 > 2.运用 Flinto + AE 帮助体验团队输出向客户演示的 Mobile 原型;
 >
