@@ -8,7 +8,7 @@ name: 敏捷营商
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/AgileUI/AgileUI-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-01.png"/>
 </div>
 <br>
 <br>
@@ -22,7 +22,7 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 <br>
 
 <div style="display: flex; justify-content: center; border: 1px solid rgba(0,0,0,0.10);">
-    <img src="../assets/AgileUI/AgileUI-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-02.png"/>
 </div>
 <br>
 <br>
@@ -34,15 +34,15 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 <br>
 <div class=" grid grid-cols-3 gap-4">
     <div>
-        <img src="../assets/AgileUI/AgileUI-03-01.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-03-01.png"/>
         <center class="text-sm text-gray-400 mt-2">调研</center>
     </div>
     <div>
-        <img src="../assets/AgileUI/AgileUI-03-02.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-03-02.png"/>
         <center class="text-sm text-gray-400 mt-2">分析</center>
     </div>
     <div>
-        <img src="../assets/AgileUI/AgileUI-03-03.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-03-03.png"/>
         <center class="text-sm text-gray-400 mt-2">商讨解决方案</center>
     </div>
 </div>
@@ -63,7 +63,7 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 
 <br>
 <div class=" px-32">
-    <img src="../assets/AgileUI/AgileUI-03-04.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-03-04.png"/>
 </div>
 <br>
 <br>
@@ -74,9 +74,9 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 
 <br>
 <div class=" grid grid-cols-3 gap-2">
-    <img src="../assets/AgileUI/AgileUI-04-01.png"/>
-    <img src="../assets/AgileUI/AgileUI-04-02.png"/>
-    <img src="../assets/AgileUI/AgileUI-04-03.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-03.png"/>
 </div>
 <br>
 <br>
@@ -86,7 +86,7 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 **Agile UI** 应用场景存在的大多为各类台式显示器、笔记本与平板未来可能会有更多移动端应用，经过商讨基于扩展性决定使用弹性布局并已 rem 为单位，让页面根据用户终端环境（系统，分辨率，屏幕尺寸与视距等），进行自发式调整，提供一致的信息呈现与适合当前环境的阅读和操作体验。
 
 <div class=" px-10">
-    <img src="../assets/AgileUI/AgileUI-04-04.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-04.png"/>
 </div>
 <br>
 
@@ -95,7 +95,7 @@ Agile UI 是华为为电信运维（操作维护）设计的系统，遵循用�
 > 首先我们以 Agile UI 应用场景中最多的 1440 分辨率作为基础设计，引入 rem 做为响应式计算单位，把屏幕横向等分成 240 个网格，规则不同分辨率下两个基础网格(grid) = 1rem，以下列出 Agile UI 应用场景场景中使用最多的屏幕分辨率与基础网格:
 
 <div class=" px-10">
-    <img src="../assets/AgileUI/AgileUI-04-05.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-05.png"/>
 </div>
 <br>
 
@@ -109,7 +109,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" px-10">
-    <img src="../assets/AgileUI/AgileUI-04-06.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-06.png"/>
 </div>
 <br>
 
@@ -119,7 +119,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" px-20">
-    <img src="../assets/AgileUI/AgileUI-04-07.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-07.png"/>
 </div>
 <br>
 
@@ -127,7 +127,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" px-10">
-    <img src="../assets/AgileUI/AgileUI-04-08.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-04-08.png"/>
 </div>
 <br>
 
@@ -137,12 +137,12 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" grid grid-cols-6 gap-2 px-10">
-    <img src="../assets/AgileUI/AgileUI-05-01.png"/>
-    <img src="../assets/AgileUI/AgileUI-05-02.png"/>
-    <img src="../assets/AgileUI/AgileUI-05-03.png"/>
-    <img src="../assets/AgileUI/AgileUI-05-04.png"/>
-    <img src="../assets/AgileUI/AgileUI-05-05.png"/>
-    <img src="../assets/AgileUI/AgileUI-05-06.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-03.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-04.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-05.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-05-06.png"/>
 </div>
 <br>
 <br>
@@ -177,8 +177,8 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" grid grid-cols-12 items-center gap-4 px-10">
-    <img class=" col-span-9 " src="../assets/AgileUI/AgileUI-06-01.png"/>
-    <img class=" col-span-3 " src="../assets/AgileUI/AgileUI-06-02.png"/>
+    <img class=" col-span-9 " src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-01.png"/>
+    <img class=" col-span-3 " src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-02.png"/>
 </div>
 <br>
 <br>
@@ -190,11 +190,11 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 <br>
 <div class=" grid grid-cols-12 items-center gap-20 px-10">
     <div class=" col-span-6 ">
-        <img src="../assets/AgileUI/AgileUI-06-03.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-03.png"/>
         <center class="text-sm text-gray-400 mt-2">style</center>
     </div>
     <div class=" col-span-6 ">
-        <img src="../assets/AgileUI/AgileUI-06-04.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-04.png"/>
         <center class="text-sm text-gray-400 mt-2">font style</center>
     </div>
 </div>
@@ -207,7 +207,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 <br>
 <div class=" px-10">
-    <img src="../assets/AgileUI/AgileUI-06-05.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-05.png"/>
 </div>
 <br>
 
@@ -233,7 +233,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 >
 > 我们把组件按照人机交互的原则分成五类: 通用-General(G)，数据输入-Data Entry(DE)，数据输出-Data display(DD)，导航-Navigation(N)，反馈-Feedback(FB)，其他-Other(OT)。在命名组件的时候用 “ / ” 分割 B、E、M 的，用“ - ”来连接内部特征. 举例如下:
 >
-> <div class=" px-10"><img src="../assets/AgileUI/AgileUI-06-06.png"/></div>
+> <div class=" px-10"><img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-06.png"/></div>
 
 <br>
 <br>
@@ -242,7 +242,7 @@ Card 是模块设计基础单位，每一个 card 都是覆盖在 Column 上面�
 
 录制视频课程, 组织内部教学:
 
-<div class=" pl-10 pr-64"><img src="../assets/AgileUI/AgileUI-06-07.png"/></div>
+<div class=" pl-10 pr-64"><img src="https://book.rxshc.com/blog-assets/assets/AgileUI/AgileUI-06-07.png"/></div>
 
 <br>
 <br>

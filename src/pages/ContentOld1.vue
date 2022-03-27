@@ -19,8 +19,8 @@
     <div class="bg-white w-full h-full flex flex-col items-center rounded-sm ">
       <contentOld01 />
       <div
-        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12"
-        style="width: 1024px"
+        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12 w-11/12 px-6"
+        style="max-width:1024px"
       >
         <RouterLink class="before-button flex items-center" to="/home">
           <!-- <img src="../assets/toBefore.svg" alt="" /> -->

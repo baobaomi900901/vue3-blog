@@ -8,7 +8,7 @@ name: 沃达丰概念设计
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/vodafone/vodafone-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-01.png"/>
 </div>
 <br>
 <br>
@@ -27,7 +27,7 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 
 <br>
 <div style="display: flex; justify-content: center; border: 1px solid rgba(0,0,0,0.10);">
-    <img src="../assets/vodafone/vodafone-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-02.png"/>
 </div>
 <br>
 <br>
@@ -38,12 +38,12 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 
 <br>
 <div class=" grid grid-cols-3 gap-2">
-    <img src="../assets/vodafone/vodafone-03-01.png"/>
-    <img src="../assets/vodafone/vodafone-03-02.png"/>
-    <img src="../assets/vodafone/vodafone-03-03.png"/>
-    <img src="../assets/vodafone/vodafone-03-04.png"/>
-    <img src="../assets/vodafone/vodafone-03-05.png"/>
-    <img src="../assets/vodafone/vodafone-03-06.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-03.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-04.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-05.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-03-06.png"/>
 </div>
 <br>
 <br>
@@ -54,9 +54,9 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 
 <br>
 <div class=" grid grid-cols-3 gap-2">
-    <img src="../assets/vodafone/vodafone-04-01.png"/>
-    <img src="../assets/vodafone/vodafone-04-02.png"/>
-    <img src="../assets/vodafone/vodafone-04-03.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-04-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-04-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-04-03.png"/>
 </div>
 <br>
 <br>
@@ -67,7 +67,7 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 
 <br>
 <div class=" mx-10 ">
-    <img src="../assets/vodafone/vodafone-05-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-05-01.png"/>
 </div>
 <br>
 
@@ -76,10 +76,10 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 <br>
 
 <div class=" grid grid-cols-2 gap-2">
-    <img src="../assets/vodafone/vodafone-05-02.png"/>
-    <img src="../assets/vodafone/vodafone-05-04.png"/>
-    <img src="../assets/vodafone/vodafone-05-03.png"/>
-    <img src="../assets/vodafone/vodafone-05-05.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-05-02.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-05-04.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-05-03.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-05-05.png"/>
 </div>
 <br>
 <br>
@@ -130,17 +130,17 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 <br>
 <div class=" grid grid-cols-2 gap-2">
     <div class=' col-span-2'>
-        <img src="../assets/vodafone/vodafone-06-01.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-06-01.png"/>
         <center class="text-sm text-gray-400">Mobile frame</center>
         <br>
     </div>
     <div>
-        <img src="../assets/vodafone/vodafone-06-02.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-06-02.png"/>
         <center class="text-sm text-gray-400">对话式交互</center>
         <br>
     </div>
     <div>
-        <img src="../assets/vodafone/vodafone-06-03.png"/>
+        <img src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-06-03.png"/>
         <center class="text-sm text-gray-400">按照客户价值提供差异性内容</center>
         <br>        
     </div>
@@ -154,12 +154,12 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
     </div>
     <br>
     <div class="grid grid-cols-6 gap-2">
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-01.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-02.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-03.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-04.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-05.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-07-06.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-01.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-02.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-03.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-04.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-05.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-07-06.png"/>
     </div>
 </div>
 <br>
@@ -171,12 +171,12 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
     </div>
     <br>
     <div class="grid grid-cols-6 gap-2 ">
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-01.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-02.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-03.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-04.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-05.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-08-06.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-01.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-02.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-03.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-04.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-05.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-08-06.png"/>
     </div>
 </div>
 <br>
@@ -184,19 +184,19 @@ BES(Busines Enabling System)产品线目标拿下欧洲最大电信运营商 Vod
 <div class="video-play grid gap-2">
     <h5>故事3 - 自服务维修</h5>
     <div class="grid grid-cols-6 gap-2 ">
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-01.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-02.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-03.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-04.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-05.png"/>
-        <img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-09-06.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-01.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-02.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-03.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-04.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-05.png"/>
+        <img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-09-06.png"/>
     </div>
 </div>
 <br>
 
 ##### 其他页面
 
-<img class=" shadow-md shadow-slate-200" src="../assets/vodafone/vodafone-10.png"/>
+<img class=" shadow-md shadow-slate-200" src="https://book.rxshc.com/blog-assets/assets/vodafone/vodafone-10.png"/>
 <br>
 <br>
 

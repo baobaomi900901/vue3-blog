@@ -8,7 +8,7 @@ name: SEGI设计系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/tm/tm.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm.png"/>
 </div>
 <br>
 <br>
@@ -31,7 +31,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-03.png">
+    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-03.png">
 </div>
     <center class="text-sm text-gray-400 mt-4">自定义配置</center>
 <br>
@@ -58,7 +58,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-01.gif">
+    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-01.gif">
 </div>
 <br>
 
@@ -72,7 +72,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-02.gif">
+    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-02.gif">
 </div>
 <br>
 
@@ -121,11 +121,11 @@ module.exports = {
   
   <!--  /Left/Right Button  -->
   <li class="slide">
-    <img src="../assets/tm/tm-05.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-05.png" class=" absolute w-10/12">
     <span class="text-sm text-white">模板演示</span>
   </li>
   <li class="slide">
-    <img src="../assets/tm/tm-06.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-06.png" class=" absolute w-10/12">
     <span class="text-sm text-white">代码演示</span>
   </li>
 
@@ -162,7 +162,7 @@ module.exports = {
 设计部门应该量化设计, 用工程化的思维去指导工作, 提前完成 **设计资产数字化** 来迎接未来 **低代码建站** 平台产成为行业趋势。
 
 <div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="../assets/tm/tm-10.png"> 
+    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-10.png"> 
 </div>
 <center class="text-sm text-gray-400 mt-4">设计资产包含哪些? --图片来源 Microsoft Design Cente </center>
 <br>

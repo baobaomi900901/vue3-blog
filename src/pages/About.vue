@@ -3,10 +3,23 @@
     <div class="w-11/12 mt-40">
       <h1 class="font-bold text-5xl">Hi, I'm Maosusu</h1>
       <h2 class="font-bold text-3xl text-gray-400 mt-4">
-        交互设计师 / 动效设计师 / 前端动画开发 / 宅
+        交互设计师 / 动效设计师 / 前端动画开发
       </h2>
 
-      <div class="avatarContainer flex justify-center items-center mt-10 relative overflow-hidden rounded-md bg-dark-blue" style="height: 720px">
+      <div
+        class="
+          avatarContainer
+          flex
+          justify-center
+          items-center
+          mt-10
+          relative
+          overflow-hidden
+          rounded-md
+          bg-dark-blue
+        "
+        style="height: 720px"
+      >
         <img
           ref="avatar"
           id="avatar"
@@ -17,12 +30,21 @@
       </div>
 
       <div class="flex flex-col justify-center w-full mb-10 items-center">
-        <ul class="infoBox">
+        <ul class="infoBox w-11/12">
           <h3 class="font-bold text-dark-blue text-xl">联系</h3>
           <div class="border-b pb-16 border-gray-300">
             <p>我叫唐清伟, 朋友们都称呼猫叔叔</p>
             <p class="mt-2">Phone: 13922832244</p>
             <p class="mt-2">Email: baobaomi900901@icloud.com</p>
+            <p class="mt-2">
+              BiliBili:
+              <a
+                href="https://space.bilibili.com/20388600?spm_id_from=333.1007.0.0"
+                target="_blank"
+                class="text-dark-blue hover:underline"
+                >CodingStartup_阿喵</a
+              >
+            </p>
           </div>
 
           <h3>教育</h3>
@@ -61,6 +83,11 @@
             </p>
           </div>
 
+          <h3>想做什么?</h3>
+          <div class="border-b pb-16 border-gray-300">
+            <p class="font-bold">设计实现 / 前端动画开发 / WebGL 设计</p>
+          </div>
+
           <h3>在学什么?</h3>
           <div class="border-b pb-16 border-gray-300">
             <p class="font-bold">WebGL:</p>
@@ -70,9 +97,7 @@
           <h3>经验</h3>
           <div class="space-y-2">
             <p class="font-bold">深圳市四格互联信息技术有限公司</p>
-            <p class="font-light">
-              2020.03 ~ 至今 | 产品设计部 - 交互组组长
-            </p>
+            <p class="font-light">2020.03 ~ 至今 | 产品设计部 - 交互组组长</p>
             <br />
             <p class="font-bold">
               深圳软通动力信息技术有限公司 | 华为 UCD 驻场
@@ -89,18 +114,67 @@
           </div>
         </ul>
 
-        <div class="mt-20 w-full flex flex-col justify-center items-center text-center text-xl">
-          <p class="w-2/3 border-t border-gray-300 pt-10 mb-10">
-            Feel free to say hi!
+        <div
+          class="
+            mt-20
+            w-full
+            flex flex-col
+            justify-center
+            items-center
+            text-center text-xl
+          "
+        >
+          <p class="w-full border-t border-gray-300 pt-10 mb-10" style="max-width: 960px;">
+            👏🏻 欢迎联系我!
           </p>
           <div class="space-x-8">
-            <button class="border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear" @click="contact">contact me</button>
-            <button class="border-2  border-dark-blue text-lg text-dark-blue  font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear" @click="resume">view resume</button>
+            <button
+              class="
+                border-2 border-dark-blue
+                text-lg text-dark-blue
+                font-normal
+                uppercase
+                p-5
+                hover:text-white hover:bg-dark-blue
+                transition
+                duration-200
+                ease-linear
+              "
+              style="min-width: 8rem"
+              @click="contact"
+            >
+              联系我
+            </button>
+            <button
+              class="
+                border-2 border-dark-blue
+                text-lg text-dark-blue
+                font-normal
+                uppercase
+                p-5
+                hover:text-white hover:bg-dark-blue
+                transition
+                duration-200
+                ease-linear
+              "
+              @click="resume"
+              style="min-width: 8rem"
+            >
+              查看简历
+            </button>
           </div>
         </div>
-        <div class="w-full my-20 pt-10 text-center text-gray-300 border-gray-300">
-          <p>All information in the projects are my own and does not necessarily reflect the views of respective companies.</p>
-          <p>All the projects complies to the NDA</p>
+        <div
+          class="
+            w-full
+            my-20
+            pt-10
+            text-sm text-center text-gray-300
+            border-gray-300
+          "
+        >
+          <p>项目中的所有信息都是我个人产出的。</p>
+          <p>所有信息都符合保密协定🤐</p>
         </div>
       </div>
     </div>
@@ -112,7 +186,6 @@ import { ref, onMounted, defineComponent, nextTick } from "vue";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 
 export default defineComponent({
   name: "About",
@@ -195,7 +268,7 @@ export default defineComponent({
             });
           };
         }
-      })
+      });
     });
 
     function contact() {
@@ -231,8 +304,8 @@ body {
 
 .infoBox {
   @apply mt-20 grid text-lg;
-  width: 960px;
+  max-width: 960px;
   grid-row-gap: 4rem;
-  grid-template-columns: 360px auto;
+  grid-template-columns: minmax(120px, 320px) auto;
 }
 </style>

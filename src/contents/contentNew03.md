@@ -8,7 +8,7 @@ name: 文档系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/wordpress/wordpress.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress.png"/>
 </div>
 <br>
 <br>
@@ -96,19 +96,19 @@ name: 文档系统
   <!--  /Left/Right Button  -->
   
   <li class="slide">
-    <img src="../assets/wordpress/wordpress-01.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-01.png" class=" absolute w-10/12">
     <!-- <span class="text-sm text-white">文档首页</span> -->
   </li>
   <li class="slide">
-    <img src="../assets/wordpress/wordpress-02.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-02.png" class=" absolute w-10/12">
     <!-- <span class="text-sm text-white">文档首页</span> -->
   </li>
   <li class="slide">
-    <img src="../assets/wordpress/wordpress-03.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-03.png" class=" absolute w-10/12">
     <!-- <span class="text-sm text-white">文档首页</span> -->
   </li>
   <li class="slide">
-    <img src="../assets/wordpress/wordpress-04.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-04.png" class=" absolute w-10/12">
     <!-- <span class="text-sm text-white">文档首页</span> -->
   </li>
   

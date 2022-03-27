@@ -8,7 +8,7 @@ name: SEGI设计系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/segi/SEGI.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/segi/SEGI.png"/>
 </div>
 <br>
 <br>
@@ -152,19 +152,19 @@ SEGI 创立于 2013 年, 主营智慧园区不动产数字化平台, 产品大�
   <!--  /Left/Right Button  -->
 
   <li class="slide">
-    <img src="../assets/segi/SEGI-Component.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/segi/SEGI-Component.png" class=" absolute w-10/12">
     <span class="text-sm text-white">Sketch 设计系统规范</span>
   </li>
   <li class="slide">
-    <img src="../assets/segi/SEGI-storybook.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/segi/SEGI-storybook.png" class=" absolute w-10/12">
     <span class="text-sm text-white">Storybook 组件开发工具</span>
   </li>
   <li class="slide">
-    <img src="../assets/segi/SEGI-design-studio.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/segi/SEGI-design-studio.png" class=" absolute w-10/12">
     <span class="text-sm text-white">设计部门对内门户网站</span>
   </li>
   <li class="slide">
-    <img src="../assets/segi/SEGI-Markdown.png" class=" absolute w-10/12">
+    <img src="https://book.rxshc.com/blog-assets/assets/segi/SEGI-Markdown.png" class=" absolute w-10/12">
     <span class="text-sm text-white">Markdown 文档</span>
   </li>
   

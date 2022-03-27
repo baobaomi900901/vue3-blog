@@ -8,7 +8,7 @@ name: UILego
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/UILego/UILego-01.png"/>
+    <img src="https://book.rxshc.com/blog-assets/assets/UILego/UILego-01.png"/>
 </div>
 <br>
 <br>
