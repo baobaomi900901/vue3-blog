@@ -16,13 +16,25 @@
       overflow-auto
     "
   >
-    <div class="bg-white w-full h-full flex flex-col items-center rounded-sm">
+    <div class="ContentNew4-page bg-white w-full h-full flex flex-col items-center rounded-sm">
       <contentNew04 />
       <div
-        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12 w-11/12 px-6"
-        style="max-width:1024px"
+        class="
+          flex
+          justify-between
+          border-t border-gray-400
+          pt-10
+          mt-20
+          mb-12
+          w-11/12
+          px-6
+        "
+        style="max-width: 1024px"
       >
-        <RouterLink class="before-button flex items-center" :to="{ name: 'document-system' }">
+        <RouterLink
+          class="before-button flex items-center"
+          :to="{ name: 'document-system' }"
+        >
           <svg width="74px" height="74px">
             <g
               id="r1"
@@ -55,11 +67,18 @@
           </div>
         </RouterLink>
 
-        <RouterLink class="after-button flex items-center flex-row-reverse opacity-30 pointer-events-none" :to="{name: 'billing-center'}">
-          <svg
-            width="74px"
-            height="74px"
-          >
+        <RouterLink
+          class="
+            after-button
+            flex
+            items-center
+            flex-row-reverse
+            opacity-30
+            pointer-events-none
+          "
+          :to="{ name: 'billing-center' }"
+        >
+          <svg width="74px" height="74px">
             <g
               id="r1"
               stroke="none"
@@ -95,9 +114,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right"
-              >计费中心(更新中)</span
-            >
+            <span class="font-normal text-right">计费中心(更新中)</span>
           </div>
         </RouterLink>
       </div>
@@ -126,9 +143,22 @@ export default {
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
         },
       });
+      gsap.fromTo(
+        ".ContentNew4-page",
+        {
+          y: 10,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: 0,
+          ease: "power3.inOut",
+        }
+      );
     });
-    return {
-    };
+    return {};
   },
 };
 </script>

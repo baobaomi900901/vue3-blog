@@ -16,13 +16,25 @@
       overflow-auto
     "
   >
-    <div class="bg-white w-full h-full flex flex-col items-center rounded-sm ">
+    <div class="ContentOld3-page bg-white w-full h-full flex flex-col items-center rounded-sm">
       <contentOld03 />
       <div
-        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12 w-11/12 px-6"
-        style="max-width:1024px"
+        class="
+          flex
+          justify-between
+          border-t border-gray-400
+          pt-10
+          mt-20
+          mb-12
+          w-11/12
+          px-6
+        "
+        style="max-width: 1024px"
       >
-        <RouterLink class="before-button flex items-center" :to="{name:'agile-ui'}">
+        <RouterLink
+          class="before-button flex items-center"
+          :to="{ name: 'agile-ui' }"
+        >
           <svg width="74px" height="74px">
             <g
               id="r1"
@@ -57,7 +69,7 @@
 
         <RouterLink
           class="after-button flex items-center flex-row-reverse"
-          :to="{name:'UI-Lego'}"
+          :to="{ name: 'UI-Lego' }"
         >
           <svg width="74px" height="74px">
             <g
@@ -124,6 +136,20 @@ export default {
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
         },
       });
+      gsap.fromTo(
+        ".ContentOld3-page",
+        {
+          y: 10,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: 0,
+          ease: "power3.inOut",
+        }
+      );
     });
     return {};
   },

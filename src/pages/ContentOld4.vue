@@ -16,11 +16,20 @@
       overflow-auto
     "
   >
-    <div class="bg-white w-full h-full flex flex-col items-center rounded-sm">
+    <div class="ContentOld4-page bg-white w-full h-full flex flex-col items-center rounded-sm">
       <contentOld04 />
       <div
-        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12 w-11/12 px-6"
-        style="max-width:1024px"
+        class="
+          flex
+          justify-between
+          border-t border-gray-400
+          pt-10
+          mt-20
+          mb-12
+          w-11/12
+          px-6
+        "
+        style="max-width: 1024px"
       >
         <RouterLink
           class="before-button flex items-center"
@@ -127,6 +136,20 @@ export default {
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
         },
       });
+      gsap.fromTo(
+        ".ContentOld4-page",
+        {
+          y: 10,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: 0,
+          ease: "power3.inOut",
+        }
+      );
     });
     return {};
   },
