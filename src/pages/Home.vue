@@ -77,7 +77,7 @@
             <li class="menuItem mb-3">
               <button
                 class="cyberpunk font-bold"
-                data-text="Inspirations"
+                data-text="Portfolio"
                 @click="clickPortfolio"
               >
                 <span
@@ -667,7 +667,7 @@
                           ref="elContentFour9"
                           class="elContentFour9 content-title font-yk text-5xl"
                           :class="{ cyberpunk: class4 }"
-                          data-text="CMS 系统"
+                          data-text="CMS系统"
                           >CMS系统</span
                         >
                       </RouterLink>
