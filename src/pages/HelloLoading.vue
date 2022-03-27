@@ -32,7 +32,7 @@
       </div>
       <div class="SATextBox font-semibold mb-32 w-full text-center">
         <div class="t1 SATextItem absolute w-full text-6xl mobile:text-3xl t-1" ref="t1">
-          We're
+          I'm
         </div>
         <div class="t2 SATextItem absolute w-full text-6x mobile:text-3xl t-2" ref="t2">
           3D
