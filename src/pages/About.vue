@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-center bg-gray-100">
-    <div class="w-11/12 mt-40">
-      <h1 class="font-bold text-5xl">Hi, I'm Maosusu</h1>
-      <h2 class="font-bold text-3xl text-gray-400 mt-4">
+    <div class="w-11/12 mt-24 sm:mt-40">
+      <h1 class="font-bold text-4xl sm:text-5xl">Hi, I'm Maosusu</h1>
+      <h2 class="font-bold text-3xl text-gray-400 mt-2 sm:mt-4">
         交互设计师 / 动效设计师 / 前端动画开发
       </h2>
 
@@ -12,27 +12,29 @@
           flex
           justify-center
           items-center
-          mt-10
+          mt-6
+          sm:mt-10
+          h-96
+          sm:h-192
           relative
           overflow-hidden
           rounded-md
           bg-dark-blue
         "
-        style="height: 720px"
       >
         <img
           ref="avatar"
           id="avatar"
           src="https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/me.png"
           alt=""
-          class="mt-10 h-80 rounded-full border-4 border-gray-300 z-10 hidden"
+          class="w-60 h-60 sm:w-80 sm:h-80 rounded-full border-4 border-gray-300 z-10 hidden"
         />
       </div>
 
-      <div class="flex flex-col justify-center w-full mb-10 items-center">
+      <div class="flex flex-col justify-center w-full my-10 items-center">
         <ul class="infoBox w-11/12">
-          <h3 class="font-bold text-dark-blue text-xl">联系</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="pb-4 sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">联系</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p>我叫唐清伟, 朋友们都称呼猫叔叔</p>
             <p class="mt-2">Phone: 13922832244</p>
             <p class="mt-2">Email: baobaomi900901@icloud.com</p>
@@ -47,8 +49,8 @@
             </p>
           </div>
 
-          <h3>教育</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">教育</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p>2018 年 ~ 2021 年</p>
             <p class="font-bold mt-2">湖南师范大学 | 非全日制本科</p>
             <p class="mt-2">心理学</p>
@@ -58,8 +60,8 @@
             <p class="mt-2">卡漫设计与制作</p>
           </div>
 
-          <h3>我会什么?</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">我会什么?</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">界面设计与交互:</p>
             <p>Adobe、Sketch、Figma、Axure</p>
             <br />
@@ -76,26 +78,26 @@
             </p>
           </div>
 
-          <h3>在做什么?</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">在做什么?</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">
               UI 设计 / 交互设计 / 动效设计 / 前端动画开发
             </p>
           </div>
 
-          <h3>想做什么?</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">想做什么?</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">设计实现 / 前端动画开发 / WebGL 设计</p>
           </div>
 
-          <h3>在学什么?</h3>
-          <div class="border-b pb-16 border-gray-300">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">在学什么?</h3>
+          <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">WebGL:</p>
             <p>Three.js + Blender</p>
           </div>
 
-          <h3>经验</h3>
-          <div class="space-y-2">
+          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">经验</h3>
+          <div class="space-y-2 pb-6 sm:pb-16">
             <p class="font-bold">深圳市四格互联信息技术有限公司</p>
             <p class="font-light">2020.03 ~ 至今 | 产品设计部 - 交互组组长</p>
             <br />
@@ -114,49 +116,20 @@
           </div>
         </ul>
 
-        <div
-          class="
-            mt-20
-            w-full
-            flex flex-col
-            justify-center
-            items-center
-            text-center text-xl
-          "
-        >
+        <div class="w-full flex flex-col justify-center items-center text-center text-xl">
           <p class="w-full border-t border-gray-300 pt-10 mb-10" style="max-width: 960px;">
             👏🏻 欢迎联系我!
           </p>
           <div class="space-x-8">
             <button
-              class="
-                border-2 border-dark-blue
-                text-lg text-dark-blue
-                font-normal
-                uppercase
-                p-5
-                hover:text-white hover:bg-dark-blue
-                transition
-                duration-200
-                ease-linear
-              "
+              class="border-2 border-dark-blue text-lg text-dark-blue font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear"
               style="min-width: 8rem"
               @click="contact"
             >
               联系我
             </button>
             <button
-              class="
-                border-2 border-dark-blue
-                text-lg text-dark-blue
-                font-normal
-                uppercase
-                p-5
-                hover:text-white hover:bg-dark-blue
-                transition
-                duration-200
-                ease-linear
-              "
+              class="border-2 border-dark-blue text-lg text-dark-blue font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear"
               @click="resume"
               style="min-width: 8rem"
             >
@@ -164,15 +137,9 @@
             </button>
           </div>
         </div>
+
         <div
-          class="
-            w-full
-            my-20
-            pt-10
-            text-sm text-center text-gray-300
-            border-gray-300
-          "
-        >
+          class="w-full mt-10 sm:my-20 text-sm text-center text-gray-800 border-gray-300">
           <p>项目中的所有信息都是我个人产出的。</p>
           <p>所有信息都符合保密协定🤐</p>
         </div>
@@ -302,10 +269,20 @@ body {
   overflow: auto;
 }
 
-.infoBox {
-  @apply mt-20 grid text-lg;
-  max-width: 960px;
-  grid-row-gap: 4rem;
-  grid-template-columns: minmax(120px, 320px) auto;
+@media (max-width: 767px) {
+  .infoBox {
+    max-width: 100%;
+    grid-row-gap: 1rem;
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .infoBox {
+    @apply mt-20 grid text-lg;
+    max-width: 960px;
+    grid-row-gap: 4rem;
+    grid-template-columns: minmax(120px, 320px) auto;
+  }
 }
 </style>

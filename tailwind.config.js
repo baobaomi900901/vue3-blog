@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         "dark-blue": "#0042f6",
       },
+      height: {
+        '192': '48rem'
+      }
     },
     fontFamily: {
       "yk": "YouSheBiaoTiHei"

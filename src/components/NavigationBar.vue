@@ -7,38 +7,18 @@
 !-->
 <template>
   <div
-    ref="NavigationBar"
-    class="
-      NavigationBar
-      fixed
-      w-full
-      h-20
-      px-16
-      flex
-      items-center
-      justify-between
-      z-50
-      text-gray-400
-    "
+    class="NavigationBar fixed w-full h-20 px-4 sm:px-16 flex items-center justify-between z-50 text-gray-400"
+    :class="[
+      { 'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about' }
+    ]"
   >
     <div class="flex items-center" id="logo">
       <router-link to="/home">
-        <img src="../assets/img/logo.png" alt="" class="w-8 h-8"
-      /></router-link>
+        <img src="../assets/img/logo.png" alt="" class="w-8 h-8" />
+      </router-link>
     </div>
 
-    <nav
-      class="
-        grid grid-flow-col
-        gap-6
-        items-center
-        font-semibold
-        leading-tight
-        uppercase
-        relative
-        text-gray-500
-      "
-    >
+    <nav class=" grid grid-flow-col gap-6 items-center font-semibold leading-tight uppercase relative text-gray-500">
       <router-link
         to="/home"
         :active-class="isActive ? 'active-bg-black' : 'active-bg-white'"
@@ -50,13 +30,14 @@
             mix-blend-difference
             inline-block
           "
-          >Home</span
         >
+          Home
+        </span>
       </router-link>
 
       <router-link
         to="/About"
-        :active-class="isActive ? 'active-bg-black' : 'active-bg-white'"
+        :class="{ 'text-dark-blue': $route.name == 'about' }"
       >
         <span
           class="
@@ -65,8 +46,9 @@
             mix-blend-difference
             inline-block
           "
-          >About</span
         >
+          About
+        </span>
       </router-link>
 
       <!-- <a href="https://baobaomi900901-blog.netlify.app/">
@@ -109,12 +91,12 @@
 </template>
 
 <script lang="ts">
-import { ref, reactive, onMounted, onUnmounted, computed } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import { gsap } from "gsap";
 export default {
   name: "NavigationBar",
+
   setup() {
-    // let isActive = ref("active-bg-black");
     let isActive = ref(true);
     function scrollToTopFn() {
       let scrollTop = document.body?.scrollTop;
@@ -158,6 +140,7 @@ export default {
       navAnimeLine.add(logoEA, 0);
       navAnimeLine.add(navbar, 0);
     }
+
     onMounted(() => {
       navAnime();
       window.addEventListener("scroll", scrollToTopFn, true);
@@ -167,11 +150,8 @@ export default {
       window.removeEventListener("scroll", scrollToTopFn, true);
     });
 
-    let NavigationBar = ref(null);
-
     return {
       link: "https://baobaomi900901-blog.netlify.app/",
-      NavigationBar,
       isActive,
     };
   },

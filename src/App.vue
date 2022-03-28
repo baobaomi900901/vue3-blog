@@ -1,11 +1,11 @@
 <template>
-  <NavigationBar v-if="route.path !== '/' && terminal "></NavigationBar>
+  <NavigationBar></NavigationBar>
   <router-view></router-view>
 </template>
 
-<script>
-import { ref, reactive, onMounted, watch } from "vue";
-import NavigationBar from "./components/NavigationBar";
+<script lang="ts">
+import { ref, watch } from "vue";
+import NavigationBar from "./components/NavigationBar.vue";
 import { useRoute } from "vue-router";
 // using es modules
 import device from "current-device";
@@ -16,7 +16,6 @@ export default {
     NavigationBar,
   },
   setup() {
-    let fristNavBar = ref();
     const route = useRoute();
 
     let terminal = ref(device.desktop());
