@@ -1,5 +1,5 @@
 <template>
-  <NavigationBar></NavigationBar>
+  <NavigationBar v-if="route.path !== '/' && terminal"></NavigationBar>
   <router-view></router-view>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     const route = useRoute();
 
     let terminal = ref(device.desktop());
-    console.log("device :>> ", terminal.value);
+    // console.log("device :>> ", terminal.value);
 
     watch(
       () => route.path,
