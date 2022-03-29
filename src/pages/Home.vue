@@ -238,7 +238,7 @@
           class="
             homePage2
             px-40
-            md:pl-10 md:pl-20
+            md:pl-10
             lg:pl-40 lg:pr-20
             flex
             items-center
@@ -830,7 +830,7 @@
 </template>
 
 <script lang="ts">
-import { ref, reactive, onMounted, watch, onUpdated, computed } from "vue";
+import { ref, reactive, onMounted, watch, onUpdated, computed, defineComponent } from "vue";
 import { gsap } from "gsap";
 import useTextEnterAnime from "../hooks/useTextEnterAnime";
 import contentLineAnime from "../hooks/contentLineAnime";
@@ -842,7 +842,7 @@ import lottie from "lottie-web";
 
 // import NavigationBar from "../components/NavigationBar";
 
-export default {
+export default defineComponent({
   name: "Home",
   components: {
     // NavigationBar,
@@ -1649,7 +1649,7 @@ export default {
       mailto,
     };
   },
-};
+});
 </script>
 
 <style scoped>

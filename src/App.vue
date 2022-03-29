@@ -4,17 +4,17 @@
 </template>
 
 <script lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch, defineComponent } from "vue";
 import NavigationBar from "./components/NavigationBar.vue";
 import { useRoute } from "vue-router";
 // using es modules
 import device from "current-device";
 
-export default {
+export default defineComponent({
   name: "App",
   components: {
     NavigationBar,
-  },
+},
   setup() {
     const route = useRoute();
 
@@ -32,7 +32,7 @@ export default {
     );
     return { route, terminal };
   },
-};
+});
 </script>
 
 <style>
