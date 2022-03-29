@@ -204,7 +204,6 @@ export default defineComponent({
           },
           onComplete: () => {
             setTimeout(() => {
-              console.log(1);
               anime();
             }, 1000);
           },
