@@ -56,10 +56,11 @@ name: 文档系统
   <input type="radio" id="control-2" name="control">
   <input type="radio" id="control-3" name="control">
   <input type="radio" id="control-4" name="control">
+  <input type="radio" id="control-5" name="control">
   
   <!--  Left/Right Button  -->
   <div class="navigator slide-1">
-    <label for="control-4">
+    <label for="control-5">
       <div class="fas fa-chevron-left"></div>
     </label>
     <label for="control-2">
@@ -84,9 +85,18 @@ name: 文档系统
       <div class="fas fa-chevron-right"></div>
     </label>
   </div>
-
+  
   <div class="navigator slide-4">
     <label for="control-3">
+      <div class="fas fa-chevron-left"></div>
+    </label>
+    <label for="control-5">
+      <div class="fas fa-chevron-right"></div>
+    </label>
+  </div>
+
+  <div class="navigator slide-5">
+    <label for="control-4">
       <div class="fas fa-chevron-left"></div>
     </label>
     <label for="control-1">
@@ -111,12 +121,17 @@ name: 文档系统
     <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-04.png" class=" absolute w-10/12">
     <!-- <span class="text-sm text-white">文档首页</span> -->
   </li>
+  <li class="slide">
+    <img src="https://book.rxshc.com/blog-assets/assets/wordpress/wordpress-05.png" class=" absolute w-10/12">
+    <!-- <span class="text-sm text-white">文档首页</span> -->
+  </li>
   
   <div class="controls-visible">
     <label for="control-1"></label>
     <label for="control-2"></label>
     <label for="control-3"></label>
     <label for="control-4"></label>
+    <label for="control-5"></label>
   </div>
 </ul>
 <br>

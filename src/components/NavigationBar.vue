@@ -165,7 +165,6 @@ export default defineComponent({
   
     function scrollToTopFn() {
       let scrollTop = document.body?.scrollTop;
-      console.log(document.querySelector("#homePage2"))
       let offsetTop = document.querySelector("#homePage2")?.offsetTop;
       isActive.value = scrollTop + 50 <= offsetTop;
     }
