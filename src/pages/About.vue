@@ -45,11 +45,11 @@
                 target="_blank"
                 class="text-dark-blue hover:underline"
                 >CodingStartup_阿喵</a
-              >
+              > <span class=" text-gray-400 ">(前端动画案例, 目前两天一更)</span>
             </p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">教育</h3>
+          <h3 class="sm:y-8 font-bold text-dark-blue text-2xl sm:text-xl">教育</h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p>2018 年 ~ 2021 年</p>
             <p class="font-bold mt-2">湖南师范大学 | 非全日制本科</p>
@@ -60,7 +60,7 @@
             <p class="mt-2">卡漫设计与制作</p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">我会什么?</h3>
+          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">我会什么?</h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">界面设计与交互:</p>
             <p>Adobe、Sketch、Figma、Axure</p>
@@ -78,25 +78,25 @@
             </p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">在做什么?</h3>
+          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">在做什么?</h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">
               UI 设计 / 交互设计 / 动效设计 / 前端动画开发
             </p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">想做什么?</h3>
+          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">想做什么?</h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">设计实现 / 前端动画开发 / WebGL 设计</p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">在学什么?</h3>
+          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">在学什么?</h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">WebGL:</p>
             <p>Three.js + Blender</p>
           </div>
 
-          <h3 class="py-4 sm:py-8 font-bold text-dark-blue text-2xl sm:text-xl">经验</h3>
+          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">经验</h3>
           <div class="space-y-2 pb-6 sm:pb-16">
             <p class="font-bold">深圳市四格互联信息技术有限公司</p>
             <p class="font-light">2020.03 ~ 至今 | 产品设计部 - 交互组组长</p>
