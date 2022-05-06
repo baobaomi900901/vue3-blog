@@ -21,7 +21,7 @@ const images = {
   imageSeven,
   imageEight,
   imageNine,
-  imageTen,
+  imageTen
 };
 
 // images.imageTwo.setAttribute("src", 'https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/assets/img/agile-ui.jpg');
