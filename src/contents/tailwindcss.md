@@ -4,7 +4,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-03.png">
+    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-03.png">
 </div>
     <center class="text-sm text-gray-400 mt-4">自定义配置</center>
 <br>
@@ -31,7 +31,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-01.gif">
+    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-01.gif">
 </div>
 <br>
 
@@ -45,7 +45,7 @@ Tailwind 本身已经提供了大量常用的样式类, 使用时候遵从所见
 
 <br>
 <div class="flex justify-center">
-    <img class="w-4/5 shadow-lg" src="https://book.rxshc.com/blog-assets/assets/tm/tm-02.gif">
+    <img class="w-4/5 shadow-lg" src="../assets/tm/tm-02.gif">
 </div>
 <br>
 

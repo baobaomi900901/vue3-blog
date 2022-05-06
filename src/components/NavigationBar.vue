@@ -27,7 +27,6 @@
           class="
             navBarItem
             hover:text-dark-blue
-            mix-blend-difference
             inline-block
           "
         >
@@ -43,7 +42,6 @@
           class="
             navBarItem
             hover:text-dark-blue
-            mix-blend-difference
             inline-block
           "
         >

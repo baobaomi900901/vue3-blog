@@ -8,7 +8,7 @@ name: 文档系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="https://book.rxshc.com/blog-assets/assets/vdp/vdp.png"/>
+    <img src="../assets/vdp/vdp.png"/>
 </div>
 <br>
 <br>
@@ -31,7 +31,7 @@ name: 文档系统
 
 <br>
 
-<img src="https://book.rxshc.com/blog-assets/assets/vdp/vdp-02.png" class=" w-full">
+<img src="../assets/vdp/vdp-02.png" class=" w-full">
 <center class="text-sm text-gray-400 mt-2">低代码数据可视化平台</center>
 
 <br>

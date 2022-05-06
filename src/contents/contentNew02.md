@@ -8,7 +8,7 @@ name: SEGI设计系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm.png"/>
+    <img src="../assets/tm/tm.png"/>
 </div>
 <br>
 <br>
@@ -61,11 +61,11 @@ name: SEGI设计系统
   
   <!--  /Left/Right Button  -->
   <li class="slide">
-    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-05.png" class=" absolute w-10/12">
+    <img src="../assets/tm/tm-05.png" class=" absolute w-10/12">
     <span class="text-sm text-white">模板演示</span>
   </li>
   <li class="slide">
-    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-06.png" class=" absolute w-10/12">
+    <img src="../assets/tm/tm-06.png" class=" absolute w-10/12">
     <span class="text-sm text-white">代码演示</span>
   </li>
 
@@ -104,7 +104,7 @@ name: SEGI设计系统
 <br>
 
 <div class=" shadow-lg rounded-lg overflow-hidden">
-    <img src="https://book.rxshc.com/blog-assets/assets/tm/tm-10.png"> 
+    <img src="../assets/tm/tm-10.png"> 
 </div>
 <center class="text-sm text-gray-400 mt-4">设计资产包含哪些? --图片来源 Microsoft Design Cente </center>
 <br>

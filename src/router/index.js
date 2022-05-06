@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 // createWebHistory
 // createWebHashHistory, 带哈希值 #
 import HelloLoading from "../pages/HelloLoading";
@@ -90,7 +90,7 @@ const routes = [
   }
 ];
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

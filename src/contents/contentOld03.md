@@ -8,7 +8,7 @@ name: HKT
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="https://book.rxshc.com/blog-assets/assets/HKT/HKT-01.png"/>
+    <img src="../assets/HKT/HKT-01.png"/>
 </div>
 <br>
 <br>

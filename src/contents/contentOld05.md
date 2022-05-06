@@ -8,7 +8,7 @@ name: 敏捷营商
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace.png"/>
+    <img src="../assets/iSlace/iSlace.png"/>
 </div>
 <br>
 <br>
@@ -31,9 +31,9 @@ name: 敏捷营商
 
 <br>
 <div class=" grid grid-cols-1 gap-4 px-12">
-    <img class="shadow-md" src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-01.png"/>
-    <img class="shadow-md" src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-02.png"/>
-    <img class="shadow-md" src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-03.png"/>
+    <img class="shadow-md" src="../assets/iSlace/iSlace-01.png"/>
+    <img class="shadow-md" src="../assets/iSlace/iSlace-02.png"/>
+    <img class="shadow-md" src="../assets/iSlace/iSlace-03.png"/>
 </div>
 <br>
 <br>
@@ -44,7 +44,7 @@ name: 敏捷营商
 
 <br>
 <div class=" px-10">
-    <img class="shadow-md" src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-04.jpg"/>
+    <img class="shadow-md" src="../assets/iSlace/iSlace-04.jpg"/>
 </div>
 <br>
 <br>
@@ -55,7 +55,7 @@ name: 敏捷营商
 
 <br>
 <div class=" px-10">
-    <img class="shadow-md" src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-05.png"/>
+    <img class="shadow-md" src="../assets/iSlace/iSlace-05.png"/>
 </div>
 <br>
 <br>
@@ -129,7 +129,7 @@ name: 敏捷营商
         <p><span class="text-dark-blue font-bold">因此我可以,</span> 勾选信息保存起来。</p>
     </div>
     <div class=" bg-dark-blue flex justify-center items-center rounded-lg px-4" style="height:420px">
-        <img src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-06.png" />
+        <img src="../assets/iSlace/iSlace-06.png" />
     </div>
 </div>
 <br>
@@ -146,7 +146,7 @@ name: 敏捷营商
         <p><span class="text-dark-blue font-bold">因此我可以,</span> 通过文件名或者发送人来找到文件。</p>
     </div>
     <div class=" bg-dark-blue flex justify-center items-center rounded-lg px-4" style="height:420px">
-        <img src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-07.png" />
+        <img src="../assets/iSlace/iSlace-07.png" />
     </div>
 </div>
 <br>
@@ -163,7 +163,7 @@ name: 敏捷营商
         <p><span class="text-dark-blue font-bold">因此我可以,</span> 通过不同的颜色来区分的不同人意见。</p>
     </div>
     <div class=" bg-dark-blue flex justify-center items-center rounded-lg px-4" style="height:420px">
-        <img src="https://book.rxshc.com/blog-assets/assets/iSlace/iSlace-07.png" />
+        <img src="../assets/iSlace/iSlace-07.png" />
     </div>
 </div>
 <br>

@@ -615,7 +615,7 @@
                 </div>
 
                 <main class="inspirations">
-                  <ul class="ul2">
+                  <ul class="ul2 italic">
                     <li
                       class="
                         relative

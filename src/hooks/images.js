@@ -12,16 +12,17 @@
 import homeBigImage from "../assets/img/home-big-image.png";
 
 const images = {
-  imageOne: 'https://book.rxshc.com/blog-assets/assets/img/vodafone.jpg',
-  imageTwo: 'https://book.rxshc.com/blog-assets/assets/img/agile-ui.jpg',
-  imageThree: 'https://book.rxshc.com/blog-assets/assets/img/HKT.png',
-  imageFour: 'https://book.rxshc.com/blog-assets/assets/img/ui-lego.png',
-  imageFive: 'https://book.rxshc.com/blog-assets/assets/img/iSlace.jpg',
-  imageSix: 'https://book.rxshc.com/blog-assets/assets/img/Design-system.jpg',
-  imageSeven: 'https://book.rxshc.com/blog-assets/assets/img/Template-market.jpg',
-  imageEight: 'https://book.rxshc.com/blog-assets/assets/img/wordpress.jpg',
-  imageNine: 'https://book.rxshc.com/blog-assets/assets/img/dataview.jpg',
-  imageTen: 'https://book.rxshc.com/blog-assets/assets/img/10.jpg',
+
+  imageOne: 'src/assets/img/vodafone.jpg',
+  imageTwo: 'src/assets/img/agile-ui.jpg',
+  imageThree: 'src/assets/img/HKT.png',
+  imageFour: 'src/assets/img/ui-lego.png',
+  imageFive: 'src/assets/img/iSlace.jpg',
+  imageSix: 'src/assets/img/Design-system.jpg',
+  imageSeven: 'src/assets/img/Template-market.jpg',
+  imageEight: 'src/assets/img/wordpress.jpg',
+  imageNine: 'src/assets/img/dataview.jpg',
+  imageTen: 'src/assets/img/10.jpg',
 };
 
 // images.imageTwo.setAttribute("src", 'https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/assets/img/agile-ui.jpg');
