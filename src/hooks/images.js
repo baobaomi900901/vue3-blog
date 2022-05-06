@@ -12,9 +12,9 @@
 // import homeBigImage from "../assets/img/luckphoto.jpg";
 
 const images = {
-  imageOne: '../assets/img/vodafone.jpg',
-  imageTwo: '../assets/img/agile-ui.jpg',
-  imageThree: '../assets/img/HKT.png',
+  imageOne: '@/assets/img/vodafone.jpg',
+  imageTwo: '@/assets/img/agile-ui.jpg',
+  imageThree: '~/assets/img/HKT.png',
   imageFour: '../assets/img/ui-lego.png',
   imageFive: '../assets/img/iSlace.jpg',
   imageSix: '../assets/img/Design-system.jpg',
