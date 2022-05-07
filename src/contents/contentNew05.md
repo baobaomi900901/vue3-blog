@@ -2,9 +2,9 @@
 name: 收费标准模块
 ---
 
-# <center>**<span class=" font-bold ">SEGI</span> 数据可视化平台**</center>
+# <center>**<span class=" font-bold ">SEGI</span> 计费中心**</center>
 
-##### <center class="text-gary-500 font-light">大数据可视化平台</center>
+##### <center class="text-gary-500 font-light"> 重新设计功能模块, 提升易用性, 减少运营成本</center>
 
 <br>
 <div style="display: flex; justify-content: center;">
@@ -15,23 +15,20 @@ name: 收费标准模块
 
 ##### 项目背景
 
-收费标准模块是 SEGI 平台收入产品线下的一个底层模块, 为全平台提供所有费用科目的收费方案(标准); 该模块最初产品设计时考虑不全, 属于功能导向的产品, 导致功能
+收费标准模块是 SEGI 平台收入产品线下的一个底层模块, 为全平台提供所有费用科目的收费方案(标准); 该模块最初产品设计时考虑不全, 属于功能导向的产品, 为了满足需求无序设计, 导致该产品客户几乎无法使用, 客户的需求全部由交付经理代替操作完成, 运营成本非常大。
 
 <br>
+
+##### 设计目标
+
+配合产品线, 就本次前后端分离的契机, 提升产品易用性, 目标是让用户能够独立使用, 减轻运营压力。
 
 ##### 我做了什么?
 
-> 产品交互设计;
->
-> 基于 Echarts 图形化设计;
->
-> 使用 Canvas 帮助开发扩展图形化;
+###### 1. 重新设计
 
-具体案例请与我联系 🤳🏼
+与产品经济对现有功能归类,
 
 <br>
-
-<img src="../assets/wordpress/wordpress-01.png" class=" w-full">
-<center class="text-sm text-gray-400 mt-2">按照客户价值提供差异性内容</center>
 
 <br>
