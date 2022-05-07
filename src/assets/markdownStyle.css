@@ -27,8 +27,9 @@
 }
 
 .markdown-body p {
-  @apply text-lg my-2 text-inherit font-normal text-black opacity-70;
+  @apply text-lg my-2 text-inherit font-normal text-black;
   text-indent: 2.25rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .markdown-body blockquote {

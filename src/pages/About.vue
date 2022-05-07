@@ -56,7 +56,7 @@
                 class="text-dark-blue hover:underline"
                 >CodingStartup_阿喵</a
               >
-              <span class="text-gray-400">(前端动画案例, 目前两天一更)</span>
+              <span class="text-gray-400">(前端动画案例, 目前两天一更, 最近开坑物理引擎)</span>
             </p>
           </div>
 
