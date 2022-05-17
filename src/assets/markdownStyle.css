@@ -251,3 +251,7 @@ input[type="radio"] {
 p > strong {
   @apply font-semibold;
 }
+
+.markdown-body ul > li::marker {
+  color: #0042f6;
+}

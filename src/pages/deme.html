@@ -8,37 +8,33 @@
   <body>
     <div id="bbm"></div>
     <script>
-      var arr = [3, 4, 2, 4, 3, 2, 7, 5];
-      var arr2 = [...new Set(arr)];
-      console.log(arr2);
-
-      // 1.统计次数
-      var str = "abdgdbcaethbganmugthaesqszaphfdvwd";
-      var obj = {};
-      // 创建了一个空的对象，存储字符串中的每个字符。属性：每个字符，属性值：该字符出现的次数
-      for (var i = 0; i < str.length; i++) {
-        // // 遍历字符串
-        var chars = str.charAt(i);
-        // // chars代表字符串的每一个字符
-        if (obj[chars]) {
-          obj[chars]++;
-        } else {
-          obj[chars] = 1;
-        }
-        // // obj[chars]属性值：该字符出现的次数
-        // // 如果已经存在，那么次数+1；否则赋值为1
-      }
-      console.log(obj);
-
-      let el = document.querySelector("#bbm");
-
-      let bbm = 123;
-      let vvn = 456;
-
-      console.log(el);
-      console.log(bbm);
-      console.log();
-      console.log(vvn);
+      let func = (arr) => {
+        let len = arr.length;
+        let res = []; // 所有排列结果
+        /**
+         * 【全排列算法】
+         * 说明：arrange用来对arr中的元素进行排列组合，将排列好的各个结果存在新数组中
+         * @param tempArr：排列好的元素
+         * @param leftArr：待排列元素
+         */
+        let arrange = (tempArr, leftArr) => {
+          if (tempArr.length === len) {
+            // 这里就是递归结束的地方
+            // res.push(tempArr) // 得到全排列的每个元素都是数组
+            res.push(tempArr.join("")); // 得到全排列的每个元素都是字符串
+          } else {
+            leftArr.forEach((item, index) => {
+              let temp = [].concat(leftArr);
+              temp.splice(index, 1);
+              // 此时，第一个参数是当前分离出的元素所在数组；第二个参数temp是传入的leftArr去掉第一个后的结果
+              arrange(tempArr.concat(item), temp); // 这里使用了递归
+            });
+          }
+        };
+        arrange([], arr);
+        return res;
+      };
+      console.log("结果：", func([1, 2, 3]));
     </script>
   </body>
 </html>

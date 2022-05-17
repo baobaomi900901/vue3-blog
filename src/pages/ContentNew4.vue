@@ -67,15 +67,8 @@
           </div>
         </RouterLink>
 
-        <RouterLink
-          class="
-            after-button
-            flex
-            items-center
-            flex-row-reverse
-            opacity-30
-            pointer-events-none
-          "
+         <RouterLink
+          class="after-button flex items-center flex-row-reverse"
           :to="{ name: 'billing-center' }"
         >
           <svg width="74px" height="74px">
@@ -114,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">计费中心(更新中)</span>
+            <span class="font-normal text-right">重新设计算费中心</span>
           </div>
         </RouterLink>
       </div>

@@ -33,7 +33,7 @@
       >
         <RouterLink
           class="before-button flex items-center"
-          :to="{ name: 'document-system' }"
+          :to="{ name: 'visualized-data-platform' }"
         >
           <svg width="74px" height="74px">
             <g
@@ -63,13 +63,13 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">SEGI 文档系统</span>
+            <span class="font-normal">SEGI 数据可视化平台</span>
           </div>
         </RouterLink>
 
         <RouterLink
           class="after-button flex items-center flex-row-reverse"
-          :to="{ name: 'UI-Lego' }"
+          :to="{ name: 'Homex' }"
         >
           <svg width="74px" height="74px">
             <g
@@ -106,8 +106,8 @@
             </g>
           </svg>
           <div class="mr-4 flex flex-col items-end">
-            <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">xxx</span>
+            <span class="font-semibold text-right">末页</span>
+            <span class="font-normal text-right">回到首页</span>
           </div>
         </RouterLink>
       </div>

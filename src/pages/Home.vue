@@ -701,15 +701,16 @@
                         class="elContentFour14 line"
                       ></div>
                     </li>
-                    <li class="pointer-events-none">
+
+                    <!-- class="pointer-events-none" -->
+                    <li>
                       <RouterLink
                         :to="{ name: 'billing-center' }"
-                        class="pointer-events-none"
                       >
                         <span
                           ref="elContentFour15"
                           class="elContentFour15 content-title font-yk text-5xl"
-                          :class="{ cyberpunk: false }"
+                          :class="{ cyberpunk: class4 }"
                           data-text="重新设计算费中心"
                           >重新设计算费中心</span
                         >
