@@ -6,7 +6,9 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="bbm"></div>
+    <div id="bbm">
+      <button class="btn">button</button>
+    </div>
     <script>
       let func = (arr) => {
         let len = arr.length;
@@ -38,3 +40,26 @@
     </script>
   </body>
 </html>
+
+<style>
+  .btn {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: blue;
+    color: white;
+    border: 0px;
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  .btn:hover {
+    background-color: red;
+  }
+</style>
