@@ -275,4 +275,4 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 实现以上构想的根本在于解放设计部门的生产力, 用运用 **设计系统** 去解决重复性工作。
 
-这里有一篇扩展文章<a href="https://iodized-samba-a1b.notion.site/Design-Code-5d84a410128b425e8c561f6c292588ce" target="_blank">Design+Code 提升用户体验实践</a>。
+这里有一篇我写的扩展文章<a href="https://iodized-samba-a1b.notion.site/Design-Code-5d84a410128b425e8c561f6c292588ce" target="_blank"> Design+Code 提升用户体验实践 </a>。
