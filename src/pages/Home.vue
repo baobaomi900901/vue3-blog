@@ -121,7 +121,7 @@
           id="HomePageContentHead"
           class="HomePage_content_head h-screen flex flex-col"
         >
-          <div class="Introduce flex justify-center items-center flex-1 z-10">
+          <div class="Introduce flex justify-center items-center flex-1 px-4 md:px-8 z-10">
             <div class="myself text-white opacity-80 uppercase leading-loose">
               <div
                 ref="welcome"
@@ -135,11 +135,9 @@
                   myname
                   font-extrabold
                   italic
-                  text-8xl
-                  sm:text-8xl
+                  text-7xl
                   md:text-8xl
                   xl:text-9xl
-                  2xl:text-9xl
                 "
               >
                 <p ref="myname1" id="myname1" class="myname1">i'm</p>
@@ -148,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="flex h-1/5 z-10">
+          <div class="flex h-auto z-10">
             <div
               id="aboutMeBox"
               class="
@@ -171,8 +169,8 @@
                 About Me
               </p>
             </div>
-
-            <div class="about text-white text-base uppercase py-0 grid w-1/2">
+t
+            <div class="about text-white text-base uppercase px-1 py-0 grid w-1/2">
               <div
                 id="aboutLine"
                 class="about-describe w-full h-full flex items-end"
@@ -182,12 +180,13 @@
                   id="aboutText"
                   class="
                     aboutText
-                    sm:text-xl
+                    sm:text-sm
                     md:text-2xl
                     lg:text-2xl
                     xl:text-3xl
                     2xl:text-4xl
-                    mb-4
+                    mb-2
+                    md:mb-4
                     italic
                     max-w-lg
                   "
@@ -209,6 +208,7 @@
                   ref="dribbbleLink"
                   id="dribbbleLink"
                   href="https://dribbble.com/MobyTang"
+                  target="_blank"
                   class="dribbbleLink"
                   data-text=""
                   >dribbble</a
@@ -237,7 +237,9 @@
           ref="homePage2"
           class="
             homePage2
-            px-40
+            px-8
+            sm:px-24
+            md:px-40
             md:pl-10
             lg:pl-40 lg:pr-20
             flex
@@ -248,7 +250,7 @@
         >
           <div
             ref="el-content-one"
-            class="el-Indt-content w-full flex flex-col mt-32"
+            class="el-Indt-content w-full flex flex-col mt-20 sm:mt-26 md:mt-32"
           >
             <span
               id="elContentOne1"
@@ -299,7 +301,7 @@
             </div>
           </div>
 
-          <div class="el-Indt-fl-content w-full mt-32">
+          <div class="el-Indt-fl-content w-full mt-20 sm:mt-26 md:mt-32">
             <div ref="el-content-two">
               <span
                 ref="elContentTwo1"
@@ -323,7 +325,7 @@
               >
                 <span
                   ref="elContentTwo3"
-                  class="elContentTwo3 text-4xl font-bold text-dark-blue italic"
+                  class="elContentTwo3 text-3xl sm:text-4xl font-bold text-dark-blue italic"
                   >Industry</span
                 >
                 <span
@@ -350,7 +352,7 @@
               >
                 <span
                   ref="elContentTwo6"
-                  class="elContentTwo6 text-4xl font-bold text-dark-blue"
+                  class="elContentTwo6 text-3xl sm:text-4xl font-bold text-dark-blue"
                   >Workplace</span
                 >
                 <span
@@ -377,7 +379,7 @@
               >
                 <span
                   ref="elContentTwo9"
-                  class="elContentTwo9 text-4xl font-bold text-dark-blue"
+                  class="elContentTwo9 text-3xl sm:text-4xl font-bold text-dark-blue"
                   >Anytime</span
                 >
                 <span
@@ -393,21 +395,21 @@
             </div>
 
             <div>
-              <ul class="text-base mt-32 font-bold">
-                <li ref="elContentTwo12" class="elContentTwo12">3D</li>
-                <li ref="elContentTwo13" class="elContentTwo13">
+              <ul class="text-base mt-20 sm:mt-26 md:mt-32 font-bold">
+                <li ref="elContentTwo12" class="elContentTwo12 mb-2">3D</li>
+                <li ref="elContentTwo13" class="elContentTwo13 text-2xl sm:text-3xl mb-1">
                   UI/UX Design
                 </li>
-                <li ref="elContentTwo14" class="elContentTwo14">
+                <li ref="elContentTwo14" class="elContentTwo14 text-2xl sm:text-3xl mb-1">
                   Motion Design
                 </li>
-                <li ref="elContentTwo15" class="elContentTwo15">
+                <li ref="elContentTwo15" class="elContentTwo15 text-2xl sm:text-3xl mb-1">
                   Interaction Design
                 </li>
-                <li ref="elContentTwo16" class="elContentTwo16">
+                <li ref="elContentTwo16" class="elContentTwo16 text-2xl sm:text-3xl mb-1">
                   Brand Design
                 </li>
-                <li ref="elContentTwo17" class="elContentTwo17">
+                <li ref="elContentTwo17" class="elContentTwo17 text-2xl sm:text-3xl">
                   Web deveiopment
                 </li>
               </ul>
@@ -464,13 +466,15 @@
                       class="
                         relative
                         flex
+                        flex-col
+                        md:flex-row
                         items-center
                         justify-between
                         pb-4
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }">
+                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }" class="w-full flex justify-start">
                         <span
                           ref="elContentThree5"
                           class="elContentThree5 content-title font-yk text-5xl"
@@ -481,7 +485,7 @@
                       </RouterLink>
                       <span
                         ref="elContentThree6"
-                        class="elContentThree6 subtitle"
+                        class="elContentThree6 subtitle w-full text-right"
                         >UI/UE/Motion</span
                       >
                       <div
@@ -489,8 +493,19 @@
                         class="elContentThree7 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'agile-ui' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'agile-ui' }" class="w-full flex justify-start">
                         <span
                           ref="elContentThree8"
                           class="elContentThree8 content-title font-yk text-5xl"
@@ -501,7 +516,7 @@
                       </RouterLink>
                       <span
                         ref="elContentThree9"
-                        class="elContentThree9 subtitle"
+                        class="elContentThree9 subtitle w-full text-right"
                         >UE</span
                       >
                       <div
@@ -509,8 +524,19 @@
                         class="elContentThree10 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'HKT-motion-design' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'HKT-motion-design' }" class="w-full flex justify-start">
                         <span
                           ref="elContentThree11"
                           class="
@@ -526,7 +552,7 @@
                       </RouterLink>
                       <span
                         ref="elContentThree12"
-                        class="elContentThree12 subtitle"
+                        class="elContentThree12 subtitle w-full text-right"
                         >Motion/Code</span
                       >
                       <div
@@ -534,8 +560,19 @@
                         class="elContentThree13 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'UI-Lego' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'UI-Lego' }" class="w-full flex justify-start">
                         <span
                           ref="elContentThree14"
                           class="
@@ -551,7 +588,7 @@
                       </RouterLink>
                       <span
                         ref="elContentThree15"
-                        class="elContentThree15 subtitle"
+                        class="elContentThree15 subtitle w-full text-right"
                         >UE/UI</span
                       >
                       <div
@@ -559,8 +596,19 @@
                         class="elContentThree16 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'islace-mobile' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'islace-mobile' }" class="w-full flex justify-start">
                         <span
                           ref="elContentThree17"
                           class="
@@ -576,7 +624,7 @@
                       </RouterLink>
                       <span
                         ref="elContentThree18"
-                        class="elContentThree18 subtitle"
+                        class="elContentThree18 subtitle w-full text-right"
                         >UE/Motion</span
                       >
                       <div
@@ -620,13 +668,15 @@
                       class="
                         relative
                         flex
+                        flex-col
+                        md:flex-row
                         items-center
                         justify-between
                         pb-4
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'segi-design-system' }">
+                      <RouterLink :to="{ name: 'segi-design-system' }" class="w-full flex justify-start">
                         <span
                           ref="elContentFour3"
                           class="elContentFour3 content-title font-yk text-5xl"
@@ -635,16 +685,26 @@
                           >SEGI设计系统</span
                         >
                       </RouterLink>
-                      <span ref="elContentFour4" class="elContentFour4 subtitle"
-                        >UE/Motion/Code</span
+                      <div ref="elContentFour4" class="elContentFour4 subtitle w-full text-right">UE/Motion/Code</div
                       >
                       <div
                         ref="elContentFour5"
                         class="elContentFour5 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'segi-template-market' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'segi-template-market' }" class="w-full flex justify-start">
                         <span
                           ref="elContentFour6"
                           class="elContentFour6 content-title font-yk text-5xl"
@@ -653,16 +713,26 @@
                           >模板市场</span
                         >
                       </RouterLink>
-                      <span ref="elContentFour7" class="elContentFour7 subtitle"
-                        >UE/Code</span
+                      <div ref="elContentFour7" class="elContentFour7 subtitle w-full text-right">UE/Code</div
                       >
                       <div
                         ref="elContentFour8"
                         class="elContentFour8 line justify-center items-center"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'document-system' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'document-system' }" class="w-full flex justify-start">
                         <span
                           ref="elContentFour9"
                           class="elContentFour9 content-title font-yk text-5xl"
@@ -673,7 +743,7 @@
                       </RouterLink>
                       <span
                         ref="elContentFour10"
-                        class="elContentFour10 subtitle"
+                        class="elContentFour10 subtitle w-full text-right"
                         >Motion/Code</span
                       >
                       <div
@@ -681,8 +751,19 @@
                         class="elContentFour11 line"
                       ></div>
                     </li>
-                    <li>
-                      <RouterLink :to="{ name: 'visualized-data-platform' }">
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
+                      <RouterLink :to="{ name: 'visualized-data-platform' }" class="w-full flex justify-start">
                         <span
                           ref="elContentFour12"
                           class="elContentFour12 content-title font-yk text-5xl"
@@ -693,7 +774,7 @@
                       </RouterLink>
                       <span
                         ref="elContentFour13"
-                        class="elContentFour13 subtitle"
+                        class="elContentFour13 subtitle w-full text-right"
                         >UE/Code</span
                       >
                       <div
@@ -703,9 +784,21 @@
                     </li>
 
                     <!-- class="pointer-events-none" -->
-                    <li>
+                    <li
+                      class="
+                        relative
+                        flex
+                        flex-col
+                        md:flex-row
+                        items-center
+                        justify-between
+                        pb-4
+                        mb-4
+                      "
+                    >
                       <RouterLink
                         :to="{ name: 'billing-center' }"
+                        class="w-full flex justify-start"
                       >
                         <span
                           ref="elContentFour15"
@@ -717,7 +810,7 @@
                       </RouterLink>
                       <span
                         ref="elContentFour16"
-                        class="elContentFour16 subtitle"
+                        class="elContentFour16 subtitle w-full text-right"
                         >UE</span
                       >
                       <div
@@ -1674,7 +1767,6 @@ svg:hover path {
 } */
 
 .about {
-  @apply text-white text-base uppercase py-0 px-8 grid;
   grid-template-rows: auto 40px;
 }
 

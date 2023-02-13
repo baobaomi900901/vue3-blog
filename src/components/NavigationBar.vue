@@ -7,10 +7,11 @@
 !-->
 <template>
   <div
-    class="NavigationBar fixed w-full h-20 px-4 sm:px-16 flex items-center justify-between z-50 text-gray-400"
+    class="NavigationBar fixed w-full h-20 px-4 sm:px-16 flex items-center justify-between text-gray-400"
     :class="[
       { 'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about' }
     ]"
+    style="zIndex: 999;"
   >
     <div class="flex items-center" id="logo">
       <router-link to="/home">

@@ -51,7 +51,7 @@
         </div>
       </div>
       <div ref="SATextFooter" class="SATextFooter opacity-80 mobile:text-sm">
-        ©2021 Mading😼&🤡™ studio
+        ©{{ (new Date()).getFullYear() }} Mading😼&🤡™ studio
       </div>
     </div>
   </div>
