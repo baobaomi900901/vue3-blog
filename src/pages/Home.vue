@@ -7,8 +7,8 @@
 !-->
 <template>
   <!-- <NavigationBar></NavigationBar> -->
-  <!-- overflow-hidden -->
   <div class="HomePage w-full flex z-10 select-none">
+    <!-- menu -->
     <div
       class="
         HomePage_left
@@ -43,9 +43,10 @@
               inline-block
               w-1/2
               h-auto
+              3xl:text-5xl
             "
           >
-            <h3 class="menu text-base text-gray-500 mb-10 uppercase">Menu</h3>
+            <h3 class="menu text-base text-gray-500 mb-10 uppercase 3xl:text-xl">Menu</h3>
             <li class="menuItem mb-3">
               <button
                 class="cyberpunk font-bold"
@@ -113,32 +114,48 @@
       </div>
     </div>
 
-    <!-- overflow-hidden -->
+    <!-- content -->
     <div class="HomePage_content w-full h-screen flex relative">
+      <!-- placeholder -->
       <div class="lg:w-4/12"></div>
+
       <div class="right relative w-full lg:w-8/12">
         <div
           id="HomePageContentHead"
           class="HomePage_content_head h-screen flex flex-col"
         >
-          <div class="Introduce flex justify-center items-center flex-1 px-4 md:px-8 z-10">
-            <div class="myself text-white opacity-80 uppercase leading-loose">
+          <div
+            class="
+              Introduce
+              flex
+              justify-center
+              items-center
+              flex-1
+              px-4
+              md:px-8
+              z-10
+            "
+          >
+            <div class="myself text-white opacity-80 uppercase leading-loose ">
               <div
                 ref="welcome"
                 id="welcome"
-                class="welcome vc text-base font-black mb-4 italic"
+                class="
+                  welcome
+                  vc
+                  font-black
+                  mb-4
+                  mobile:text-sm
+                  sm:text-xs
+                  md:text-sm
+                  lg:text-base
+                  3xl:text-xl
+                "
               >
                 Welcome
               </div>
               <div
-                class="
-                  myname
-                  font-extrabold
-                  italic
-                  text-7xl
-                  md:text-8xl
-                  xl:text-9xl
-                "
+                class="myname font-extrabold text-6xl md:text-7xl xl:text-9xl mobile:text-5xl"
               >
                 <p ref="myname1" id="myname1" class="myname1">i'm</p>
                 <p ref="myname2" id="myname2" class="myname2">maosusu</p>
@@ -146,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="flex h-auto z-10">
+          <div class="flex z-10 h-1/5">
             <div
               id="aboutMeBox"
               class="
@@ -164,36 +181,34 @@
               <p
                 ref="aboutMe"
                 id="aboutMe"
-                class="text-white text-lg font-extrabold italic"
+                class="text-white text-lg font-extrabold 3xl:text-2xl"
               >
                 About Me
               </p>
             </div>
-t
-            <div class="about text-white text-base uppercase px-1 py-0 grid w-1/2">
+
+            <div
+              class="
+                about
+                text-white text-base
+                uppercase
+                px-1
+                py-0
+                grid
+                w-1/2
+                px-2
+                3xl:px-4
+              "
+            >
               <div
                 id="aboutLine"
-                class="about-describe w-full h-full flex items-end"
+                class="about-describe w-full h-full flex items-center"
               >
-                <p
-                  ref="aboutText"
-                  id="aboutText"
-                  class="
-                    aboutText
-                    sm:text-sm
-                    md:text-2xl
-                    lg:text-2xl
-                    xl:text-3xl
-                    2xl:text-4xl
-                    mb-2
-                    md:mb-4
-                    italic
-                    max-w-lg
-                  "
-                >
-                  We're a 3d/motion /interaction /UI /UX & webflow developer.
+                <p ref="aboutText" id="aboutText" class="aboutText">
+                  We're a motion, interaction, UI, UX & webflow developer.
                 </p>
               </div>
+
               <div
                 class="
                   about-linkCoord
@@ -201,7 +216,7 @@ t
                   flex
                   justify-between
                   items-center
-                  box-border
+                  h-full
                 "
               >
                 <a
@@ -219,6 +234,8 @@ t
               </div>
             </div>
           </div>
+
+          <!-- mask -->
           <div class="w-full h-screen absolute top-0 left-0 bg-gray-50">
             <div
               class="marks absolute w-full h-full grid grid-cols-3 gap-1"
@@ -232,20 +249,22 @@ t
           </div>
         </div>
 
+        <!-- content - 01 -->
         <div
           id="homePage2"
           ref="homePage2"
           class="
             homePage2
-            px-8
-            sm:px-24
-            md:px-40
-            md:pl-10
-            lg:pl-40 lg:pr-20
             flex
             items-center
             flex-col
             bg-gray-200
+            sm:px-24
+            lg:pl-20
+            lg:py-32
+            3xl:pl-32
+            3xl:pr-60
+            mobile:px-8
           "
         >
           <div
@@ -255,48 +274,42 @@ t
             <span
               id="elContentOne1"
               ref="elContentOne1"
-              class="text-base font-bold"
+              class="text-base font-bold mobile:text-sm 3xl:text-xl"
               >01</span
             >
             <div
               ref="elContentOne2"
-              class="elContentOne2 text-6xl font-black mb-10"
+              class="elContentOne2 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl"
             >
-              Maosusu.😾
+              Maosusu.😼
             </div>
-            <div class="text-xl font-normal break-all italic" style="max-width: 640px">
-              <div ref="elContentOne3" class="elContentOne3">
-                猫叔叔是一个灵活的多功能设计师，
+            <div class="text-xl font-normal break-all sm:text-base md:text-xl 3xl:text-2xl mobile:text-sm" style="">
+              <div ref="elContentOne3" class="elContentOne3 zh">
+                我是一个灵活的多功能(Design + Code)设计师，
               </div>
-              <div ref="elContentOne4" class="elContentOne4 mt-2">
-                注重设计的便捷、速度和高质量；
+              <div ref="elContentOne4" class="elContentOne4 mt-2 zh">
+                交互设计、动效、前端动画实现经验丰富；
               </div>
-              <div ref="elContentOne5" class="elContentOne5 mt-6">
-                喜欢挖掘设计背后的商业价值，
+              <div ref="elContentOne5" class="elContentOne5 mt-8 zh">
+                最近 6 年从事 B2B 产品设计，项目经验包含:
               </div>
-              <div ref="elContentOne6" class="elContentOne6 mt-2">
-                思考“Why”和“How"；
+              <div ref="elContentOne6" class="elContentOne6 mt-2 zh">
+                海外仓、电商、电信运营、企业供应链、园区物业管理、
               </div>
-              <div ref="elContentOne7" class="elContentOne7 mt-6">
-                愿意不断挑战自我，同时也希望与团队合作，
+              <div ref="elContentOne7" class="elContentOne7 mt-2 zh">
+                OA、数据大屏、Web可视化开发等；
               </div>
-              <div ref="elContentOne8" class="elContentOne8 mt-2">
-                去探索设计策略，维护以用户为中心的设计方法；
+              <div ref="elContentOne8" class="elContentOne8 mt-8 zh">
+                渴望探索新知识，并能持续学习；
               </div>
-              <div ref="elContentOne9" class="elContentOne9 mt-6">
-                渴望探索新的知识，并能持续学习，
+              <div ref="elContentOne9" class="elContentOne9 mt-2 zh">
+                现已自学并熟悉VUE、WordPress、GSAP、Pixi.js、THREE.js等；
               </div>
-              <div ref="elContentOne10" class="elContentOne10 mt-2">
-                现已自学并熟悉VUE、WordPress、PHP等；
+              <div ref="elContentOne10" class="elContentOne10 mt-8 zh">
+                善于工作中解决实际问题，能帮助团队设计落地，
               </div>
-              <div ref="elContentOne11" class="elContentOne11 mt-6">
-                能帮助团队设计落地，并乐于团队间的
-              </div>
-              <div ref="elContentOne12" class="elContentOne12 mt-2">
-                交流和知识分享，以提升团队效率；
-              </div>
-              <div ref="elContentOne13" class="elContentOne13 mt-6">
-                我是"Jack of all trades”
+              <div ref="elContentOne11" class="elContentOne11 mt-2 zh">
+                乐于团队间的交流和知识分享，以提升团队效率；
               </div>
             </div>
           </div>
@@ -305,10 +318,10 @@ t
             <div ref="el-content-two">
               <span
                 ref="elContentTwo1"
-                class="elContentTwo1 text-base font-bold"
+                class="elContentTwo1 text-base font-bold mobile:text-sm 3xl:text-xl"
                 >02</span
               >
-              <div ref="elContentTwo2" class="elContentTwo2 mb-4">
+              <div ref="elContentTwo2" class="elContentTwo2 mb-4 mobile:text-xs">
                 Looking forward to work
               </div>
               <div
@@ -320,17 +333,16 @@ t
                   pb-4
                   mb-4
                   relative
-                  italic
                 "
               >
                 <span
                   ref="elContentTwo3"
-                  class="elContentTwo3 text-3xl sm:text-4xl font-bold text-dark-blue italic"
+                  class="elContentTwo3 text-4xl font-bold text-dark-blue mobile:text-3xl "
                   >Industry</span
                 >
                 <span
                   ref="elContentTwo4"
-                  class="elContentTwo4 text-gray-400 font-light"
+                  class="elContentTwo4 text-gray-400 font-normal"
                   >toB</span
                 >
                 <div
@@ -347,18 +359,17 @@ t
                   pb-4
                   mb-4
                   relative
-                  italic
                 "
               >
                 <span
                   ref="elContentTwo6"
-                  class="elContentTwo6 text-3xl sm:text-4xl font-bold text-dark-blue"
+                  class="elContentTwo6 text-4xl font-bold text-dark-blue mobile:text-3xl "
                   >Workplace</span
                 >
                 <span
                   ref="elContentTwo7"
-                  class="elContentTwo7 text-gray-400 font-light"
-                  >ShenZhen&ChangSha</span
+                  class="elContentTwo7 text-gray-400 zh font-normal"
+                  >深圳 & 广州</span
                 >
                 <div
                   ref="elContentTwo8"
@@ -374,17 +385,16 @@ t
                   pb-4
                   mb-4
                   relative
-                  italic
                 "
               >
                 <span
                   ref="elContentTwo9"
-                  class="elContentTwo9 text-3xl sm:text-4xl font-bold text-dark-blue"
-                  >Anytime</span
+                  class="elContentTwo9 text-4xl font-bold text-dark-blue mobile:text-3xl "
+                  >WorkingTime</span
                 >
                 <span
                   ref="elContentTwo10"
-                  class="elContentTwo10 text-gray-400 font-light"
+                  class="elContentTwo10 text-gray-400 font-normal"
                   >995</span
                 >
                 <div
@@ -395,27 +405,29 @@ t
             </div>
 
             <div>
-              <ul class="text-base mt-20 sm:mt-26 md:mt-32 font-bold">
-                <li ref="elContentTwo12" class="elContentTwo12 mb-2">3D</li>
-                <li ref="elContentTwo13" class="elContentTwo13 text-2xl sm:text-3xl mb-1">
-                  UI/UX Design
+              <ul class="text-base mt-32 font-medium text-gray-700 mobile:text-sm mobile:mt-16">
+                <li
+                  ref="elContentTwo12"
+                  class="elContentTwo12 font-bold text-gray-900 mb-4"
+                >
+                  My work:
                 </li>
-                <li ref="elContentTwo14" class="elContentTwo14 text-2xl sm:text-3xl mb-1">
-                  Motion Design
+                <li ref="elContentTwo13" class="elContentTwo13 mb-2">
+                  UI Design | 界面设计
                 </li>
-                <li ref="elContentTwo15" class="elContentTwo15 text-2xl sm:text-3xl mb-1">
-                  Interaction Design
+                <li ref="elContentTwo14" class="elContentTwo14 mb-2">
+                  Interaction Design | 交互设计
                 </li>
-                <li ref="elContentTwo16" class="elContentTwo16 text-2xl sm:text-3xl mb-1">
-                  Brand Design
+                <li ref="elContentTwo15" class="elContentTwo15 mb-2">
+                  Motion Design | 动效设计
                 </li>
-                <li ref="elContentTwo17" class="elContentTwo17 text-2xl sm:text-3xl">
-                  Web deveiopment
+                <li ref="elContentTwo16" class="elContentTwo16 mb-2">
+                  Web Deveiopment | 前端开发
                 </li>
               </ul>
               <div
                 ref="elContentTwo18"
-                class="elContentTwo18 w-full text-center mt-24 relative"
+                class="elContentTwo18 w-full text-center mt-24 relative mobile:text-sm mobile:mt-20"
               >
                 Good things comest to down-scrollers 🧼 😆
               </div>
@@ -427,12 +439,12 @@ t
                 <div class="Portfolio-title relative mb-8 z-50">
                   <span
                     ref="elContentThree1"
-                    class="elContentThree1 text-base font-bold"
+                    class="elContentThree1 text-base font-bold mobile:text-sm 3xl:text-xl"
                     >03</span
                   >
                   <div
                     ref="elContentThree2"
-                    class="elContentThree2 text-6xl font-black mb-4"
+                    class="elContentThree2 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl"
                   >
                     Portfolio
                   </div>
@@ -465,8 +477,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -474,7 +485,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'vodafone-conceptual-design' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentThree5"
                           class="elContentThree5 content-title font-yk text-5xl"
@@ -496,8 +510,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -505,7 +518,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'agile-ui' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'agile-ui' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentThree8"
                           class="elContentThree8 content-title font-yk text-5xl"
@@ -527,8 +543,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -536,7 +551,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'HKT-motion-design' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'HKT-motion-design' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentThree11"
                           class="
@@ -563,8 +581,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -572,7 +589,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'UI-Lego' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'UI-Lego' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentThree14"
                           class="
@@ -599,8 +619,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -608,7 +627,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'islace-mobile' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'islace-mobile' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentThree17"
                           class="
@@ -667,8 +689,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -676,7 +697,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'segi-design-system' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'segi-design-system' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentFour3"
                           class="elContentFour3 content-title font-yk text-5xl"
@@ -685,8 +709,12 @@ t
                           >SEGI设计系统</span
                         >
                       </RouterLink>
-                      <div ref="elContentFour4" class="elContentFour4 subtitle w-full text-right">UE/Motion/Code</div
+                      <div
+                        ref="elContentFour4"
+                        class="elContentFour4 subtitle w-full text-right"
                       >
+                        UE/Motion/Code
+                      </div>
                       <div
                         ref="elContentFour5"
                         class="elContentFour5 line"
@@ -695,8 +723,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -704,7 +731,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'segi-template-market' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'segi-template-market' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentFour6"
                           class="elContentFour6 content-title font-yk text-5xl"
@@ -713,8 +743,12 @@ t
                           >模板市场</span
                         >
                       </RouterLink>
-                      <div ref="elContentFour7" class="elContentFour7 subtitle w-full text-right">UE/Code</div
+                      <div
+                        ref="elContentFour7"
+                        class="elContentFour7 subtitle w-full text-right"
                       >
+                        UE/Code
+                      </div>
                       <div
                         ref="elContentFour8"
                         class="elContentFour8 line justify-center items-center"
@@ -723,8 +757,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -732,7 +765,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'document-system' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'document-system' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentFour9"
                           class="elContentFour9 content-title font-yk text-5xl"
@@ -754,8 +790,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -763,7 +798,10 @@ t
                         mb-4
                       "
                     >
-                      <RouterLink :to="{ name: 'visualized-data-platform' }" class="w-full flex justify-start">
+                      <RouterLink
+                        :to="{ name: 'visualized-data-platform' }"
+                        class="w-full flex justify-start"
+                      >
                         <span
                           ref="elContentFour12"
                           class="elContentFour12 content-title font-yk text-5xl"
@@ -787,8 +825,7 @@ t
                     <li
                       class="
                         relative
-                        flex
-                        flex-col
+                        flex flex-col
                         md:flex-row
                         items-center
                         justify-between
@@ -836,16 +873,19 @@ t
 
               <span
                 ref="elContent41"
-                class="elContent41 text-base font-bold mt-24"
+                class="elContent41 text-base font-bold mobile:text-sm 3xl:text-xl"
                 >04</span
               >
               <div
                 ref="elContent42"
-                class="elContent42 text-6xl font-black mb-10"
+                class="elContent42 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl"
               >
                 Contact Me
               </div>
-              <div class="text-xl font-normal break-all italic" style="max-width: 640px">
+              <div
+                class="text-xl font-normal break-all italic"
+                style="max-width: 640px"
+              >
                 <div ref="elContent43" class="elContent43 italic">
                   需要我成为团队中的一员吗? 😼
                 </div>
@@ -918,13 +958,22 @@ t
         </div>
       </div>
     </div>
+
     <div class="caView fixed top-0 z-10" style="pointer-events: none"></div>
   </div>
   <router-view></router-view>
 </template>
 
 <script lang="ts">
-import { ref, reactive, onMounted, watch, onUpdated, computed, defineComponent } from "vue";
+import {
+  ref,
+  reactive,
+  onMounted,
+  watch,
+  onUpdated,
+  computed,
+  defineComponent,
+} from "vue";
 import { gsap } from "gsap";
 import useTextEnterAnime from "../hooks/useTextEnterAnime";
 import contentLineAnime from "../hooks/contentLineAnime";
@@ -971,8 +1020,6 @@ export default defineComponent({
     let elContentOne9 = ref(null);
     let elContentOne10 = ref(null);
     let elContentOne11 = ref(null);
-    let elContentOne12 = ref(null);
-    let elContentOne13 = ref(null);
 
     let elContentTwo1 = ref(null);
     let elContentTwo2 = ref(null);
@@ -1051,6 +1098,7 @@ export default defineComponent({
         duration: time,
       });
       pageMenuClass.value = 1;
+      console.log("home", pageMenuClass.value);
     }
 
     function clickIntroduce() {
@@ -1062,6 +1110,7 @@ export default defineComponent({
         duration: time,
       });
       pageMenuClass.value = 2;
+      console.log("Introduce", pageMenuClass.value);
     }
 
     function clickPortfolio() {
@@ -1074,6 +1123,7 @@ export default defineComponent({
         duration: time,
       });
       pageMenuClass.value = 3;
+      console.log("Portfolio", pageMenuClass.value);
     }
 
     function clickContactUs() {
@@ -1086,6 +1136,7 @@ export default defineComponent({
         duration: time,
       });
       pageMenuClass.value = 4;
+      console.log("ContactUs", pageMenuClass.value);
     }
 
     function scrollToTopMemu() {
@@ -1350,8 +1401,6 @@ export default defineComponent({
       contentOneTimeLine.add(useTextEnterAnime(elContentOne9, 0.3), "-=0.2");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne10, 0.4), "-=0.2");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne11, 0.4), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne12, 0.2), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne13, 0.4), "-=0.1");
 
       //#endregion
 
@@ -1545,9 +1594,9 @@ export default defineComponent({
             y: 0,
             opacity: 1,
             duration: 0.5,
-            onComplete:()=>{
-              console.log('takeToMeBox end');
-            }
+            onComplete: () => {
+              console.log("takeToMeBox end");
+            },
           }
         )
       );
@@ -1670,8 +1719,6 @@ export default defineComponent({
       elContentOne9,
       elContentOne10,
       elContentOne11,
-      elContentOne12,
-      elContentOne13,
       elContentTwo1,
       elContentTwo2,
       elContentTwo3,
@@ -1747,8 +1794,16 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
+
 #root {
   --gray-0: #fafafa;
+  --highlight-1: #0042f6;
+  --highlight-2: #09feff;
+}
+
+.zh {
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 svg:hover path {
@@ -1767,11 +1822,28 @@ svg:hover path {
 } */
 
 .about {
-  grid-template-rows: auto 40px;
+  /* grid-template-rows: auto 40px; */
 }
 
 .about-describe {
   @apply border-b border-white grid;
+  container-type: inline-size;
+}
+
+.aboutText {
+  font-size: 4.2cqh;
+  line-height: 120%;
+}
+
+@media (max-width: 390px) {
+  .aboutText {
+    font-size: 2.7cqh;
+    line-height: 120%;
+  }
+
+  .about-coord {
+    display: none;
+  }
 }
 
 .about-describe p {
@@ -1779,6 +1851,8 @@ svg:hover path {
 }
 
 .about-linkCoord {
+  font-size: 1.7cqh;
+  line-height: 120%;
 }
 
 .about-linkCoord a {
@@ -1964,10 +2038,10 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  text-shadow: -10px -10px 0px #0042f6, 10px 10px 0px #ff5500;
-  text-shadow: -10px -10px 0px #81fafb, 10px 10px 0px #e8514c;
+  text-shadow: -10px -10px 0px var(--highlight-1), 10px 10px 0px #ff5500;
+  text-shadow: -10px -10px 0px #09feff, 10px 10px 0px #e8514c;
 
-  /* #81fafb #e8514c */
+  /* #09FEFF #e8514c */
   clip-path: var(--slice-0);
   /* transform: translate(-4px, 2px); */
 }
@@ -1978,7 +2052,7 @@ canvas {
 
 .cyberpunk:hover {
   animation: 0.25s glitch2 forwards;
-  color: #0042f6;
+  color: var(--highlight-1);
 }
 
 @keyframes clrEA {
@@ -2045,16 +2119,20 @@ canvas {
   0% {
     opacity: 0;
   }
-  33% {
+  10% {
     opacity: 1;
+  }
+  33% {
+    opacity: 0;
     color: #ff5500;
   }
   66% {
     opacity: 1;
-    color: #0042f6;
+    color: var(--highlight-1);
   }
   90% {
-    color: #0042f6;
+    opacity: 0;
+    color: var(--highlight-1);
   }
   100% {
     opacity: 1;
@@ -2065,30 +2143,16 @@ canvas {
 @keyframes glitch3 {
   100% {
     opacity: 0.2;
-    /* color: #9ca3ae; */
-    /* @apply text-gray-200 */
   }
 }
 
 @keyframes glitch3-2 {
   100% {
-    opacity: 1;
+    opacity: 0.8;
     color: #ff5500;
-    /* color: #9ca3ae; */
-    /* @apply text-gray-200 */
   }
 }
 
-@keyframes glitch4 {
-  0% {
-    /* opacity: 0; */
-  }
-  100% {
-    /* opacity: 1; */
-    color: #ff5500;
-    /* font-weight: 700; */
-  }
-}
 
 .inspirations:hover .cyberpunk,
 .inspirations:hover .subtitle {

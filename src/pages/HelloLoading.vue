@@ -109,17 +109,17 @@ export default {
       let StartPageLine = gsap.timeline({
         delay: 1,
         onStart: () => {
-          console.log("device.mobile() === %s", device.desktop());
+          // console.log("device.mobile() === %s", device.desktop());
         },
         onComplete: () => {
-          // router.push({ path: "home" });
-          console.log("device.mobile() === %s", device.desktop());
-          if (device.desktop()) {
-            router.push({ path: "home" });
-            return;
-          } else {
-            router.push({ path: "Prompt" });
-          }
+          router.push({ path: "home" });
+          // console.log("device.mobile() === %s", device.desktop());
+          // if (device.desktop()) {
+          //   router.push({ path: "home" });
+          //   return;
+          // } else {
+          //   router.push({ path: "Prompt" });
+          // }
         },
       });
       StartPageLine.add(SATextHeadEnt);
