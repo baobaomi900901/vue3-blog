@@ -7,8 +7,13 @@ export default function (
   duration = 0.75,
   stagger = 0.01,
   delayTime = 0,
-  y = 10
+  y = 10,
+  complete,
 ) {
+
+  // menu 疑惑
+  if (!el.value) { return }
+
   let spanClassName = `${el.value.className.split(" ")[0]}Span`;
   useTextSplit(el, spanClassName);
 
@@ -28,7 +33,12 @@ export default function (
       opacity: 1,
       rotateX: 0,
       // ease: "elastic.out(1, 0.75)"
-    }
+      onComplete: () => {
+        if (complete) {
+          console.log(complete);
+        }
+      },
+    },
   );
   return anime;
 }

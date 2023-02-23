@@ -31,7 +31,7 @@ export default class WebGL {
     this.scene = new THREE.Scene();
     this.perspective = 100;
     this.sizes = new THREE.Vector2(0, 0);
-    this.offset = new THREE.Vector2(0, 0); // Positions of mesh on screen. Will be updated below.
+    this.offset = new THREE.Vector2(0, 0); // 屏幕上位置.
     this.uniforms = {
       uTexture: {
         value: new THREE.TextureLoader().load(images.imageThree),
@@ -199,12 +199,12 @@ export default class WebGL {
         0.1
       ));
 
-    //     for(let i = 0; i< this.links.length; i++){
-    //         if(this.linkHovered){
-    //             this.links[i].style.opacity = 0.5
-    //         }else{
-    //             this.links[i].style.opacity = 1
-    //         }
+    // for (let i = 0; i < this.links.length; i++) {
+    //   if (this.linkHovered) {
+    //     this.links[i].style.opacity = 0.5
+    //   } else {
+    //     this.links[i].style.opacity = 1
+    //   }
 
     // }
 
