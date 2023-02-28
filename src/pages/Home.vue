@@ -431,8 +431,8 @@
                           ref="elContentThree7"
                           class="elContentThree7 main-heading"
                           :class="{ cyberpunk: class3 }"
-                          data-text="香港电讯(HKT)运营后台"
-                          >香港电讯(HKT)运营后台</span
+                          data-text="香港电讯运营后台"
+                          >香港电讯运营后台</span
                         >
                         <span
                           ref="elContentThree7TitleType"
@@ -527,12 +527,12 @@
                           class="elContentFour5 main-heading"
                           :class="{ cyberpunk: class3 }"
                           data-text="SEGI设计系统"
-                          >SEGI设计系统</span
+                          >SEGI 设计系统</span
                         >
                         <span
                           ref="elContentFour5TitleType"
                           class="elContentFour5TitleType title-type"
-                          >移动端、客服、电商</span
+                          >园区管理, 设计系统</span
                         >
                         <span
                           ref="elContentFour5Subtitle"
@@ -557,7 +557,7 @@
                         <span
                           ref="elContentFour6TitleType"
                           class="elContentFour6TitleType title-type"
-                          >移动端、客服、电商</span
+                          >组件代码, 页面模板代码</span
                         >
                         <span
                           ref="elContentFour6Subtitle"
@@ -577,12 +577,12 @@
                           class="elContentFour7 main-heading"
                           :class="{ cyberpunk: class3 }"
                           data-text="CMS系统"
-                          >CMS系统</span
+                          >CMS 系统</span
                         >
                         <span
                           ref="elContentFour7TitleType"
                           class="elContentFour7TitleType title-type"
-                          >移动端、客服、电商</span
+                          >全栈开发</span
                         >
                         <span
                           ref="elContentFour7Subtitle"
@@ -607,7 +607,7 @@
                         <span
                           ref="elContentFour8TitleType"
                           class="elContentFour8TitleType title-type"
-                          >移动端、客服、电商</span
+                          >数据大屏、低代码、组件设计</span
                         >
                         <span
                           ref="elContentFour8Subtitle"
@@ -632,7 +632,7 @@
                         <span
                           ref="elContentFour9TitleType"
                           class="elContentFour9TitleType title-type"
-                          >移动端、客服、电商</span
+                          >重构老旧系统</span
                         >
                         <span
                           ref="elContentFour9Subtitle"
@@ -689,7 +689,11 @@
                   </div>
                 </div>
                 <!-- blueBallBox -->
-                <div class="z-1" style="height: 400px">
+                <div
+                  ref="blueBallBox"
+                  class="blueBallBox z-1"
+                  style="height: 400px"
+                >
                   <div
                     ref="blueBallBox"
                     class="flex justify-center z-50 relative takeToMeBox"
@@ -722,8 +726,9 @@
                   <p
                     class="w-full text-center mb-20 mt-24 relative mobile:text-xs mobile:mt-10 mobile:mt-1 text-gray-400 leading-10"
                   >
-                    👆想知道蓝色的圆圈是干啥的吗? <br />
-                    点一下看看吧 😆
+                    <span ref="elContent47" class="elContent47">👆想知道蓝色的圆圈是干啥的吗?</span>
+                    <br />
+                    <span ref="elContent48" class="elContent48">点一下看看吧 😆 </span>
                   </p>
                 </div>
               </div>
@@ -772,119 +777,121 @@ export default defineComponent({
 
     // elRef
     //#region
-    let pageMenuClass = ref(1);
-    let welcome = ref(null);
-    let myname1 = ref(null);
-    let myname2 = ref(null);
-    let myname3 = ref(null);
-    let aboutMe = ref(null);
-    let aboutText = ref(null);
-    let dribbbleLink = ref(null);
-    let myCoords = ref(null);
-    let homePage2 = ref(null);
-    let elContentOne1 = ref(null);
-    let elContentOne2 = ref(null);
-    let elContentOne3 = ref(null);
-    let elContentOne4 = ref(null);
-    let elContentOne5 = ref(null);
-    let elContentOne6 = ref(null);
+    const pageMenuClass = ref(1);
+    const welcome = ref(null);
+    const myname1 = ref(null);
+    const myname2 = ref(null);
+    const myname3 = ref(null);
+    const aboutMe = ref(null);
+    const aboutText = ref(null);
+    const dribbbleLink = ref(null);
+    const myCoords = ref(null);
+    const homePage2 = ref(null);
+    const elContentOne1 = ref(null);
+    const elContentOne2 = ref(null);
+    const elContentOne3 = ref(null);
+    const elContentOne4 = ref(null);
+    const elContentOne5 = ref(null);
+    const elContentOne6 = ref(null);
 
-    let elContentOne7 = ref(null);
-    let elContentOne8 = ref(null);
-    let elContentOne9 = ref(null);
-    let elContentOne10 = ref(null);
-    let elContentOne11 = ref(null);
-    let elContentOne12 = ref(null);
-    let elContentOne13 = ref(null);
-    let elContentOne14 = ref(null);
+    const elContentOne7 = ref(null);
+    const elContentOne8 = ref(null);
+    const elContentOne9 = ref(null);
+    const elContentOne10 = ref(null);
+    const elContentOne11 = ref(null);
+    const elContentOne12 = ref(null);
+    const elContentOne13 = ref(null);
+    const elContentOne14 = ref(null);
 
-    // let elContentTwo1 = ref(null);
-    let elContentTwo2 = ref(null);
-    let elContentTwo3 = ref(null);
-    let elContentTwo4 = ref(null);
-    let elContentTwo5 = ref(null);
-    let elContentTwo6 = ref(null);
-    let elContentTwo7 = ref(null);
-    let elContentTwo8 = ref(null);
-    let elContentTwo9 = ref(null);
-    let elContentTwo10 = ref(null);
-    let elContentTwo11 = ref(null);
-    let elContentTwo12 = ref(null);
-    let elContentTwo13 = ref(null);
-    let elContentTwo14 = ref(null);
-    let elContentTwo15 = ref(null);
-    let elContentTwo16 = ref(null);
-    let elContentTwo17 = ref(null);
-    let elContentTwo18 = ref(null);
+    // const elContentTwo1 = ref(null);
+    const elContentTwo2 = ref(null);
+    const elContentTwo3 = ref(null);
+    const elContentTwo4 = ref(null);
+    const elContentTwo5 = ref(null);
+    const elContentTwo6 = ref(null);
+    const elContentTwo7 = ref(null);
+    const elContentTwo8 = ref(null);
+    const elContentTwo9 = ref(null);
+    const elContentTwo10 = ref(null);
+    const elContentTwo11 = ref(null);
+    const elContentTwo12 = ref(null);
+    const elContentTwo13 = ref(null);
+    const elContentTwo14 = ref(null);
+    const elContentTwo15 = ref(null);
+    const elContentTwo16 = ref(null);
+    const elContentTwo17 = ref(null);
+    const elContentTwo18 = ref(null);
 
-    let elContentThree = ref(null);
-    let elContentThree1 = ref(null);
-    let elContentThree2 = ref(null);
-    let elContentThree3 = ref(null);
-    let elContentThree4 = ref(null);
+    const elContentThree = ref(null);
+    const elContentThree1 = ref(null);
+    const elContentThree2 = ref(null);
+    const elContentThree3 = ref(null);
+    const elContentThree4 = ref(null);
 
-    let elContentThree5 = ref(null);
-    let elContentThree5TitleType = ref(null);
-    let elContentThree5Subtitle = ref(null);
-    let elContentThree5Line = ref(null);
+    const elContentThree5 = ref(null);
+    const elContentThree5TitleType = ref(null);
+    const elContentThree5Subtitle = ref(null);
+    const elContentThree5Line = ref(null);
 
-    let elContentThree6 = ref(null);
-    let elContentThree6TitleType = ref(null);
-    let elContentThree6Subtitle = ref(null);
-    let elContentThree6Line = ref(null);
+    const elContentThree6 = ref(null);
+    const elContentThree6TitleType = ref(null);
+    const elContentThree6Subtitle = ref(null);
+    const elContentThree6Line = ref(null);
 
-    let elContentThree7 = ref(null);
-    let elContentThree7TitleType = ref(null);
-    let elContentThree7Subtitle = ref(null);
-    let elContentThree7Line = ref(null);
+    const elContentThree7 = ref(null);
+    const elContentThree7TitleType = ref(null);
+    const elContentThree7Subtitle = ref(null);
+    const elContentThree7Line = ref(null);
 
-    let elContentThree8 = ref(null);
-    let elContentThree8TitleType = ref(null);
-    let elContentThree8Subtitle = ref(null);
-    let elContentThree8Line = ref(null);
+    const elContentThree8 = ref(null);
+    const elContentThree8TitleType = ref(null);
+    const elContentThree8Subtitle = ref(null);
+    const elContentThree8Line = ref(null);
 
-    let elContentThree9 = ref(null);
-    let elContentThree9TitleType = ref(null);
-    let elContentThree9Subtitle = ref(null);
-    let elContentThree9Line = ref(null);
+    const elContentThree9 = ref(null);
+    const elContentThree9TitleType = ref(null);
+    const elContentThree9Subtitle = ref(null);
+    const elContentThree9Line = ref(null);
 
-    let elContentFour1 = ref(null);
-    let elContentFour2 = ref(null);
+    const elContentFour1 = ref(null);
+    const elContentFour2 = ref(null);
 
-    let elContentFour5 = ref(null);
-    let elContentFour5TitleType = ref(null);
-    let elContentFour5Subtitle = ref(null);
-    let elContentFour5Line = ref(null);
+    const elContentFour5 = ref(null);
+    const elContentFour5TitleType = ref(null);
+    const elContentFour5Subtitle = ref(null);
+    const elContentFour5Line = ref(null);
 
-    let elContentFour6 = ref(null);
-    let elContentFour6TitleType = ref(null);
-    let elContentFour6Subtitle = ref(null);
-    let elContentFour6Line = ref(null);
+    const elContentFour6 = ref(null);
+    const elContentFour6TitleType = ref(null);
+    const elContentFour6Subtitle = ref(null);
+    const elContentFour6Line = ref(null);
 
-    let elContentFour7 = ref(null);
-    let elContentFour7TitleType = ref(null);
-    let elContentFour7Subtitle = ref(null);
-    let elContentFour7Line = ref(null);
+    const elContentFour7 = ref(null);
+    const elContentFour7TitleType = ref(null);
+    const elContentFour7Subtitle = ref(null);
+    const elContentFour7Line = ref(null);
 
-    let elContentFour8 = ref(null);
-    let elContentFour8TitleType = ref(null);
-    let elContentFour8Subtitle = ref(null);
-    let elContentFour8Line = ref(null);
+    const elContentFour8 = ref(null);
+    const elContentFour8TitleType = ref(null);
+    const elContentFour8Subtitle = ref(null);
+    const elContentFour8Line = ref(null);
 
-    let elContentFour9 = ref(null);
-    let elContentFour9TitleType = ref(null);
-    let elContentFour9Subtitle = ref(null);
-    let elContentFour9Line = ref(null);
+    const elContentFour9 = ref(null);
+    const elContentFour9TitleType = ref(null);
+    const elContentFour9Subtitle = ref(null);
+    const elContentFour9Line = ref(null);
 
-    let elContentFour10 = ref(null);
+    const elContentFour10 = ref(null);
 
-    let elContent40 = ref(null);
-    let elContent41 = ref(null);
-    let elContent42 = ref(null);
-    let elContent43 = ref(null);
-    let elContent44 = ref(null);
-    let elContent45 = ref(null);
-    let elContent46 = ref(null);
+    const elContent40 = ref(null);
+    const elContent41 = ref(null);
+    const elContent42 = ref(null);
+    const elContent43 = ref(null);
+    const elContent44 = ref(null);
+    const elContent45 = ref(null);
+    const elContent46 = ref(null);
+    const elContent47 = ref(null);
+    const elContent48 = ref(null);
 
     //#endregion
 
@@ -928,9 +935,7 @@ export default defineComponent({
 
     function clickContactUs() {
       // let bodyScrollTopNew = document.body.scrollHeight;
-      let bodyScrollTopNew = document.querySelector(
-        ".elContent40"
-      )?.offsetTop;
+      let bodyScrollTopNew = document.querySelector(".elContent40")?.offsetTop;
 
       let time = Math.abs(document.body.scrollTop - bodyScrollTopNew) * 0.001;
       time = time < 1 ? time : 1;
@@ -944,7 +949,8 @@ export default defineComponent({
 
     function scrollToTopMemu() {
       let menu2 = document.querySelector(".homePage2")?.offsetTop;
-      let menu3 = document.querySelector(".Portfolio-subtitle")?.offsetTop - 100;
+      let menu3 =
+        document.querySelector(".Portfolio-subtitle")?.offsetTop - 100;
       let scrollHeight = document.body.scrollHeight;
       let scrollTop = document.body.scrollTop;
       let clientHeight = document.body.clientHeight;
@@ -1216,7 +1222,7 @@ export default defineComponent({
         scrollTrigger: {
           // markers: true,
           trigger: ".elContentTwo2",
-          start: "top 55%",
+          start: "top 80%",
           // end: "+=400",
           toggleActions: "play play resume pause",
         },
@@ -1252,7 +1258,7 @@ export default defineComponent({
         scrollTrigger: {
           // markers: true, // 启用标尺
           trigger: ".elContentThree1",
-          start: "top 55%",
+          start: "top 80%",
           toggleActions: "play play resume pause",
         },
         onStart: () => {
@@ -1364,7 +1370,7 @@ export default defineComponent({
         scrollTrigger: {
           // markers: true, // 启用标尺
           trigger: ".elContentFour1",
-          start: "top 55%",
+          start: "top 80%",
           toggleActions: "play play resume pause",
         },
         onStart: () => {
@@ -1447,23 +1453,23 @@ export default defineComponent({
 
       contentFourTimeLine.add(useTextEnterAnime(elContentFour10, 0.4), "-=0.3");
 
-      contentFourTimeLine.add(
-        gsap.fromTo(
-          ".takeToMeBox",
-          {
-            y: 10,
-            opacity: 0,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.5,
-            onComplete: () => {
-              console.log("takeToMeBox end");
-            },
-          }
-        )
-      );
+      // contentFourTimeLine.add(
+      //   gsap.fromTo(
+      //     ".takeToMeBox",
+      //     {
+      //       y: 10,
+      //       opacity: 0,
+      //     },
+      //     {
+      //       y: 0,
+      //       opacity: 1,
+      //       duration: 0.5,
+      //       onComplete: () => {
+      //         console.log("takeToMeBox end");
+      //       },
+      //     }
+      //   )
+      // );
       //#endregion
 
       // Contact Us
@@ -1471,7 +1477,7 @@ export default defineComponent({
         scrollTrigger: {
           // markers: true, // 启用标尺
           trigger: ".elContent40",
-          start: "top 55%",
+          start: "top 80%",
           // end: "+=400",
           toggleActions: "play play play pause", //restart
         },
@@ -1483,6 +1489,25 @@ export default defineComponent({
       content4TimeLine.add(useTextEnterAnime(elContent44, 0.4), "-=0.2");
       content4TimeLine.add(useTextEnterAnime(elContent45, 0.4), "-=0.2");
       content4TimeLine.add(useTextEnterAnime(elContent46, 0.4), "-=0.2");
+
+      let blueBallBox = gsap.fromTo(
+        ".blueBallBox",
+        {
+          duration: 1,
+          y: 10,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.4,
+          ease: "power2.inOut",
+        }
+      );
+
+      content4TimeLine.add(blueBallBox, "-=0.2");
+      content4TimeLine.add(useTextEnterAnime(elContent47, 0.4), "-=0.2");
+      content4TimeLine.add(useTextEnterAnime(elContent48, 0.4), "-=0.2");
 
       //#region
       gsap.set(".takeToMeText", {
@@ -1665,6 +1690,8 @@ export default defineComponent({
       elContent44,
       elContent45,
       elContent46,
+      elContent47,
+      elContent48,
       mailto,
     };
   },

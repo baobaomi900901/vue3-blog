@@ -7,35 +7,14 @@
       </h2>
 
       <div
-        class="
-          avatarContainer
-          flex
-          justify-center
-          items-center
-          mt-6
-          sm:mt-10
-          h-96
-          sm:h-192
-          relative
-          overflow-hidden
-          rounded-md
-          bg-dark-blue
-        "
+        class="avatarContainer flex justify-center items-center mt-6 sm:mt-10 h-96 sm:h-192 relative overflow-hidden rounded-md bg-dark-blue"
       >
         <img
           ref="avatar"
           id="avatar"
           src="https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/me.png"
           alt=""
-          class="
-            w-60
-            h-60
-            sm:w-80 sm:h-80
-            rounded-full
-            border-4 border-gray-300
-            z-10
-            hidden
-          "
+          class="w-60 h-60 sm:w-80 sm:h-80 rounded-full border-4 border-gray-300 z-10 hidden"
         />
       </div>
 
@@ -47,8 +26,8 @@
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p>我叫唐清伟, 朋友们都称呼猫叔叔</p>
             <p class="mt-2">
-              2012 年毕业, 大学专业是漫画, 毕业后第一份工作是 做车载导航GUI,
-              后面转型2D游戏动效与交互。
+              2012 年毕业, 大学专业是漫画, 毕业后第一份工作是做车载导航GUI,
+              之后转型网页动效与交互。
             </p>
             <p class="mt-2 text-justify">
               2016 年在 Framer.cn 和 Flinto.cn 的 QQ 群认识了一个华为的设计专家,
@@ -82,9 +61,7 @@
                 class="text-dark-blue underline hover:text-orange-500 font-bold"
                 >CodingStartup_阿喵</a
               >
-              <span class="text-gray-400"
-                >(前端动画案例, 目前两天一更, 最近开坑物理引擎)</span
-              >
+              <span class="text-gray-400">(前端动画案例, 学习总结为主)</span>
             </p>
           </div>
 
@@ -92,30 +69,31 @@
             教育
           </h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
+            <p>2009 年 ~ 2012 年</p>
+            <p class="font-bold mt-2">湖南大众传媒职业技术学院 | 大专</p>
+            <p class="mt-2">卡漫设计与制作</p>
+            <br />
             <p>2018 年 ~ 2021 年</p>
             <p class="font-bold mt-2">湖南师范大学 | 非全日制本科</p>
             <p class="mt-2">心理学</p>
             <br />
-            <p>2009 年 ~ 2012 年</p>
-            <p class="font-bold mt-2">湖南大众传媒职业技术学院 | 大专</p>
-            <p class="mt-2">卡漫设计与制作</p>
           </div>
 
           <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">
             我会什么?
           </h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
-            <p class="font-bold ">界面设计与交互:</p>
-            <p class="font-light ">Adobe、Sketch、Figma、Axure</p>
+            <p class="font-bold">界面设计与交互:</p>
+            <p class="font-light">Adobe、Sketch、Figma、Axure</p>
             <br />
             <p class="font-bold">动效&3D设计:</p>
-            <p class="font-light ">After Effects、Blender、Spine</p>
+            <p class="font-light">After Effects、Blender、Spine</p>
             <br />
             <p class="font-bold">DesignThink:</p>
-            <p class="font-light ">原子设计、设计冲刺、精益设计</p>
+            <p class="font-light">原子设计、设计冲刺、精益设计</p>
             <br />
             <p class="font-bold">Code:</p>
-            <p class="font-light ">
+            <p class="font-light">
               HTML、Javascript(初级)、
               CSS(熟练)、SASS、LESS、Tailwind、Vue、WordPress、 动画库(
               GSAP、Anime.js、Lottie )
@@ -129,15 +107,17 @@
             <p class="font-bold">
               构建设计系统 / 交互设计 / 动效设计 / 前端动画开发
             </p>
+            <p class="font-light">
+              运用丰富的工作经验和前端知识, 给设计团队赋能
+            </p>
           </div>
 
           <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">
             想做什么?
           </h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
-            <p class="font-bold">设计实现 / 前端动画开发 / WebGL 设计</p>
-            <p class="font-light">
-              运用丰富的工作经验和前端知识, 给设计团队赋能
+            <p class="font-bold">
+              设计实现(Design+code) / 前端动画开发 / WebGL 设计
             </p>
           </div>
 
@@ -145,20 +125,52 @@
             在学什么?
           </h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
-            <p class="font-bold">WebGL:</p>
-            <p>Three.js + Blender</p>
+            <p>WebGL, Three.js, Blender</p>
           </div>
 
           <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">
             经验
           </h3>
           <div class="space-y-2 pb-6 sm:pb-16">
-            <p class="font-bold">深圳市四格互联信息技术有限公司</p>
-            <p class="text-base">2020.03 ~ 至今 | 产品设计部 - 交互组组长</p>
-            <p class="font-light pt">
-              对接政府、CBD、园区、地产和物业公司的 2B/2C 软件服务
+            <p class="font-bold">inke映客直播广州分公司</p>
+            <p class="text-base">
+              2022.06 ~ 2022.11 | 设计部-交互组组长、UX2 组代理组长
             </p>
-            <br /> 
+            <p class="font-light pt">
+              负责社交, 电子书,
+              盲盒的版本迭代的交互设计;搭配前端开发提高版本质量,
+              优化用户体验;对内负责组内人员的知识培训和项目管理。
+              <br />
+              <br />
+              <span class="font-normal">工作内容:</span>:
+              <br />
+              1. 协助1v1交友、盲盒、电子书次级赛道的产品经理完成交互设计;
+              <br />
+              2.每周二、四晚上为设计团队培训 Web 前端知识;
+              <br />
+              3. 协助项目 UX 设计师与前端开发落地设计;
+              <br />
+              4. 筹划 INKE 广分公司的设计资产数字化变革，因INKE
+              广分公司业务线调整， 11 月解散设计部门，此终止;
+            </p>
+            <br />
+            <br />
+            <p class="font-bold">深圳市四格互联信息技术有限公司</p>
+            <p class="text-base">2020.03 ~ 2022.05 | 产品设计部 - 交互组组长</p>
+            <p class="font-light pt">
+              四格互联是一家园区经营软件供应商, 我在其中负责: 租赁、OA、CRM
+              、数据大屏等核心产品的交互设计; 并且配合前端团队输出 代码级 组件
+              与 页面模板 code, 协调并帮助前端团队设计落地。
+              <br />
+              <br />
+              <span class="font-normal">工作内容:</span>
+              <br />
+              在完成本身业务需求外, 协调产品经理元件库(axure), UI 设计 symbol,
+              前端组件样式统一, 并与前端开发共同输出基于 tailwindcss
+              的代码级模板, 提升 SaaS 平台多产品线设计一致性的同时 减少 UI
+              出图这一低价值步骤。
+            </p>
+            <br />
             <p class="font-bold">
               深圳软通动力信息技术有限公司 | 华为 UCD 驻场
             </p>
@@ -166,32 +178,46 @@
               2016 年 ~ 2020 年 | 交互设计师 ( 高级主任工程师 7 级 )
             </p>
             <p class="font-light pt">
-              住场华为 UCD, 主要参与项目有: 运营商相关的后台管理系统, 客服中心,
-              CRM系统以及创新设计 2B/2C 设计。
-            </p> 
+              外包岗位，驻深圳龙岗华为基地 2012 实验室 UCD ，协助创新团队完成
+              TOP 级项目的交互设计、动画设计、原型制作 以及 Web 端设计落地;
+              <br />
+              <br />
+              <span class="font-normal">经历项目:</span>
+              <br />
+              1. BES 电信据点 Web 端后台设计；
+              <br />
+              2. 2018 巴塞罗那电信展，Vodafone 移动应用概念设计；
+              <br />
+              3. 2018 IF 红点奖, Agile UI 的组件设计 ；
+              <br />
+              4. 无代码建站工具 UI +交互设计；
+              <br />
+              5. 2018香港电信运营商 HKT 数字化转型项目，动画设计与代码落地；
+              <br />
+              6. 华为销售系统 iSlace 移动端设计；
+              <br />
+              7. 华为供应链 ISC+ 体验优化，交互&UI 规范；
+            </p>
+            <br />
             <br />
             <p class="font-bold">深圳市蘑菇财富技术有限公司</p>
-            <p class="text-base">2015 年 ~ 2016 年 | 交互设计师</p>
+            <p class="text-base">2015 年 ~ 2016 年 | UI / 交互设计师</p>
             <p class="font-light pt">
-              主要参与项目有: 股票交易系统的客户端/后台管理系统, 游戏化券商APP
+              统筹设计组三人的工作，负责的交互设计与金融游戏的动画设计。
+              <br />
             </p>
-            <br /> 
-            <p class="font-bold">深圳市点视科技有限公司</p>
-            <p class="font-base">2012 年 ~ 2015 年 | UI 设计师</p>
+            <br />
+            <br />
+            <p class="font-bold">东莞远峰科技有限公司</p>
+            <p class="font-base">2012 年 ~ 2015 年 | GUI 设计师</p>
             <p class="font-light pt">
-              负责公司日常的UI设计、活动物料设计、动画设计。
+              负责公司便携式导航设备(PND)、安卓电视盒UI设计。
             </p>
-          </div> 
+          </div>
         </ul>
 
         <div
-          class="
-            w-full
-            flex flex-col
-            justify-center
-            items-center
-            text-center text-xl
-          "
+          class="w-full flex flex-col justify-center items-center text-center text-xl"
         >
           <p
             class="w-full border-t border-gray-300 pt-10 mb-10"
@@ -201,34 +227,14 @@
           </p>
           <div class="space-x-8">
             <button
-              class="
-                border-2 border-dark-blue
-                text-lg text-dark-blue
-                font-normal
-                uppercase
-                p-5
-                hover:text-white hover:bg-dark-blue
-                transition
-                duration-200
-                ease-linear
-              "
+              class="border-2 border-dark-blue text-lg text-dark-blue font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear"
               style="min-width: 8rem"
               @click="contact"
             >
               联系我
             </button>
             <button
-              class="
-                border-2 border-dark-blue
-                text-lg text-dark-blue
-                font-normal
-                uppercase
-                p-5
-                hover:text-white hover:bg-dark-blue
-                transition
-                duration-200
-                ease-linear
-              "
+              class="border-2 border-dark-blue text-lg text-dark-blue font-normal uppercase p-5 hover:text-white hover:bg-dark-blue transition duration-200 ease-linear"
               @click="resume"
               style="min-width: 8rem"
             >
@@ -238,13 +244,7 @@
         </div>
 
         <div
-          class="
-            w-full
-            mt-10
-            sm:my-20
-            text-sm text-center text-gray-800
-            border-gray-300
-          "
+          class="w-full mt-10 sm:my-20 text-sm text-center text-gray-800 border-gray-300"
         >
           <p>项目中的所有信息都是我个人产出的。</p>
           <p>所有信息都符合保密协定🤐</p>
@@ -349,7 +349,8 @@ export default defineComponent({
 
     function resume() {
       window.open(
-        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf"
+        // "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2022-new.pdf"
+        "https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/%E7%AE%80%E5%8E%86-%E5%94%90%E6%B8%85%E4%BC%9F-2023.pdf"
       );
     }
 

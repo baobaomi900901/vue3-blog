@@ -4,7 +4,7 @@ name: SEGI设计系统
 
 # <center>**<span class=" font-bold ">SEGI</span> 设计系统**</center>
 
-##### <center class="text-gary-500 font-light">支撑 SEGI Web 产品的设计系统</center>
+##### <center class="text-gary-500 font-light">支撑 SEGI 园区管理产品的设计系统</center>
 
 <br>
 <div style="display: flex; justify-content: center;">

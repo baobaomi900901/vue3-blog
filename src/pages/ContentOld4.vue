@@ -63,7 +63,7 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">HKT 数字化转型方案动效设计</span>
+            <span class="font-normal">香港电讯运营后台</span>
           </div>
         </RouterLink>
 
@@ -107,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">iSlace 移动体验升级</span>
+            <span class="font-normal text-right">iSlace 体验升级</span>
           </div>
         </RouterLink>
       </div>

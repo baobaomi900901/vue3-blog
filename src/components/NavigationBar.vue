@@ -8,7 +8,7 @@
 <template>
   <div class="fixed" style="z-index: 99">
     <div
-      class="NavigationBar fixed w-full h-20 px-4 sm:px-16 flex items-center justify-between text-gray-400"
+      class="NavigationBar fixed w-full h-20 px-4 sm:px-8 md:px-16 flex items-center justify-between text-gray-400"
       :class="[
         {
           'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about',
@@ -23,7 +23,7 @@
       </div>
 
       <nav
-        class="hidden sm:grid grid-flow-col gap-6 items-center font-semibold leading-tight uppercase relative text-gray-500"
+        class="pcNavBar hidden sm:grid grid-flow-col gap-6 items-center font-semibold leading-tight uppercase relative text-gray-500"
       >
         <router-link
           to="/home"
@@ -127,7 +127,7 @@
                 'mobileMenu-item2-close': mobileMenu == false,
               }"
             >
-              {{ $route.name }}
+              {{ $route.name == 'home' ? 'Home' : $route.name == 'about' ? 'About' : 'Work'  }}
             </div>
           </div>
         </div>
@@ -139,8 +139,8 @@
     </div>
 
     <button
-      class="fixed right-0 mt-5 mr-0 z-50 md:hidden"
-      style="z-index: 1000"
+      class="mobileNavBar fixed mt-5 mr-0 z-50 mobile:right-0 sm:right-4 "
+      style="z-index: 1000" 
       @click="mobileMenu = !mobileMenu"
     >
       <div id="hamburger" class=" " :class="{ open: mobileMenu }">
@@ -200,6 +200,20 @@ export default defineComponent({
         }
       );
 
+      let hamburger = gsap.fromTo(
+        ".mobileNavBar",
+        {
+          x: 20,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.5,
+        }
+      );
+      
+
       let navAnimeLine = gsap.timeline({
         delay: 2,
         onComplete() {},
@@ -207,6 +221,7 @@ export default defineComponent({
 
       navAnimeLine.add(logoEA, 0);
       navAnimeLine.add(navbar, 0);
+      navAnimeLine.add(hamburger, "-=0.8");
     }
 
     onMounted(() => {
@@ -405,5 +420,17 @@ svg:hover path {
 .mobileMenu-item2-close {
   opacity: 0;
   transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .pcNavBar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileNavBar {
+    display: none;
+  }
 }
 </style>

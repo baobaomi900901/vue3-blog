@@ -15,7 +15,7 @@ module.exports = {
       "yk": "YouSheBiaoTiHei"
     },
     screens: {
-      'mobile': '390px',
+      'mobile': '375px',
       // => @media (min-width: 375px) { ... }
 
       'sm': '640px',

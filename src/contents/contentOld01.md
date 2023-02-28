@@ -2,9 +2,9 @@
 name: 沃达丰概念设计
 ---
 
-# <center>**<span class=" font-bold ">Vodafone</span> 概念设计**</center>
+# <center>**沃达丰概念设计**</center>
 
-##### <center class="text-gary-500 font-light">构想一流的全渠道服务解决方案，使运营商能够服务生命周期中的不同渠道<br>更好的管理与客户的关系</center>
+##### <center class="text-gary-500 font-light">构想一流的全渠道服务解决方案，使运营商能够服务生命周期中的不同渠道，更好的管理与客户的关系</center>
 
 <br>
 <div style="display: flex; justify-content: center;">

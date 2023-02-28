@@ -2,7 +2,7 @@
 name: 敏捷营商
 ---
 
-# <center>**<span class=" font-bold ">iSlace </span>移动体验升级**</center>
+# <center>**<span class=" font-bold ">iSlace </span>体验升级**</center>
 
 ##### <center class="text-gary-500 font-light">精益设计,提升用户体验</center>
 

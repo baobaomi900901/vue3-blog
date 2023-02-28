@@ -63,7 +63,7 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">vodafone 概念设计</span>
+            <span class="font-normal">沃达丰概念设计</span>
           </div>
         </RouterLink>
 
@@ -108,7 +108,7 @@
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
             <span class="font-normal text-right"
-              >HKT数字化转型方案动效设计</span
+              >香港电讯运营后台</span
             >
           </div>
         </RouterLink>

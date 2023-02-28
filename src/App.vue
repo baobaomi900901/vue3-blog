@@ -1,11 +1,18 @@
 <template>
   <!-- v-if="route.path !== '/' && terminal" -->
-  <NavigationBar v-if="route.path !== '/'"></NavigationBar>
+  <NavigationBar
+    v-if="route.path !== '/'"
+    class="navBarDisplay"
+    :class="{
+      'navBarDisplay-open': navBarDisplay == true,
+      'navBarDisplay-close': navBarDisplay == false,
+    }"
+  ></NavigationBar>
   <router-view></router-view>
 </template>
 
 <script lang="ts">
-import { ref, watch, defineComponent,onMounted } from "vue";
+import { ref, watch, defineComponent, onMounted } from "vue";
 import NavigationBar from "./components/NavigationBar.vue";
 import { useRoute } from "vue-router";
 // using es modules
@@ -19,18 +26,47 @@ export default defineComponent({
   setup() {
     const route = useRoute();
 
-    let terminal = ref(device.desktop());
-    console.log("device :>> ", terminal.value);
+    const terminal = ref(device.desktop());
+    // console.log("device :>> ", terminal.value);
 
-    // 获取整个页面的高度
-    let pageHeight = document.documentElement.clientHeight;
-    console.log("@", pageHeight);
+    const navBarDisplay = ref(true);
 
-    onMounted(() => {
-      let myapp = document.getElementById("app");
-      console.log("myapp", myapp);
-      console.log("myappHeight", myapp?.style);
-    });
+    const myapp = document.getElementById("app");
+    let oldTop = 0;
+
+    const fn = (cb, time = 300) => {
+      let timer = null;
+      return () => {
+        if (timer) return;
+        timer = setTimeout(() => {
+          cb();
+          timer = null;
+        }, time);
+      };
+    };
+
+
+    // console.log("window.outerWidth",window.outerWidth);
+    
+
+    document.addEventListener(
+      "scroll",
+      fn(() => {
+        let newTop = myapp?.getBoundingClientRect().top;
+
+        if (oldTop !== newTop) {
+          if (newTop > oldTop || newTop == 0) {
+            navBarDisplay.value = true;
+            // console.log("向下滚动", navBarDisplay.value, newTop, oldTop);
+          } else {
+            navBarDisplay.value = false;
+            // console.log("向上滚动", navBarDisplay.value, newTop, oldTop);
+          }
+        }
+        oldTop = newTop;
+      }),
+      10
+    );
 
     watch(
       () => route.path,
@@ -41,7 +77,7 @@ export default defineComponent({
         immediate: true,
       }
     );
-    return { route, terminal };
+    return { route, terminal, navBarDisplay };
   },
 });
 </script>
@@ -49,5 +85,19 @@ export default defineComponent({
 <style>
 body {
   @apply bg-black relative select-text;
+}
+.navBarDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s;
+}
+.navBarDisplay-open {
+  opacity: 1;
+}
+.navBarDisplay-close {
+  opacity: 0;
 }
 </style>

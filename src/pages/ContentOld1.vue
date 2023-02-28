@@ -20,6 +20,7 @@
       <contentOld01 />
       <div
         class="
+          bottom-navigation
           flex
           justify-between
           border-t border-gray-400
@@ -33,7 +34,7 @@
       >
         <RouterLink class="before-button flex items-center" to="/home">
           <!-- <img src="../assets/toBefore.svg" alt="" /> -->
-          <svg width="74px" height="74px">
+          <svg  width="74px" height="74px">
             <g
               id="r1"
               stroke="none"

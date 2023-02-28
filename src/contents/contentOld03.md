@@ -2,7 +2,7 @@
 name: HKT
 ---
 
-# <center>**<span class=" font-bold ">HKT </span>数字化转型方案动效设计**</center>
+# <center>**<span class=" font-bold ">HKT </span>香港电讯运营后台**</center>
 
 ##### <center class="text-gary-500 font-light">支撑演示需求, 输出代码与开发协同工作</center>
 

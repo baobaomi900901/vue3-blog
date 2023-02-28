@@ -63,7 +63,7 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">SEGI 模板市场</span>
+            <span class="font-normal">模板市场</span>
           </div>
         </RouterLink>
 
@@ -107,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">大数据平台</span>
+            <span class="font-normal text-right">数据可视化平台</span>
           </div>
         </RouterLink>
       </div>

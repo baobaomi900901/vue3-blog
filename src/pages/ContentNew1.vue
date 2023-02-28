@@ -63,7 +63,7 @@
           </svg>
           <div class="ml-4 flex flex-col items-start">
             <span class="font-semibold">上一页</span>
-            <span class="font-normal">iSlace 移动体验升级</span>
+            <span class="font-normal">iSlace 验升级</span>
           </div>
         </RouterLink>
 
@@ -107,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">SEGI 模板市场</span>
+            <span class="font-normal text-right">模板市场</span>
           </div>
         </RouterLink>
       </div>

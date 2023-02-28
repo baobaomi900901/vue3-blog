@@ -2,9 +2,9 @@
 name: UILego
 ---
 
-# <center>**<span class=" font-bold ">UI Lego</span>** 低代码建站平台</center>
+# <center>华为可视化 Web 工具</center>
 
-##### <center class="text-gary-500 font-light">支撑演示需求, 输出代码与开发协同工作</center>
+##### <center class="text-gary-500 font-light">低代码建站工具</center>
 
 <br>
 <div style="display: flex; justify-content: center;">
@@ -15,7 +15,7 @@ name: UILego
 
 ##### 项目背景
 
-UI+ 是 Agile UI 配套的无编码建站工具, 在前人的基础上我负责了 针对 Telcel 数字化转型项目中需要的组件设计。
+UI+ 是 Agile UI 配套的低代码建站工具, 在前人的基础上我负责了 针对 Telcel 数字化转型项目中需要的组件设计。
 
 <br>
 

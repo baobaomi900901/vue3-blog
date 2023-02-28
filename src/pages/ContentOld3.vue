@@ -107,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">UI Lego 低代码开发平台</span>
+            <span class="font-normal text-right">华为可视化Web工具</span>
           </div>
         </RouterLink>
       </div>

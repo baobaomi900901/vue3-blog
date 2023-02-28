@@ -255,3 +255,101 @@ p > strong {
 .markdown-body ul > li::marker {
   color: #0042f6;
 }
+
+@media screen and (min-width: 375px) and (max-width: 639px) {
+  .markdown-body {
+    padding: 0 !important;
+  }
+
+  markdown-body h1 {
+    font-size: 2rem !important;
+  }
+  markdown-body h5 {
+    font-size: 0.5rem !important;
+    line-height: 1.25rem !important;
+  }
+  markdown-body p {
+    font-size: 0.5rem !important;
+    line-height: 1.25rem !important;
+  }
+  .before-button {
+    font-size: 0.5rem !important;
+    line-height: 1.25rem !important;
+  }
+  .after-button {
+    font-size: 0.5rem !important;
+    line-height: 1.25rem !important;
+  }
+  .bottom-navigation {
+    padding: 1rem 0 !important;
+  }
+  blockquote p {
+    margin: 0.25rem 1rem !important;
+  }
+  blockquote blockquote {
+    margin: 0.25rem 1rem !important;
+  }
+  markdown-body a svg {
+    transform: scale(0.5);
+  }
+  .before-button div {
+    transform: translateX(-16px);
+  }
+  .before-button div span:nth-child(2) {
+    display: none;
+  }
+  .before-button:hover div {
+    transform: translateX(-24px);
+  }
+  .after-button div {
+    transform: translateX(20px);
+  }
+  .after-button div span:nth-child(2) {
+    display: none;
+  }
+  .after-button:hover div {
+    transform: translateX(24px);
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  markdown-body h1 {
+    font-size: 3rem !important;
+  }
+  markdown-body h5 {
+    font-size: 0.85rem !important;
+  }
+  markdown-body p {
+    font-size: 0.85rem !important;
+  }
+  .before-button {
+    font-size: 0.85rem !important;
+  }
+  .after-button {
+    font-size: 0.85rem !important;
+  }
+  .bottom-navigation {
+    padding: 2rem 0 !important;
+  }
+  blockquote p {
+    margin: 0.25rem 1rem !important;
+  }
+  blockquote blockquote {
+    margin: 0.25rem 1rem !important;
+  }
+  markdown-body a svg {
+    transform: scale(0.5);
+  }
+  .before-button div {
+    transform: translateX(-20px);
+  }
+  .before-button:hover div {
+    transform: translateX(-24px);
+  }
+  .after-button div {
+    transform: translateX(20px);
+  }
+  .after-button:hover div {
+    transform: translateX(24px);
+  }
+}
