@@ -69,7 +69,7 @@
 
         <RouterLink
           class="after-button flex items-center flex-row-reverse"
-          :to="{ name: 'Homex' }"
+          :to="{ name: 'home' }"
         >
           <svg width="74px" height="74px">
             <g

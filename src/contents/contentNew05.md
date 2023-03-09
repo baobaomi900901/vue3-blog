@@ -8,7 +8,7 @@ name: 收费标准模块
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/vdp/vdp.png"/>
+    <img src="../assets/billing-center/billing-center-01.png"/>
 </div>
 <br>
 <br>
