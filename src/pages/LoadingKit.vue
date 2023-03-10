@@ -35,6 +35,23 @@
         </li>
       </ul>
     </div>
+
+
+    <!-- <PopUpModal :show="true">
+      <template #title>
+        <div>header</div>
+      </template>
+      <template #content>
+        <div>
+          12334
+        </div>
+      </template>
+      <template #footer>
+        <div>
+          footer
+        </div>
+      </template>
+    </PopUpModal> -->
   </div>
 </template>
 
