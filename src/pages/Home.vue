@@ -136,7 +136,7 @@
             </div>
 
             <div
-              class="about text-white text-base uppercase px-1 py-0 grid w-1/2 px-2 3xl:px-4"
+              class="about text-white text-base uppercase px-3 py-0 grid w-1/2 3xl:px-4"
             >
               <div
                 id="aboutLine"
@@ -345,167 +345,19 @@
                 请向下滑 🧼 查看我的作品
               </div>
 
-              <div
-                ref="elContentThree"
-                class="elContentThree w-full mt-24 text-gray-900"
-              >
+              <div ref="el-content-four" class="w-full mt-12">
                 <div class="Portfolio-subtitle relative mb-8 z-50">
                   <span
-                    ref="elContentThree1"
-                    class="elContentThree1 text-base font-bold mobile:text-sm 3xl:text-xl"
+                    ref="elContentFour1a"
+                    class="elContentFour1a text-base font-bold mobile:text-sm 3xl:text-xl"
                     >02</span
                   >
                   <div
-                    ref="elContentThree2"
-                    class="elContentThree2 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-4"
+                    ref="elContentFour1b"
+                    class="elContentFour1b text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-4"
                   >
                     Portfolio
                   </div>
-                  <span
-                    ref="elContentThree3"
-                    class="elContentThree3 text-base font-bold mr-4 text-dark-blue"
-                    >2017 ~ 2019
-                  </span>
-                  <span
-                    ref="elContentThree4"
-                    class="elContentThree4 text-base font-semibold text-gray-400 mix-blend-difference"
-                    >Involve in product design</span
-                  >
-                </div>
-
-                <main class="inspirations z-50">
-                  <ul class="ul">
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }">
-                        <span
-                          ref="elContentThree5"
-                          class="elContentThree5 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="沃达丰概念设计"
-                          >沃达丰概念设计</span
-                        >
-                        <span
-                          ref="elContentThree5TitleType"
-                          class="elContentThree5TitleType title-type"
-                          >移动端、客服、电商</span
-                        >
-                        <span
-                          ref="elContentThree5Subtitle"
-                          class="elContentThree5Subtitle subtitle"
-                          >UI/UE/Motion</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree5Line"
-                        class="elContentThree5Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'agile-ui' }">
-                        <span
-                          ref="elContentThree6"
-                          class="elContentThree6 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="敏捷营商设计系统"
-                          >Agile UI 设计系统</span
-                        >
-                        <span
-                          ref="elContentThree6TitleType"
-                          class="elContentThree6TitleType title-type elContentThree81"
-                          >电信运营后台、设计系统</span
-                        >
-                        <span
-                          ref="elContentThree6Subtitle"
-                          class="elContentThree6Subtitle subtitle"
-                          >UE</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree6Line"
-                        class="elContentThree6Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'HKT-motion-design' }">
-                        <span
-                          ref="elContentThree7"
-                          class="elContentThree7 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="香港电讯运营后台"
-                          >香港电讯运营后台</span
-                        >
-                        <span
-                          ref="elContentThree7TitleType"
-                          class="elContentThree7TitleType title-type"
-                          >动效设计、开发实现</span
-                        >
-                        <span
-                          ref="elContentThree7Subtitle"
-                          class="elContentThree7Subtitle subtitle"
-                          >Motion/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree7Line"
-                        class="elContentThree7Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'UI-Lego' }">
-                        <span
-                          ref="elContentThree8"
-                          class="elContentThree8 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="华为可视化 Web 工具"
-                          >华为可视化 Web 工具</span
-                        >
-                        <span
-                          ref="elContentThree8TitleType"
-                          class="elContentThree8TitleType title-type"
-                          >低代码、组件设计</span
-                        >
-                        <span
-                          ref="elContentThree8Subtitle"
-                          class="elContentThree8Subtitle subtitle"
-                          >UE/UI</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree8Line"
-                        class="elContentThree8Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'islace-mobile' }">
-                        <span
-                          ref="elContentThree9"
-                          class="elContentThree9 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="iSlace 体验升级"
-                          >iSlace 体验升级</span
-                        >
-                        <span
-                          ref="elContentThree9TitleType"
-                          class="elContentThree9TitleType title-type"
-                          >移动端、协同工具</span
-                        >
-                        <span
-                          ref="elContentThree9Subtitle"
-                          class="elContentThree9Subtitle subtitle"
-                          >UE/Motion</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree9Line"
-                        class="elContentThree9Line line"
-                      ></div>
-                    </li>
-                  </ul>
-                </main>
-              </div>
-
-              <div ref="el-content-four" class="w-full mt-12">
-                <div class="Portfolio-subtitle relative mb-8 z-50">
                   <span
                     ref="elContentFour1"
                     class="elContentFour1 text-base font-bold mr-4 text-dark-blue"
@@ -648,6 +500,155 @@
                   </ul>
                 </main>
               </div>
+
+              <div
+                ref="elContentThree"
+                class="elContentThree w-full mt-24 text-gray-900"
+              >
+                <div class="Portfolio-subtitle relative mb-8 z-50">
+                  <span
+                    ref="elContentThree3"
+                    class="elContentThree3 text-base font-bold mr-4 text-dark-blue"
+                    >2016 ~ 2019
+                  </span>
+                  <span
+                    ref="elContentThree4"
+                    class="elContentThree4 text-base font-semibold text-gray-400 mix-blend-difference"
+                    >Involve in product design</span
+                  >
+                </div>
+
+                <main class="inspirations z-50">
+                  <ul class="ul">
+                    <li class="portfolio-items">
+                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }">
+                        <span
+                          ref="elContentThree5"
+                          class="elContentThree5 main-heading"
+                          :class="{ cyberpunk: class3 }"
+                          data-text="沃达丰概念设计"
+                          >沃达丰概念设计</span
+                        >
+                        <span
+                          ref="elContentThree5TitleType"
+                          class="elContentThree5TitleType title-type"
+                          >移动端、客服、电商</span
+                        >
+                        <span
+                          ref="elContentThree5Subtitle"
+                          class="elContentThree5Subtitle subtitle"
+                          >UI/UE/Motion</span
+                        >
+                      </RouterLink>
+                      <div
+                        ref="elContentThree5Line"
+                        class="elContentThree5Line line"
+                      ></div>
+                    </li>
+                    <li class="portfolio-items">
+                      <RouterLink :to="{ name: 'agile-ui' }">
+                        <span
+                          ref="elContentThree6"
+                          class="elContentThree6 main-heading"
+                          :class="{ cyberpunk: class3 }"
+                          data-text="敏捷营商设计系统"
+                          >Agile UI 设计系统</span
+                        >
+                        <span
+                          ref="elContentThree6TitleType"
+                          class="elContentThree6TitleType title-type elContentThree81"
+                          >电信运营后台、设计系统</span
+                        >
+                        <span
+                          ref="elContentThree6Subtitle"
+                          class="elContentThree6Subtitle subtitle"
+                          >UE</span
+                        >
+                      </RouterLink>
+                      <div
+                        ref="elContentThree6Line"
+                        class="elContentThree6Line line"
+                      ></div>
+                    </li>
+                    <li class="portfolio-items">
+                      <RouterLink :to="{ name: 'HKT-motion-design' }">
+                        <span
+                          ref="elContentThree7"
+                          class="elContentThree7 main-heading"
+                          :class="{ cyberpunk: class3 }"
+                          data-text="香港电讯运营后台"
+                          >香港电讯运营后台</span
+                        >
+                        <span
+                          ref="elContentThree7TitleType"
+                          class="elContentThree7TitleType title-type"
+                          >动效设计、开发实现</span
+                        >
+                        <span
+                          ref="elContentThree7Subtitle"
+                          class="elContentThree7Subtitle subtitle"
+                          >Motion/Code</span
+                        >
+                      </RouterLink>
+                      <div
+                        ref="elContentThree7Line"
+                        class="elContentThree7Line line"
+                      ></div>
+                    </li>
+                    <li class="portfolio-items">
+                      <RouterLink :to="{ name: 'UI-Lego' }">
+                        <span
+                          ref="elContentThree8"
+                          class="elContentThree8 main-heading"
+                          :class="{ cyberpunk: class3 }"
+                          data-text="华为可视化 Web 工具"
+                          >华为可视化 Web 工具</span
+                        >
+                        <span
+                          ref="elContentThree8TitleType"
+                          class="elContentThree8TitleType title-type"
+                          >低代码、组件设计</span
+                        >
+                        <span
+                          ref="elContentThree8Subtitle"
+                          class="elContentThree8Subtitle subtitle"
+                          >UE/UI</span
+                        >
+                      </RouterLink>
+                      <div
+                        ref="elContentThree8Line"
+                        class="elContentThree8Line line"
+                      ></div>
+                    </li>
+                    <li class="portfolio-items">
+                      <RouterLink :to="{ name: 'islace-mobile' }">
+                        <span
+                          ref="elContentThree9"
+                          class="elContentThree9 main-heading"
+                          :class="{ cyberpunk: class3 }"
+                          data-text="iSlace 体验升级"
+                          >iSlace 体验升级</span
+                        >
+                        <span
+                          ref="elContentThree9TitleType"
+                          class="elContentThree9TitleType title-type"
+                          >移动端、协同工具</span
+                        >
+                        <span
+                          ref="elContentThree9Subtitle"
+                          class="elContentThree9Subtitle subtitle"
+                          >UE/Motion</span
+                        >
+                      </RouterLink>
+                      <div
+                        ref="elContentThree9Line"
+                        class="elContentThree9Line line"
+                      ></div>
+                    </li>
+                  </ul>
+                </main>
+              </div>
+
               <div
                 ref="elContentFour10"
                 class="elContentFour10 w-full text-center mb-40 mt-24 relative mobile:text-xs mobile:mt-10 mobile:mb-20 text-gray-400"
@@ -726,9 +727,13 @@
                   <p
                     class="w-full text-center mb-20 mt-24 relative mobile:text-xs mobile:mt-10 mobile:mt-1 text-gray-400 leading-10"
                   >
-                    <span ref="elContent47" class="elContent47">👆想知道蓝色的圆圈是干啥的吗?</span>
+                    <span ref="elContent47" class="elContent47"
+                      >👆想知道蓝色的圆圈是干啥的吗?</span
+                    >
                     <br />
-                    <span ref="elContent48" class="elContent48">点一下看看吧 😆 </span>
+                    <span ref="elContent48" class="elContent48"
+                      >点一下看看吧 😆
+                    </span>
                   </p>
                 </div>
               </div>
@@ -823,8 +828,6 @@ export default defineComponent({
     const elContentTwo18 = ref(null);
 
     const elContentThree = ref(null);
-    const elContentThree1 = ref(null);
-    const elContentThree2 = ref(null);
     const elContentThree3 = ref(null);
     const elContentThree4 = ref(null);
 
@@ -852,6 +855,9 @@ export default defineComponent({
     const elContentThree9TitleType = ref(null);
     const elContentThree9Subtitle = ref(null);
     const elContentThree9Line = ref(null);
+
+    const elContentFour1a = ref(null);
+    const elContentFour1b = ref(null);
 
     const elContentFour1 = ref(null);
     const elContentFour2 = ref(null);
@@ -1257,7 +1263,7 @@ export default defineComponent({
       let contentThreeTimeLine = gsap.timeline({
         scrollTrigger: {
           // markers: true, // 启用标尺
-          trigger: ".elContentThree1",
+          trigger: ".elContentThree3",
           start: "top 80%",
           toggleActions: "play play resume pause",
         },
@@ -1266,8 +1272,6 @@ export default defineComponent({
         },
       });
 
-      contentThreeTimeLine.add(useTextEnterAnime(elContentThree1, 0.2));
-      contentThreeTimeLine.add(useTextEnterAnime(elContentThree2), "-=0.2");
       contentThreeTimeLine.add(
         useTextEnterAnime(elContentThree3, 0.4),
         "-=0.3"
@@ -1369,7 +1373,7 @@ export default defineComponent({
       let contentFourTimeLine = gsap.timeline({
         scrollTrigger: {
           // markers: true, // 启用标尺
-          trigger: ".elContentFour1",
+          trigger: ".elContentFour1a",
           start: "top 80%",
           toggleActions: "play play resume pause",
         },
@@ -1377,6 +1381,9 @@ export default defineComponent({
           class3.value = true;
         },
       });
+
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour1a, 0.2));
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour1b), "-=0.2");
 
       contentFourTimeLine.add(useTextEnterAnime(elContentFour1, 0.4), "-=0.1");
       contentFourTimeLine.add(useTextEnterAnime(elContentFour2, 0.4), "-=0.2");
@@ -1631,8 +1638,6 @@ export default defineComponent({
       elContentTwo18,
       class3,
       elContentThree,
-      elContentThree1,
-      elContentThree2,
       elContentThree3,
       elContentThree4,
       elContentThree5,
@@ -1660,6 +1665,8 @@ export default defineComponent({
       clickPortfolio,
       clickContactUs,
       class4,
+      elContentFour1a,
+      elContentFour1b,
       elContentFour1,
       elContentFour2,
       elContentFour5,
@@ -1699,14 +1706,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
-
-#root {
-  --gray-0: #fafafa;
-  --highlight-1: #0042f6;
-  --highlight-2: #09feff;
-}
-
 .zh {
   font-family: "Noto Sans SC", sans-serif;
 }
@@ -1738,6 +1737,11 @@ svg:hover path {
 .aboutText {
   font-size: 4.2cqh;
   line-height: 120%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 @media (max-width: 390px) {

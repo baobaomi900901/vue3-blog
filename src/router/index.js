@@ -4,6 +4,8 @@ import { createRouter, createWebHistory, createWebHashHistory } from "vue-router
 import HelloLoading from "../pages/HelloLoading";
 import Home from "../pages/Home";
 import Prompt from "../pages/Prompt";
+import Blog from "../pages/Blog";
+import Play from "../pages/Play";
 import About from "../pages/About";
 import ContentOld1 from "../pages/ContentOld1"; // vodafone-conceptual-design
 import ContentOld2 from "../pages/ContentOld2"; // agile-ui
@@ -15,6 +17,8 @@ import ContentNew2 from "../pages/ContentNew2"; // vodafone-conceptual-design
 import ContentNew3 from "../pages/ContentNew3"; // document-system
 import ContentNew4 from "../pages/ContentNew4"; // Visualized Data Platform
 import ContentNew5 from "../pages/ContentNew5"; // billing center
+
+import LoadingKit from "../pages/LoadingKit";
 
 const routes = [
   {
@@ -31,6 +35,16 @@ const routes = [
     path: "/prompt",
     name: "prompt",
     component: Prompt
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: Blog
+  },
+  {
+    path: "/play",
+    name: "play",
+    component: Play
   },
   {
     path: "/About",
@@ -87,6 +101,11 @@ const routes = [
     path: "/billing-center",
     name: "billing-center",
     component: ContentNew5,
+  },
+  {
+    path: "/loadingKit",
+    name: "loadingKit",
+    component: LoadingKit,
   }
 ];
 const router = createRouter({

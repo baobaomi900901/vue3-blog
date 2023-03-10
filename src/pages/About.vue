@@ -30,8 +30,7 @@
               之后转型网页动效与交互。
             </p>
             <p class="mt-2 text-justify">
-              2016 年在 Framer.cn 和 Flinto.cn 的 QQ 群认识了一个华为的设计专家,
-              然后被他带到了 华为 UCD, 在设计二部 服务了 4 年, 在创新团队中承担
+              2016 年在 华为2012实验室UCD服务了 4 年, 在创新团队中承担
               动效 与 交互 工作。
             </p>
             <p class="mt-2 text-justify">
@@ -94,9 +93,9 @@
             <br />
             <p class="font-bold">Code:</p>
             <p class="font-light">
-              HTML、Javascript(初级)、
-              CSS(熟练)、SASS、LESS、Tailwind、Vue、WordPress、 动画库(
-              GSAP、Anime.js、Lottie )
+              HTML、Javascript(熟练)、
+              CSS(熟练)、Tailwindcss、Vue、WordPress、 动画库(
+              GSAP、Anime.js、Lottie、PIXI.js、THREE.js )
             </p>
           </div>
 

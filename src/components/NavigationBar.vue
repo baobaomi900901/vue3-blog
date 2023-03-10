@@ -11,7 +11,7 @@
       class="NavigationBar fixed w-full h-20 px-4 sm:px-8 md:px-16 flex items-center justify-between text-gray-400"
       :class="[
         {
-          'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about',
+          'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about' || $route.name == 'blog' || $route.name == 'play',
         },
       ]"
       style="zindex: 999"
@@ -31,6 +31,24 @@
         >
           <span class="navBarItem hover:text-dark-blue inline-block">
             Home
+          </span>
+        </router-link>
+
+        <router-link
+          to="/blog"
+          :class="{ 'text-dark-blue': $route.name == 'blog' }"
+        >
+          <span class="navBarItem hover:text-dark-blue inline-block">
+            Blog
+          </span>
+        </router-link>
+
+        <router-link
+          to="/play"
+          :class="{ 'text-dark-blue': $route.name == 'play' }"
+        >
+          <span class="navBarItem hover:text-dark-blue inline-block">
+            Play
           </span>
         </router-link>
 
@@ -105,6 +123,30 @@
             </li>
             <li class="mt-8">
               <router-link
+                to="/blog"
+                :class="{
+                  'text-dark-blue': $route.name == 'blog',
+                }"
+                @click="mobileMenu = !mobileMenu"
+              >
+                <span class="hover:text-dark-blue inline-block zh"> Blog </span>
+              </router-link>
+            </li>
+
+            <li class="mt-8">
+              <router-link
+                to="/play"
+                :class="{
+                  'text-dark-blue': $route.name == 'play',
+                }"
+                @click="mobileMenu = !mobileMenu"
+              >
+                <span class="hover:text-dark-blue inline-block zh"> Play </span>
+              </router-link>
+            </li>
+
+            <li class="mt-8">
+              <router-link
                 to="/About"
                 :class="{
                   'text-dark-blue': $route.name == 'about',
@@ -117,6 +159,7 @@
               </router-link>
             </li>
           </ul>
+
           <div
             class="absolute top-0 left-0 h-full w-full text-8xl font-semibold opacity-5 uppercase flex justify-center items-center pointer-events-none"
           >
@@ -127,7 +170,17 @@
                 'mobileMenu-item2-close': mobileMenu == false,
               }"
             >
-              {{ $route.name == 'home' ? 'Home' : $route.name == 'about' ? 'About' : 'Work'  }}
+              {{
+                $route.name == "home"
+                  ? "Home"
+                  : $route.name == "blog"
+                  ? "blog"
+                  : $route.name == "play"
+                  ? "play"
+                  : $route.name == "about"
+                  ? "about"
+                  : "Work"
+              }}
             </div>
           </div>
         </div>
@@ -139,8 +192,8 @@
     </div>
 
     <button
-      class="mobileNavBar fixed mt-5 mr-0 z-50 mobile:right-0 sm:right-4 "
-      style="z-index: 1000" 
+      class="mobileNavBar fixed mt-5 mr-0 z-50 mobile:right-0 sm:right-4"
+      style="z-index: 1000"
       @click="mobileMenu = !mobileMenu"
     >
       <div id="hamburger" class=" " :class="{ open: mobileMenu }">
@@ -155,7 +208,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script >
 import { ref, onMounted, onUnmounted, defineComponent } from "vue";
 import { gsap } from "gsap";
 export default defineComponent({
@@ -212,7 +265,6 @@ export default defineComponent({
           duration: 0.5,
         }
       );
-      
 
       let navAnimeLine = gsap.timeline({
         delay: 2,
@@ -253,7 +305,7 @@ export default defineComponent({
   display: inline-block;
   content: "";
   height: 2px;
-  /* background: rgba(0, 58, 237, 1); */
+  background: rgba(0, 58, 237, 1);
   position: absolute;
   width: 100%;
   bottom: -8px;
