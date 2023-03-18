@@ -19,6 +19,8 @@ import ContentNew4 from "../pages/ContentNew4"; // Visualized Data Platform
 import ContentNew5 from "../pages/ContentNew5"; // billing center
 
 import LoadingKit from "../pages/LoadingKit";
+import TextKit from "../pages/TextKit";
+
 
 const routes = [
   {
@@ -106,6 +108,11 @@ const routes = [
     path: "/loadingKit",
     name: "loadingKit",
     component: LoadingKit,
+  },
+  {
+    path: "/textKit",
+    name: "textKit",
+    component: TextKit,
   }
 ];
 const router = createRouter({

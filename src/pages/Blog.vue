@@ -8,7 +8,7 @@
 <template>
   <div
     id="Blog"
-    class="Blog w-full h-full bg-gray-100 flex pt-32 justify-center "
+    class="Blog w-full h-full bg-gray-100 flex py-32 justify-center"
   >
     <div class="blog-content ">
       <div
@@ -17,7 +17,7 @@
         Blog.
         <br />
         <span class="text-base font-medium text-gray-400 mix-blend-difference"
-          >Thinking and experience</span
+          >记录一些思考与技术分享</span
         >
       </div>
 
@@ -58,6 +58,19 @@
           <MyTag type="blue">工具</MyTag>
           <MyTag type="blue">思考</MyTag>
         </li>
+
+        <li>
+          <a
+            class="blog-content-li"
+            href="https://iodized-samba-a1b.notion.site/2a19c8949cb34393a75dcda4ebee8a64"
+            target="_blank"
+            >🍌 缓动动画函数</a
+          >
+          <br />
+          <MyTag type="blue">code</MyTag>
+          <MyTag type="blue">经验</MyTag>
+        </li>
+
       </ul>
     </div>
   </div>
@@ -77,7 +90,7 @@ export default defineComponent({
     let blogAnimeLine = gsap.timeline({
       delay: 1,
       onComplete() {
-        document.body.style.overflow = "auto";
+        document.body.classList.add("scrollbar-hide", "overflow-scroll");
       },
     });
 
@@ -141,7 +154,7 @@ export default defineComponent({
 .blog-content {
   padding: 0 40px;
   width: 100%;
-  max-width: 768px;
+  max-width: 80rem;
 }
 
 .blog-content ul li {

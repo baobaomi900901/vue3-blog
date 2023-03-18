@@ -14,3 +14,10 @@ app.use(router);
 app.mount("#app");
 
 // app.mount("#app");
+
+// Vue.directive("highlight", function (el) {
+//   let blocks = el.querySelectorAll("pre code");
+//   blocks.forEach((block) => {
+//     hljs.highlightBlock(block);
+//   });
+// });

@@ -21,9 +21,9 @@
           <img src="../assets/img/logo.png" alt="" class="w-8 h-8" />
         </router-link>
       </div>
-
+      <!-- mix-blend-mode: difference; -->
       <nav
-        class="pcNavBar hidden sm:grid grid-flow-col gap-6 items-center font-semibold leading-tight uppercase relative text-gray-500"
+        class="pcNavBar hidden sm:grid grid-flow-col gap-6 items-center font-semibold leading-tight relative text-gray-500"
       >
         <router-link
           to="/home"
@@ -38,7 +38,7 @@
           to="/blog"
           :class="{ 'text-dark-blue': $route.name == 'blog' }"
         >
-          <span class="navBarItem hover:text-dark-blue inline-block">
+          <span class="navBarItem hover:text-dark-blue inline-block ">
             Blog
           </span>
         </router-link>
@@ -48,7 +48,7 @@
           :class="{ 'text-dark-blue': $route.name == 'play' }"
         >
           <span class="navBarItem hover:text-dark-blue inline-block">
-            Play
+            Code&Play
           </span>
         </router-link>
 

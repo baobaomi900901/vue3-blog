@@ -1,5 +1,5 @@
 .markdown-body {
-  @apply flex flex-col max-w-5xl w-11/12 px-6 mt-40 overflow-auto overflow-hidden;
+  @apply flex flex-col max-w-6xl w-11/12 px-6 mt-40 overflow-auto overflow-hidden;
 }
 
 .markdown-body h1 {
@@ -154,7 +154,7 @@ video::-webkit-media-controls-play-button {
 ul.slides {
   position: relative;
   width: 100%;
-  height: 620px;
+  height: 680px;
   list-style: none;
   background-color: #0042f6;
   overflow: hidden;
@@ -351,5 +351,11 @@ p > strong {
   }
   .after-button:hover div {
     transform: translateX(24px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .markdown-body {
+    @apply max-w-7xl;
   }
 }

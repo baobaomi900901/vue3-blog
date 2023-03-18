@@ -30,7 +30,7 @@
           w-11/12
           px-6
         "
-        style="max-width: 1024px"
+        style="max-width: 80rem"
       >
         <RouterLink class="before-button flex items-center" to="/home">
           <!-- <img src="../assets/toBefore.svg" alt="" /> -->
