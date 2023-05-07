@@ -2464,6 +2464,9 @@ export default {
 /* itemCode-13 */
 
 @media screen and (max-width: 960px) {
+  .LoadingKit-content {
+    padding: 0 1rem !important;
+  }
   .LoadingKit-content ul {
     display: grid;
     grid-template-columns: 1fr;

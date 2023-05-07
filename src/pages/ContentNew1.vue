@@ -7,28 +7,14 @@
 <template>
   <div
     id="ContentNew1"
-    class="
-      ContentNew1
-      flex flex-col
-      items-center
-      bg-dark-blue
-      p-3
-      overflow-auto
-    "
+    class="ContentNew1 flex flex-col items-center bg-dark-blue p-3 overflow-auto"
   >
-    <div class="ContentNew1-page bg-white w-full h-full flex flex-col items-center rounded-sm">
+    <div
+      class="ContentNew1-page bg-white w-full h-full flex flex-col items-center rounded-sm"
+    >
       <contentNew01 />
       <div
-        class="
-          flex
-          justify-between
-          border-t border-gray-400
-          pt-10
-          mt-20
-          mb-12
-          w-11/12
-          px-6
-        "
+        class="flex justify-between border-t border-gray-400 pt-10 mt-20 mb-12 w-11/12 px-6"
         style="max-width: 80rem"
       >
         <RouterLink
@@ -129,23 +115,40 @@ export default {
     onMounted(() => {
       let scrollTop = document.body.scrollTop;
       scrollTop = 0;
-      console.log(scrollTop);
+
+      let rollingContainer = document.querySelectorAll(".rolling-container");
+      rollingContainer.forEach((item,idx) => {
+        item.style.scrollSnapType = "x mandatory";
+        item.addEventListener("wheel", (e) => {
+          e.preventDefault(); // 禁止默认事件
+          if (e.deltaY > 0) {
+            item.scrollLeft += 50;
+          } else {
+            item.scrollLeft -= 50;
+          }
+        });
+      });
+
       gsap.set("body", {
         scrollTop: 0,
         onComplete: () => {
           document.body.classList.add("scrollbar-hide", "overflow-scroll");
         },
       });
-      gsap.fromTo(".ContentNew1-page", {
-        y:10,
-      opacity:0,
-      },{
-        y:0,
-        opacity:1,
-        duration:0.5,
-        delay:0,
-        ease:"power3.inOut",
-      });
+      gsap.fromTo(
+        ".ContentNew1-page",
+        {
+          y: 10,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          delay: 0,
+          ease: "power3.inOut",
+        }
+      );
     });
   },
 };
@@ -154,4 +157,8 @@ export default {
 @import "../assets/contentStyle.css";
 @import "../assets/markdownStyle.css";
 @import "../assets/slide4.css";
+
+.rolling-container {
+  
+}
 </style>

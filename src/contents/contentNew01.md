@@ -12,13 +12,14 @@ name: SEGI设计系统
 </div>
 <br>
 <br>
-
-<a href="#name">目录</a>
+<br>
 
 ##### 初来此地
 
 2020 年 3 月，我来来到 <a href="https://www.segiuhome.com/" target="_blank">SEGI</a> 加入到产品设计部任职交互组组长，并在此工作至 2022 年 5 月。
 
+<br>
+<br>
 <br>
 
 ##### 项目背景
@@ -27,6 +28,8 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 我将使用 **Agile UI** 的经验为 <a href="https://www.segiuhome.com/" target="_blank">SEGI</a> 构建一套设计系统，包含 sketch 组件库、Axure 元件库，以及与开发人员一起编写组件库样式与动画代码。
 
+<br>
+<br>
 <br>
 
 ##### 发现问题
@@ -39,6 +42,8 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 所以纵使有看似完整的 UI 规范，因为颗粒度和理解偏差，导致将 UI 规范转译成代码时保真率无法保证。
 
+<br>
+<br>
 <br>
 
 ##### 如何改变僵局?
@@ -55,10 +60,9 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 <br>
 <br>
+<br>
 
 ##### 我做了什么?
-
-<br>
 
 ###### 1. 将团队工作流从 Photoshop + 蓝湖 转换到 Sketch + Measure + SVN
 
@@ -68,6 +72,7 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 至于 Figma，我有一篇专栏文章，欢迎 <a href="https://www.bilibili.com/read/cv16113580" target="_blank">点击阅读</a>。
 
+<br>
 <br>
 
 ###### 2. 转变设计思路
@@ -80,43 +85,47 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 <div class="pl-10">
   <div class="mt-4 text-lg font-medium">2.1.发现问题</div>
-  <div class=" font-normal mt-2 mb-4">首先从不涉及业务的页面框架的通用问题着手, 标准关键词如: 
+  <div class=" font-normal mt-2 mb-4 text-lg text-gray-600">首先从不涉及业务的页面框架的通用问题着手，标准关键词如: 
     <span class="font-semibold">用户视觉动线、用户场景匹配、防御性设计</span>
   </div>
-  <div class=" flex flex-col justify-center items-center rounded-sm  mt-2 bg-gray-200 shadow-lg p-4">
+  <div class="rolling-container flex flex-row rounded-sm  mt-2 bg-gray-200 shadow-lg p-4 w-full overflow-hidden overflow-x-auto border-2 border-gray-200 hover:border-dark-blue">
       <img src="../assets/segi/组件改版案例/合同台账体验优化.003.png" class="">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.004.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.005.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.006.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.007.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.008.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.009.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.010.png" class="mt-6">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.004.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.005.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.006.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.007.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.008.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.009.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.010.png" class="ml-2">
   </div>
 </div>
+<center class="text-sm text-gray-400 mt-4">滚动查看</center>
+<br>
 
 <div class="pl-10 mt-8">
   <div class="mt-4 text-lg font-medium">2.2.提出设想</div>
-  <div class=" font-normal mt-2 mb-4">用 <span class="font-semibold text-dark-blue ">When__ , I want to__, so I can__</span> 模型对问题场景化, 提出解决方案 : 
+  <div class=" font-normal mt-2 mb-4 text-lg text-gray-600">用 <span class="font-semibold text-dark-blue ">When__ ，I want to__，so I can__</span> 模型对问题场景化，提出解决方案 : 
   </div>
-  <div class=" flex flex-col justify-center items-center rounded-sm  mt-2 bg-gray-200 shadow-lg p-4">
+  <div class="rolling-container flex flex-row rounded-sm  mt-2 bg-gray-200 shadow-lg p-4 w-full overflow-hidden overflow-x-auto border-2 border-gray-200 hover:border-dark-blue">
       <img src="../assets/segi/组件改版案例/合同台账体验优化.012.png" class="">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.013.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.014.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.015.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.016.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.017.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.018.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.019.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.020.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.021.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.022.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.023.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.024.png" class="mt-6">
-      <img src="../assets/segi/组件改版案例/合同台账体验优化.025.png" class="mt-6">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.013.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.014.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.015.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.016.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.017.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.018.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.019.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.020.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.021.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.022.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.023.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.024.png" class="ml-2">
+      <img src="../assets/segi/组件改版案例/合同台账体验优化.025.png" class="ml-2">
   </div>
 </div>
+<center class="text-sm text-gray-400 mt-4">滚动查看</center>
 
+<br>
 <br>
 
 ###### 3. 将 Sketch 和 Axure 元件库转换成组件库
@@ -125,10 +134,13 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 
 产品经理的低保真是所有项目的源头，必须与他们合作共同维护设计规范，从源头上治理产品一致性体验的问题。输出与设计稿统一版本的元件库也是在帮助他们工作中更容易，更规范，更美观的输出低保真产品原型。
 
+<br>
+
 <div class="flex justify-center items-center rounded-sm bg-gray-200 shadow-lg p-4">
     <video src="https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/segi/axure.mp4" controls></video>
 </div>
 
+<br>
 <br>
 
 ###### 4. 评估已有组件的扩展性
@@ -139,6 +151,7 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
     <img src="../assets/segi/SEGI-组件走查.png" class="border">
 </div>
 
+<br>
 <br>
 
 ###### 5. 扩充新的组件与构建组件回收机制
@@ -152,19 +165,29 @@ SEGI 创立于 2013 年，主营智慧园区不动产数字化平台，产品大
 **组件回收机制**: 考虑实际场景，设计部门并不会参与到所有项目，预先准备的组件设计也不能保证 100% 支撑所有场景，所以，我们需要有一个回收机制。即遇到现有组件不支持的情景时，允许项目组开发组件，并在项目项目交付时放在临时组件仓库中，设计部门和前端中台部门定时 **review** -> **评估** -> **改进** -> **吸收到组件库中迭代**。
 
 <br>
+<br>
 
 ###### 6. 向其他部门宣讲设计系统的意义
 
 设计的价值在一定程度上也收受到营销的影响，我们要改变以前等着兄弟部门来找我们合作的方式，主动的去与其他部门合作沟通，方式包括，但是不限于:
-**定期展开内部分享会**，**参与产品规划阶段的友商分析**，**旁听现场同事与产品经理的需求澄清会议**等等。 一切的目的是运用设计知识来帮助其他团队赋能，牢记设计部门是来帮忙的，而非争功劳/甩锅。培养跨部门的团队信任对公司、部门和个人是三赢。
+**定期展开内部分享会**，**参与产品规划阶段的友商分析**，**旁听现场同事与产品经理的需求澄清会议**等等。 一切的目的是运用设计知识来帮助其他团队赋能，**牢记设计部门是来帮忙的，而非争功劳/甩锅**。培养跨部门的团队信任对公司、部门和个人是三赢。
+
+<br>
+<br>
 
 ###### 7. 使用 Taiwindcss 配置 CSS 类
 
 Taiwindcss 是什么? <a href="https://zhuanlan.zhihu.com/p/397880385" target="_blank">阅读此篇</a>，考虑到看这片文章的大概率是设计师，咱们尽量不聊技术细节。只要知道 Taiwindcss 只是一个工具，本质上它与 sketch、 AI 、Eagle 和 taglyst 无异。它能够帮助我们将设计规范 **原子化解构**，**语义化命名** 后，交给开发团队直接使用，这样设计规范传达给开发会实现 **0 失真**的效果。
 
+<br>
+<br>
+
 ###### 8. 与前端使用 Storybook 编写组件文档
 
 Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storybook" target="_blank">阅读此篇</a>，我们可以在线对组件 api 的值进行修改，来完成可用性测试与验收。
+
+<br>
+<br>
 
 ###### 9. 为部分页面提供代码级页面模板，且提供自适应方案
 
@@ -172,10 +195,14 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 我们对系统进行埋点，用户侦测用户终端显示器的分辨率，得知大部分用户的显示器已经是 1440(52%) / 1920+(31%)，于是我们基于满足大部分用户的体验运用栅格系统对界面进行自适应适配方案设计。
 
+<br>
+<br>
+
 ###### 10. 编写一个设计部门对公司内部的门户网站
 
 以往设计部门没有一个统一渠道与人力在每一次设计迭代时将设计思想传达到所有相关方，于是我运用 VuePress 给部门设计了一个统一的门户网站，以便公司内部的同事可以在这个网站上获取我们的设计文档与设计数字资产(icon，插图，以及各版本 UI & 交互稿)。
 
+<br>
 <br>
 <br>
 
@@ -185,6 +212,8 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 虽然公司同意我提议构建设计系统，但是这个系统并不能我一个人完成，同时其他同事，部门的产品线项目任务也很重要，在没有看到利益的情况下，并不是所有人都支持。
 
+<br>
+<br>
 <br>
 
 **如何与开发协同工作**
@@ -212,7 +241,6 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 > 使用 sketch + measure，让开发不用盲猜设计规范，当然这还不够，规范越是详细，越是得分类向需要这些规范的开发人员宣讲，帮助他们理解为何如此设计，避免将颗粒度太低信息传递给开发。这样就可以双方的节省时间，消除不必要的错误，并提高质量。
 
 <br>
-
 <br>
 <br>
 
@@ -220,7 +248,7 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 因为系统是内网部署，所以只能展示一些截图:
 
-<ul class="slides rounded-sm">
+<ul class="slides rounded-sm bg-gray-200">
   <input type="radio" id="control-1" name="control" checked>
   <input type="radio" id="control-2" name="control">
   <input type="radio" id="control-3" name="control">
@@ -265,21 +293,21 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
   <!--  /Left/Right Button  -->
 
-  <li class="slide p-24">
-    <img src="../assets/segi/SEGI-Component.png" class=" w-11/12">
-    <span class="text-sm text-white">Sketch 设计系统规范</span>
+  <li class="slide">
+    <img src="../assets/segi/SEGI-Component.png" class=" w-10/12">
+    <span class="text-sm text-gray-400">Sketch 设计系统规范</span>
   </li>
   <li class="slide">
     <img src="../assets/segi/SEGI-storybook.png" class=" w-10/12">
-    <span class="text-sm text-white">Storybook 组件开发工具</span>
+    <span class="text-sm text-gray-400">Storybook 组件开发工具</span>
   </li>
   <li class="slide">
     <img src="../assets/segi/SEGI-design-studio.png" class=" absolute w-10/12">
-    <span class="text-sm text-white">设计部门对内门户网站</span>
+    <span class="text-sm text-gray-400">设计部门对内门户网站</span>
   </li>
   <li class="slide">
     <img src="../assets/segi/SEGI-Markdown.png" class=" absolute w-10/12">
-    <span class="text-sm text-white">Markdown 文档</span>
+    <span class="text-sm text-gray-400">Markdown 文档</span>
   </li>
   
   <div class="controls-visible">
@@ -295,7 +323,7 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 ##### 写在最后
 
-设计应该 **务实**，而非花大量时间去纠结 样式好不好看，动画顺不顺畅，我们需要参与到产品的全生命周期中去。 跨职能协作时，我们要尽足最大努力让每个参与方都觉得可用、有用、愉悦，说到底，设计部门是内部支撑部门，设计部门价值来源于兄弟部门的肯定。
+设计应该**务实**，而非花大量时间去纠结样式好不好看，动画顺不顺畅，我们需要参与到产品的全生命周期中去。 跨职能协作时，要尽足最大努力让项目每个参与方都觉得可用、有用、愉悦，说到底，设计部门是内部支撑部门，设计部门价值来源于兄弟部门的肯定。
 
 <br>
 
@@ -303,7 +331,7 @@ Storybook 是什么? <a href="https://www.zhihu.com/search?type=content&q=Storyb
 
 > **计划**:
 >
-> 通常一个功能从澄清需求到设计完成，在设计师手上的事件少则 3~5 天，最多不过一个月，而我们的产品经理大部分在这个领域已经经营了好几年，这中间存在巨大的信息差，为了避免项目实施时鸡同鸭讲，应该在计划阶段主动参与收集需求，分析需求，竞品分析等;
+> 通常一个功能从澄清需求到设计完成，在设计师手上的时间少则 3~5 天，最多不过一个月，而我们的产品经理大部分在这个领域已经经营了好几年，这中间存在巨大的信息差，为了避免项目实施时鸡同鸭讲，应该在计划阶段主动参与收集需求，分析需求，竞品分析等;
 >
 > **开发**:
 >

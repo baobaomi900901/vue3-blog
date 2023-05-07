@@ -21,111 +21,284 @@
         </span>
       </div>
 
-      <ul class="play-content-ul">
-        <li class="play-content-1" data-title="View Project">
-          <router-link class="relative" to="/loadingKit">
-            <div class="play-content-view">
-              <div class="spinner"></div>
-            </div>
-
-            <div class="play-content-text">
-              <div class="play-content-li-title text-gray-900">Loading Kit</div>
-              <div class="play-content-li-subtitle text-gray-500 zh">
-                CSS 实现的加载动画
-              </div>
-            </div>
-          </router-link>
-        </li>
-        <li class="play-content-2" data-title="View Project">
-          <router-link to="/textKit">
-            <div class="play-content-view">
-              <div class="textAnime">
-                <span class="letters letters-1">Ready</span>
-                <span class="letters letters-2">Set</span>
-                <span class="letters letters-3">Go!</span>
-              </div>
-            </div>
-            <div class="play-content-text">
-              <div class="play-content-li-title text-gray-900">
-                Text Anime Kit
-              </div>
-              <div class="play-content-li-subtitle text-gray-500 zh">
-                anime.js 实现的文字动画
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li
-          class="play-content-3"
-          data-title="View Project"
-          style="background: #131313"
+      <div class="play-radio">
+        <div
+          class="label-box my-10 flex justify-center gap-12 text-3xl capitalize font-medium text-gray-500"
         >
-          <a
-            href="https://mobytang.com/WebDemo/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E5%87%86%E6%98%9F/index.html"
-            target="_blank"
+          <label
+            for="option1"
+            :class="{ 'text-dark-blue': selectedType == 'all' }"
           >
-            <div class="play-content-view">
-              <img
-                src="https://mobytang.com/WebDemo/preview-image/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E5%8A%A8%E6%95%88.gif"
-                alt=""
-              />
-            </div>
-            <div class="play-content-text">
-              <div
-                class="play-content-li-title text-gray-50 mix-blend-difference"
-              >
-                自定义鼠标指针动效
-              </div>
-              <div
-                class="play-content-li-subtitle text-gray-50 mix-blend-difference"
-              >
-                实现了一个开箱即用的 hooks
-              </div>
-            </div>
-          </a>
-        </li>
+            <input
+              v-model="selectedType"
+              id="option1"
+              type="radio"
+              name="type"
+              value="all"
+            />
+            <span>All</span>
+          </label>
+          <label
+            for="option2"
+            :class="{
+              'text-dark-blue': selectedType == '1',
+            }"
+          >
+            <input
+              v-model="selectedType"
+              id="option2"
+              type="radio"
+              name="type"
+              value="1"
+            />
+            <span>WebDesign</span>
+          </label>
 
-        <!-- 不可点击 -->
-        <!-- <li class="play-content-2" data-title="Contact me">
-          <router-link to="">
-            <div class="play-content-view play-content-view-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-              >
-                <g>
-                  <path
-                    d="M36,26H32V13a8,8,0,0,0-16,0V26H12V13a12,12,0,0,1,24,0Z"
-                    fill="#c8c8c8"
-                  ></path>
-                  <path
-                    d="M40,20H8a3,3,0,0,0-3,3V44a3,3,0,0,0,3,3H40a3,3,0,0,0,3-3V23A3,3,0,0,0,40,20Z"
-                    fill="#ffd764"
-                  ></path>
-                  <path
-                    d="M28,31a4,4,0,1,0-6,3.445V40a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V34.445A3.982,3.982,0,0,0,28,31Z"
-                    fill="#eba40a"
-                  ></path>
-                </g>
-              </svg>
+          <label
+            for="option3"
+            :class="{
+              'text-dark-blue': selectedType == '2',
+            }"
+          >
+            <input
+              v-model="selectedType"
+              id="option3"
+              type="radio"
+              name="type"
+              value="2"
+            />
+            <span>动画工具</span>
+          </label>
+          <label
+            for="option4"
+            :class="{
+              'text-dark-blue': selectedType == '3',
+            }"
+          >
+            <input
+              v-model="selectedType"
+              id="option4"
+              type="radio"
+              name="type"
+              value="3"
+            />
+            <span> 创意 </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="play-content-items">
+        <!-- 私人项目 -->
+        <div
+          :class="{
+            'play-hidden':
+              selectedType !== 'all' && selectedType !== '1' ? true : false,
+          }"
+        >
+          <div
+            class="play-content-item-title mt-8 text-2xl font-bold capitalize"
+          >
+            Web Design
+          </div>
+          <div class="play-content-item mb-16">
+            <CodeCard
+              :bgColor="'#232323'"
+              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/glaze.jpg'"
+              :title="'Glaze Studio'"
+              :subTitle="'镜子生产商、门户网站'"
+              :href="'https://www.mobytang.com/WebDemo/private-project/glazeSTD/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#232323'"
+              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9.jpg'"
+              :title="'无人机站点'"
+              :subTitle="'门户网站动效'"
+              :href="'https://www.mobytang.com/WebDemo/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9/index.html'"
+            />
+          </div>
+        </div>
+
+        <!-- 动画工具 -->
+        <div
+          :class="{
+            'play-hidden':
+              selectedType !== 'all' && selectedType !== '2' ? true : false,
+          }"
+        >
+          <div
+            class="play-content-item-title mt-8 text-2xl font-bold capitalize"
+          >
+            动画工具
+          </div>
+          <div class="play-content-item mb-16">
+            <div
+              class="item-content"
+              data-title="View Project"
+              style="background: #d5e0e1"
+            >
+              <router-link class="relative" to="/loadingKit">
+                <div class="item-content-preview h-full w-full flex justify-center items-center">
+                  <div class="spinner"></div>
+                </div>
+                <div class="item-content-textBox">
+                  <div class="textBox-title text-gray-50 mix-blend-difference">
+                    Loading Kit
+                  </div>
+                  <div
+                    class="textBox-subtitle text-gray-400 mix-blend-difference"
+                  >
+                    CSS 实现的加载动画
+                  </div>
+                </div>
+              </router-link>
             </div>
-            <div class="play-content-text">
-              <div class="play-content-li-title text-gray-50 z-50">ZhaoM-Blog</div>
-              <div class="play-content-li-subtitle text-gray-50 zh z-50">ZhaoM-Blog</div>
+
+            
+            <div
+              class="item-content"
+              data-title="View Project"
+              style="background: #f1e9ca"
+            >
+              <router-link class="relative" to="/textKit">
+                <div class="item-content-preview flex justify-center items-center">
+                  <div class="textAnime">
+                    <span class="letters letters-1">Ready</span>
+                    <span class="letters letters-2">Set</span>
+                    <span class="letters letters-3">Go!</span>
+                  </div>
+                </div>
+                <div class="item-content-textBox">
+                  <div class="textBox-title text-gray-50 mix-blend-difference">
+                    Text Anime Kit
+                  </div>
+                  <div
+                    class="textBox-subtitle text-gray-400 mix-blend-difference"
+                  >
+                    anime.js 实现的文字动画
+                  </div>
+                </div>
+              </router-link>
             </div>
-            <div class=" bg-gray-900 w-full h-full absolute top-0 opacity-80"></div>
-          </router-link>
-        </li> -->
-      </ul>
+
+            <CodeCard
+              :bgColor="'#131313'"
+              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E5%8A%A8%E6%95%88.jpg'"
+              :title="'自定义鼠标指针动效'"
+              :subTitle="'开箱即用的 hooks'"
+              :href="'https://mobytang.com/WebDemo/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E5%87%86%E6%98%9F/index.html'"
+            />
+          </div>
+        </div>
+
+        <!-- 创意 -->
+        <div
+          :class="{
+            'play-hidden':
+              selectedType !== 'all' && selectedType !== '3' ? true : false,
+          }"
+        >
+          <div
+            class="play-content-item-title mt-8 text-2xl font-bold capitalize"
+          >
+            创意
+          </div>
+          <div
+            class="play-content-item mb-16"
+            :class="{
+              'play-hidden':
+                selectedType !== 'all' && selectedType !== '3' ? true : false,
+            }"
+          >
+            <CodeCard
+              :bgColor="'#38363c'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/3d%20%E5%8D%A1%E7%89%87.png'"
+              :title="'3D卡片'"
+              :subTitle="'鼠标交互控制 CSS 样式模拟按压卡片'"
+              :href="'https://mobytang.com/WebDemo/CSS%E5%8A%A8%E7%94%BB/3D%E5%8D%A1%E7%89%87/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#c5b7a8'"
+              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E9%9F%B3%E9%A2%91%E6%B3%A2%E6%B5%AA%E7%BA%BF.jpg'"
+              :title="'音频波浪线'"
+              :subTitle="'canvas'"
+              :href="'https://www.mobytang.com/WebDemo/canvas/canvas%E9%9F%B3%E4%B9%90%E6%B3%A2%E6%B5%AA%E7%BA%BF/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#131313'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%97%A0%E9%99%90.png'"
+              :title="'无限循环滚动2'"
+              :subTitle="'JS 实现菜单无限循环'"
+              :href="'https://mobytang.com/WebDemo/%E6%97%A0%E9%99%90%E6%BB%9A%E5%8A%A8/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#161616'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8C%87%E7%A4%BA%E5%99%A8.png'"
+              :title="'滚动条指示器'"
+              :subTitle="'鼠标跟随、hsl 颜色渐变实例'"
+              :href="'https://mobytang.com/WebDemo/%E6%BB%9A%E5%8A%A8%E8%BF%9B%E5%BA%A6%E6%8C%87%E7%A4%BA%E5%99%A8/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#181818'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/IntObs%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB.png'"
+              :title="'滚动触发动画事件'"
+              :subTitle="'IntersectionObserver'"
+              :href="'https://mobytang.com/WebDemo/%E6%BB%9A%E5%8A%A8%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB%E4%BA%8B%E4%BB%B6/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#eaeaea'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/svg%E6%BB%A4%E9%95%9C.png'"
+              :title="'SVG滤镜图片变形'"
+              :subTitle="'噪点背景、svg 滤镜'"
+              :href="'https://mobytang.com/WebDemo/%E6%B0%B4%E5%B9%B3%E6%BB%91%E5%8A%A8%E5%B9%B6%E4%BD%BF%E7%94%A8SVG%E6%BB%A4%E9%95%9C/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#262525'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E5%83%8F%E7%B4%A0%E5%8C%96.png'"
+              :title="'图片像素化'"
+              :subTitle="'canvas、像素化'"
+              :href="'https://mobytang.com/WebDemo/%E5%9B%BE%E7%89%87%E5%83%8F%E7%B4%A0%E5%8C%96/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#fff'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/canvas%20%E7%B2%92%E5%AD%90.png'"
+              :title="'Particle & Line'"
+              :subTitle="'ccanvas、粒子、鼠标干扰'"
+              :href="'https://mobytang.com/WebDemo/canvas/%E7%B2%92%E5%AD%90%E8%BF%9E%E7%BA%BF/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#38363c'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94.png'"
+              :title="'模拟水蒸气'"
+              :subTitle="'CSS模拟水蒸气'"
+              :href="'https://mobytang.com/WebDemo/CSS%E5%8A%A8%E7%94%BB/css%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94/index.html'"
+            />
+
+            <CodeCard
+              :bgColor="'#eeeeee'"
+              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%96%B0%E6%A8%A1%E6%80%81%E8%AE%A1%E7%AE%97%E5%99%A8.png'"
+              :title="'新拟态UI'"
+              :subTitle="'基本运算计算器'"
+              :href="'https://mobytang.com/WebDemo/newCalculator/main/index.html'"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<script lang='ts'>
-import { ref, reactive, onMounted } from "vue";
+<script>
+import CodeCard from "../components/CodeCard.vue";
+import { ref, reactive, onMounted, watch } from "vue";
 import { gsap } from "gsap";
 // import * as anime from 'animejs/lib/anime.es.js'
 import anime from "animejs/lib/anime.es.js";
@@ -140,6 +313,8 @@ export default {
       },
     });
 
+    const selectedType = ref("all");
+
     function MyAnime() {
       let aTitle = gsap.fromTo(
         ".play-content-title",
@@ -152,8 +327,20 @@ export default {
         }
       );
 
-      let aLi = gsap.fromTo(
-        ".play-content li",
+      let aRadio = gsap.fromTo(
+        ".play-content .play-radio",
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power4.out",
+        }
+      );
+
+      let items = gsap.fromTo(
+        ".play-content-items",
         { opacity: 0, y: 100 },
         {
           opacity: 1,
@@ -165,7 +352,8 @@ export default {
       );
 
       playAnimeLine.add(aTitle);
-      playAnimeLine.add(aLi, "-=0.5");
+      playAnimeLine.add(aRadio, "-=0.8");
+      playAnimeLine.add(items, "-=0.8");
     }
 
     const textAnime = {};
@@ -230,10 +418,15 @@ export default {
     }
 
     onMounted(() => {
+      gsap.set("body", {
+        scrollTop: 0,
+      });
       MyAnime();
       MyTextAnime();
     });
-    return {};
+    return {
+      selectedType,
+    };
   },
 };
 </script>
@@ -242,81 +435,76 @@ export default {
   @apply bg-gray-100;
   min-height: 100vh;
 }
-.play-content {
-  padding: 0 40px;
-  width: 100%;
-  max-width: 80rem;
+.play-hidden {
+  display: none !important;
+  transform: scale(0);
 }
 
-.play-content-view {
-  @apply w-full h-2/3 flex justify-center items-center;
-  transition: transform 0.5s ease-in-out;
-}
-
-.play-content-text {
-  @apply absolute bottom-0 w-full mb-16 flex flex-col text-center;
-}
-
-.play-content ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px 10px;
-}
-
-.play-content ul li {
-  height: 45vh;
-  max-height: 360px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.play-content ul li:hover .play-content-view {
-  transform: scale(2);
-}
-
-.play-content ul li a {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.play-radio label {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
   position: relative;
 }
 
-.play-content ul li::after {
-  /* content: "View Project"; */
-  content: attr(data-title);
-  display: inline-block;
+.play-radio label::before {
+  content: "";
   position: absolute;
-  top: 0;
-  right: 20px;
-  background: #000;
-  color: #fff;
-  padding: 10px 20px;
-  /* 透视 */
-  transform-style: preserve-3d;
-  perspective-origin: 50% 50%;
-  transform: perspective(1000px) rotateX(-90deg);
-  transform-origin: top center;
-  transition: all 0.2s;
-}
-.play-content ul li:hover::after {
-  transform: perspective(1000px) rotateX(0deg);
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #1941ed;
+
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
 }
 
-.play-content-li-title {
-  @apply font-semibold text-2xl;
-  /* mix-blend-mode: difference; */
+.play-radio label:hover {
+  color: #1941ed;
 }
 
-.play-content-li-subtitle {
-  @apply text-base  mt-2;
-  /* mix-blend-mode: difference; */
+.play-radio label:hover::before {
+  transform: scalex(1);
+}
+
+.play-content {
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.play-content-item {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+}
+.item-content a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+
+  display: grid;
+  grid-template-rows: 75% 25%;
+}
+
+.item-content-textBox {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .spinner {
@@ -326,48 +514,6 @@ export default {
 
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-.play-content-2-view {
-  width: 100%;
-}
-
-.textAnime {
-  position: relative;
-  font-weight: 900;
-  font-size: 2em;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.textAnime .letters {
-  position: absolute;
-  opacity: 0;
-}
-
-.play-content-1 {
-  background: #d2e1e1;
-}
-
-.play-content-2 {
-  background: #f3e9c6;
-}
-
-.play-content-view-3 {
-  background-image: url("../assets/codeplay/web-demo-ZhaoBlog.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-
-  filter: blur(6px);
 }
 
 @-webkit-keyframes sk-rotateplane {
@@ -397,15 +543,42 @@ export default {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .play-content ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px 10px;
+@media screen and (max-width: 1680px) {
+  .play-content-item {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .play-content ul li {
-    /* background: blue; */
-    height: 320px;
+}
+
+@media screen and (max-width: 1366px) {
+  .play-content-item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .play-content {
+    padding: 0 2rem;
+  }
+  .play-content-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-content {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .play-content-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .play-radio .label-box {
+    font-size: 1rem;
+    gap: 1rem;
   }
 }
 </style>

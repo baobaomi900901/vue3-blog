@@ -2169,6 +2169,9 @@ anime
 /* #endregion */
 
 @media screen and (max-width: 960px) {
+  .TextKit-content {
+    padding: 0 1rem !important;
+  }
   .TextKit-content ul {
     display: grid;
     grid-template-columns: 1fr;

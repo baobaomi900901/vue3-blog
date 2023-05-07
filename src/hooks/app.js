@@ -12,16 +12,19 @@ function lerp(start, end, t) {
 let targetX = 0;
 let targetY = 0;
 
-const textureOne = new THREE.TextureLoader().load(images.imageOne);
-const textureTwo = new THREE.TextureLoader().load(images.imageTwo);
-const textureThree = new THREE.TextureLoader().load(images.imageThree);
-const textureFour = new THREE.TextureLoader().load(images.imageFour);
-const textureFive = new THREE.TextureLoader().load(images.imageFive);
-const textureSix = new THREE.TextureLoader().load(images.imageSix);
-const textureSeven = new THREE.TextureLoader().load(images.imageSeven);
-const textureEight = new THREE.TextureLoader().load(images.imageEight);
-const textureNine = new THREE.TextureLoader().load(images.imageNine);
-const textureTen = new THREE.TextureLoader().load(images.imageTen);
+const texture1 = new THREE.TextureLoader().load(images.image1);
+const texture2 = new THREE.TextureLoader().load(images.image2);
+const texture3 = new THREE.TextureLoader().load(images.image3);
+const texture4 = new THREE.TextureLoader().load(images.image4);
+const texture5 = new THREE.TextureLoader().load(images.image5);
+const texture6 = new THREE.TextureLoader().load(images.image6);
+const texture7 = new THREE.TextureLoader().load(images.image7);
+const texture8 = new THREE.TextureLoader().load(images.image8);
+const texture9 = new THREE.TextureLoader().load(images.image9);
+const texture10 = new THREE.TextureLoader().load(images.image10);
+const texture11 = new THREE.TextureLoader().load(images.image11);
+const texture12 = new THREE.TextureLoader().load(images.image12);
+
 
 
 export default class WebGL {
@@ -47,45 +50,52 @@ export default class WebGL {
       link.addEventListener("mouseenter", () => {
         switch (idx) {
           case 0:
-            this.uniforms.uTexture.value = textureOne;
+            this.uniforms.uTexture.value = texture1;
             break;
           case 1:
-            this.uniforms.uTexture.value = textureTwo;
+            this.uniforms.uTexture.value = texture2;
             break;
           case 2:
-            this.uniforms.uTexture.value = textureThree;
+            this.uniforms.uTexture.value = texture3;
             break;
           case 3:
-            this.uniforms.uTexture.value = textureFour;
+            this.uniforms.uTexture.value = texture4;
             break;
           case 4:
-            this.uniforms.uTexture.value = textureFive;
+            this.uniforms.uTexture.value = texture5;
             break;
           case 5:
-            this.uniforms.uTexture.value = textureSix;
+            this.uniforms.uTexture.value = texture6;
             break;
           case 6:
-            this.uniforms.uTexture.value = textureSeven;
+            this.uniforms.uTexture.value = texture7;
             break;
           case 7:
-            this.uniforms.uTexture.value = textureEight;
+            this.uniforms.uTexture.value = texture8;
             break;
           case 8:
-            this.uniforms.uTexture.value = textureNine;
+            this.uniforms.uTexture.value = texture9;
             break;
           case 9:
-            this.uniforms.uTexture.value = textureTen;
+            this.uniforms.uTexture.value = texture10;
+            break;
+          case 10:
+            this.uniforms.uTexture.value = texture11;
+            break;
+          case 11:
+            this.uniforms.uTexture.value = texture12;
             break;
         }
-        // console.log(idx);
       });
 
       link.addEventListener("mouseleave", () => {
         this.uniforms.uAlpha.value = lerp(this.uniforms.uAlpha.value, 0.0, 0.1);
       });
+
     });
     this.addEventListeners(document.querySelector(".inspirations .ul"));
     this.addEventListeners(document.querySelector(".inspirations .ul2"));
+    this.addEventListeners(document.querySelector(".inspirations .ul3"));
     this.setUpCamera();
     this.onMouseMove();
     this.createMesh();
@@ -155,6 +165,7 @@ export default class WebGL {
     this.mesh.position.set(this.offset.x, this.offset.y, 0);
 
     this.scene.add(this.mesh);
+
   }
   onWindowResize() {
     this.camera.aspect = this.viewport.aspectRatio;

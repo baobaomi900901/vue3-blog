@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from "vue-router
 // createWebHistory
 // createWebHashHistory, 带哈希值 #
 import HelloLoading from "../pages/HelloLoading";
-import Home from "../pages/Home";
+import Home from "../pages/Home2";
 import Prompt from "../pages/Prompt";
 import Blog from "../pages/Blog";
 import Play from "../pages/Play";
@@ -16,7 +16,10 @@ import ContentNew1 from "../pages/ContentNew1"; // vodafone-conceptual-design
 import ContentNew2 from "../pages/ContentNew2"; // vodafone-conceptual-design
 import ContentNew3 from "../pages/ContentNew3"; // document-system
 import ContentNew4 from "../pages/ContentNew4"; // Visualized Data Platform
-import ContentNew5 from "../pages/ContentNew5"; // billing center
+import ContentNew5 from "../pages/ContentNew5"; // 客用监测平台
+import ContentNew6 from "../pages/ContentNew6"; // billing center
+
+import ContentGlaze from "../pages/ContentGlaze";// ContentGlaze.vue
 
 import LoadingKit from "../pages/LoadingKit";
 import TextKit from "../pages/TextKit";
@@ -100,9 +103,19 @@ const routes = [
     component: ContentNew4,
   },
   {
+    path: "/IoT",
+    name: "IoT",
+    component: ContentNew5,
+  },
+  {
     path: "/billing-center",
     name: "billing-center",
-    component: ContentNew5,
+    component: ContentNew6,
+  },
+  {
+    path: "/glaze",
+    name: "glaze",
+    component: ContentGlaze,
   },
   {
     path: "/loadingKit",

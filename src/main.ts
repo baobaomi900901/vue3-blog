@@ -3,6 +3,7 @@ import App from "./App.vue";
 // import MyUI from "./libs/MyUI";
 import "./assets/index.css";
 import router from "./router";
+import CodeCard from "./components/CodeCard.vue";
 
 const app = createApp(App);
 
@@ -11,6 +12,7 @@ const app = createApp(App);
 //   btnShadow: true,
 // });
 app.use(router);
+app.component("CodeCard", CodeCard);
 app.mount("#app");
 
 // app.mount("#app");

@@ -69,7 +69,7 @@
 
          <RouterLink
           class="after-button flex items-center flex-row-reverse"
-          :to="{ name: 'billing-center' }"
+          :to="{ name: 'IoT' }"
         >
           <svg width="74px" height="74px">
             <g
@@ -107,7 +107,7 @@
           </svg>
           <div class="mr-4 flex flex-col items-end">
             <span class="font-semibold text-right">下一页</span>
-            <span class="font-normal text-right">重新设计算费中心</span>
+            <span class="font-normal text-right">客用运载监测系统</span>
           </div>
         </RouterLink>
       </div>

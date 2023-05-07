@@ -17,9 +17,9 @@
       style="zindex: 999"
     >
       <div class="flex items-center z-50" id="logo">
-        <router-link to="/home">
+        <a href="https://mobytang.com/#/home">
           <img src="../assets/img/logo.png" alt="" class="w-8 h-8" />
-        </router-link>
+        </a>
       </div>
       <!-- mix-blend-mode: difference; -->
       <nav

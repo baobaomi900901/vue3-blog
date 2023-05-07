@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { ref, watch, defineComponent, onMounted } from "vue";
-import NavigationBar from "./components/NavigationBar.vue";
+import NavigationBar from "./components/NavigationBar2.vue";
 import { useRoute } from "vue-router";
 // using es modules
 import device from "current-device";

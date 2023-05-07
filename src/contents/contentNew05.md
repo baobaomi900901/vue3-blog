@@ -1,174 +1,115 @@
 ---
-name: 收费标准模块
+name: 客用运载监测系统
 ---
 
-# <center>重新设计算费中心</center>
+# <center>客用运载监测系统</center>
 
-##### <center class="text-gary-500 font-light"> 重新功能, 提升易用性, 减少运营成本</center>
+##### <center class="text-gary-500 font-light"> 物业电梯手扶梯运载 Iot 监测系统 </center>
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/billing-center/billing-center-01.png"/>
+    <img src="../assets/Iot/Iot.png"/>
 </div>
 <br>
 <br>
 
 ##### 项目背景
 
-算费中心是 SEGI 平台收入产品线为全平台提供 **算费、拆账、推账和收费** 等与财务相关的重要产品; 它的开发模式属于功能导向, 为了满足需求无序设计, 缺乏对产品的整体规划, 经过 5 年的持续需求迭代, 导致虽功能可以满足, 但是客户学习成本非常高, 客户几乎无法独自使用, 客户的需求全部由交付经理代替操作完成, 运营成本非常大。
+随着城市化进程的加快，越来越多的高层建筑和商业中心使用手扶梯和电梯，这些设备成为人们日常生活的重要组成部分。为了保证手扶梯电梯的安全可靠运行，物业公司需要对其进行监测和维护。然而，传统的手动巡检和维护方式效率低下，而且容易忽略一些潜在的故障隐患。因此，采用物联网技术开发手扶梯电梯监测系统，成为保障设备安全和稳定运行的重要手段。
 
-本篇主要阐述其中最为复杂模块 -- **<span class="text-dark-blue ">" 收费标准 "</span>**
-
-<br>
-
-##### 设计目标
-
-配合产品线, 就本次前后端分离的契机, 兼容之前的业务模型, 提升产品易用性
-
-核心体验目标是让 **用户能够独立使用, 减轻运营压力。**
+四格互联基于物联网技术的手扶梯电梯监测系统是一种集传感器监测、数据采集、数据分析和报警处理于一体的智能化系统。该系统可以实现对手扶梯电梯的实时监测和远程管理，能够及时发现设备的异常状态和潜在故障隐患，为物业公司提供科学的运维管理手段。
 
 <br>
 
-##### 用研与数据
+##### 我做了什么?
 
-在开始重新设计项目之前，我采访了 **6** 位收费标准用户, 其中 **3** 位交付经理, **1** 位我司财务人员, **1** 位客户财务人员, **4** 位不同产品线的制单人员, 以更好地了解我的设计对象：
+这个项目四格互联 **资源巡查(功能，也是我负责)** 衍生系统，本文将描述我是如何接手 PM 低保真原型，对其中一个看板页面重新设计交互为产品赋能的过程。
 
-<br>
+##### 1.首先我们来看看产品的低保真原型
 
-<ul class="list-disc ml-9">
-    <li><span class="list-disc font-bold">典型用户长什么样的?</span></li>
-    <li><span class="list-disc font-bold">使用场景是什么样的?</span></li>
-    <li><span class="list-disc font-bold">目前系统中的数据谁建立?</span></li>
-    <li><span class="list-disc font-bold">他们的期望有哪些?</span></li>
-</ul>
+<img src="../assets/Iot/Iot-01.png" class=" scale-90"/>
 
-<br>
-<div class=" shadow-md rounded-lg overflow-hidden grid grid-cols-2">
-    <img src="../assets/billing-center/billing-center-03.png"> 
-    <img src="../assets/billing-center/billing-center-02.png"> 
-</div>
-<br>
+整个系统是这三类人员在使用:
 
-在采访用户的过程中, 听到最多的抱怨是: <span class="text-dark-blue">"界面复杂", "内容关联性差", "学习成本高"</span>;
-
-听到最多的愿景是: <span class="text-dark-blue">"希望设置方案时有指引", "提高方案复用率"</span>。
+> **1.物业公司的(安全管理员)** : 实时监测设备的运行状态，及时安排维修人员进行维修。
+>
+> **2.物业公司的(巡检员)**: 通过手机 APP 接收巡检任务上传巡检结果，发现异常设备后，及时上报。
+>
+> **3.维保人员(可能是第三方)**: 按照指派工单对设备进行故障维修和保养。
 
 <br>
 
-##### 咱们来看看现在的界面
+很明显, 这个页面是 **安全管理员** 使用，那么我们推导出他的使用场景与任务目标:
+
+> **1.实时监测故障/预警;**
+>
+> **2.查看确认故障/预警详情;**
+>
+> **3.迅速响应和处理故障/预警;**
+>
+> **4.统筹维保/巡检人员的工作计划。**
 
 <br>
-
-<div class=" shadow-md rounded-lg overflow-hidden  flex justify-center" style="background-color:#666666">
-    <img src="../assets/billing-center/billing-center-04.png" class=" w-3/4"> 
-</div>
-
+<br>
 <br>
 
-初看这个页面时, 觉得挺简单, 并不是很难理解, 但是在深入了解之后, 发现里面有海量的关联属性, 且有一些关联属性并没有排列在一起, 我大致用了三天的时间摸清楚这些关联属性、找出业务流转的上下游, 将相关信息重新排列, 归纳出 <a href="https://www.processon.com/view/link/627cde9fe0b34d5ac4088baa#map" target="_blank">关键步骤与功能</a> , 然后与产品经理验证方案设想。
+##### 2.页面诊断
+
+根据安全管理员的使用场景推断，他应该每天大部分的时间都会停留在这个页面，这个页面也是他开展工作的起始点。那么现在有什么问题?
+
+> **1.无法第一时间获取到故障/预警信息;**
+>
+> **2.页面的太长, 一屏看不完;**
+>
+> **3.元素过于扁平，无法突出重点;**
+>
+> **4.内容对齐无逻辑，不易阅读;**
 
 <br>
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-05.png" class=" w-3/4"> 
-</div>
-
+<br>
 <br>
 
-方案通过验证后, 我们基于的关键步骤, 运用 **全链体验设计** 来对产品进行 redesign。
+##### 3.页面重构
 
+我们从左往右, 从上往下, 进行页面的重构。
+
+<img src="../assets/Iot/客用运载监测系统.002.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.003.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.004.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.005.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.006.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.007.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.008.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.009.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.010.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.011.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.012.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.013.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.014.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.015.jpeg" class=" shadow-md "/>
+<br>
+<img src="../assets/Iot/客用运载监测系统.016.jpeg" class=" shadow-md "/>
 <br>
 
-##### 全链体验设计
-
-这是一套来自 **Frog** 的设计方法, 大致有三个要素:
+本项目还有其他的小故事, 篇幅太长不在这里展开。
 
 <br>
-
-- **角色 / Actors**
-- **媒介 / Medium**
-- **全链体验流程 / Full experience lifecycle**
-
+<br>
 <br>
 
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-07.png" class=" w-5/6"> 
-</div>
+##### 写在最后
 
-<br>
-
-现在我们设计好了角色与媒介,我们来逐步用故事的方式推导设计方案。
-
-<br>
-
-###### 1. 申明核心任务与功能
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-08.png" class=" w-5/6"> 
-</div>
-
-<br>
-
-###### 2. 故事推导
-
-故事尽量简介, 我们首先要面对的是共同推动项目的相关方, 如**开发**, 关注工作量, 需求实现难度; **产品**, 想看到设计对业务的理解, 借用设计方案来补全产品迭代的价值; **向上级汇报**, 他们更多的向看到成果差异。观念统一, 项目才能顺利推进。
-
-结合实际情况, 设计部门与产品是一对多的关系, 为了快速反应, 我把设计方法简化成如下关键点:
-
-<br>
-
-- **故事描述** - 描述完成什么操作;
-- **接触点 / 界面** - 故事涉及哪些页面与步骤, 会和用户/数据产生交互;
-- **机会领域** - 对目标用户, 提供提升产品价值且符合自生能力的功能;
-- **设计思路**
-- **全链体验流程**
-
-<br>
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-09.png" class=" w-5/6"> 
-</div>
-
-<br>
-
-###### 2.1 设计思路
-
-阐述设计要点, 运用 <span class="text-dark-blue font-bold"> " When \_ \_ \_ \_ I want to\_ \_ \_ \_ so I can \_ \_ \_ \_ "</span> 模型去代入, 增强同理心。
-
-<br>
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-10.png" class=" w-5/6 my-10"> 
-</div>
-
-<br>
-
-###### 2.2 全链体验流程
-
-描述我们在不同阶段, 能提供什么样的能力, 帮助用户提升用户体验与产品价值。
-
-<br>
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-11.png" class=" w-5/6 my-10"> 
-</div>
-
-<br>
-
-###### 3. 推动关联业务下游体验优化
-
-在 toB 环境下, 设计团队应该重视产品大局观, 主动的去了解业务上下游。用户完成一个任务目标多数时候是有到多个产品的组合流程, 我们需要在所有操作接点上为之赋能, 以便用户更好的完成任务目标。
-
-<br>
-
-<div class=" shadow-md rounded-lg overflow-hidden flex justify-center" style="background-color:#f6f6f6">
-    <img src="../assets/billing-center/billing-center-12.png" class=" w-5/6 my-10"> 
-</div>
-
-<br>
-
-更多细节的思维导图, <a href="https://www.processon.com/view/link/627dfc85e0b34d5ac40b2fad" target="_blank">点此查看</a>。
-
-👇 接下来展示我产出的交互方案:
-
-待上传...
+工作中会遇到不同产品经理给出各种不同质量，不同需求颗粒的的原型，这时候我们需要带着 **用户思维** 根据自己的经验，对原型进行诊断，进行重构，这样才能发挥最大的设计价值更好的为产品赋能。

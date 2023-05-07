@@ -10,7 +10,7 @@
     id="Blog"
     class="Blog w-full h-full bg-gray-100 flex py-32 justify-center"
   >
-    <div class="blog-content ">
+    <div class="blog-content">
       <div
         class="blog-content-title text-6xl font-black mb-8 sm:text-5xl mobile:text-4xl mobile:mb-4"
       >
@@ -40,11 +40,35 @@
             class="blog-content-li"
             href="https://iodized-samba-a1b.notion.site/Design-Code-5d84a410128b425e8c561f6c292588ce"
             target="_blank"
-            >Design + Code 提升用户体验实践</a
+            >👨‍💻 Design + Code 提升用户体验实践</a
           >
           <br />
           <MyTag type="blue">code</MyTag>
           <MyTag type="blue">用户体验</MyTag>
+        </li>
+
+        <li>
+          <a
+            class="blog-content-li"
+            href="https://iodized-samba-a1b.notion.site/PRD-8571d50dd07c4e018f45bb050bb2665f"
+            target="_blank"
+            >📝 交互设计师-PRD文档-自查表</a
+          >
+          <br />
+          <MyTag type="blue">UE</MyTag>
+          <MyTag type="blue">经验</MyTag>
+        </li>
+
+        <li>
+          <a
+            class="blog-content-li"
+            href="https://iodized-samba-a1b.notion.site/6c342c6e015349f880ad6f8a683d7f17"
+            target="_blank"
+            >🔍 如何快速了解一个产品</a
+          >
+          <br />
+          <MyTag type="blue">UE</MyTag>
+          <MyTag type="blue">经验</MyTag>
         </li>
 
         <li>
@@ -70,7 +94,6 @@
           <MyTag type="blue">code</MyTag>
           <MyTag type="blue">经验</MyTag>
         </li>
-
       </ul>
     </div>
   </div>
@@ -135,6 +158,9 @@ export default defineComponent({
 
     onMounted(() => {
       Anime();
+      gsap.set("body", {
+        scrollTop: 0,
+      });
     });
     return {};
   },
@@ -171,7 +197,7 @@ export default defineComponent({
   letter-spacing: 0.5px;
 }
 
-.blog-content ul li:hover  {
+.blog-content ul li:hover {
   border-bottom: 1px solid #d8d8d8;
 }
 
@@ -200,4 +226,9 @@ export default defineComponent({
   }
 }
 
+@media screen and (max-width: 960px) {
+  .blog-content {
+    padding: 0 2rem !important;
+  }
+}
 </style>

@@ -85,8 +85,10 @@
         <div id="leftimgbox" class="leftimgbox h-1/5 relative z-0">
           <div
             class="leftimgmark w-full h-full bg-white absolute opacity-50"
-          ></div>
-          <div class="leftimg"></div>
+          >
+        </div>
+          <div class="leftimg">
+          </div>
         </div>
       </div>
     </div>
@@ -104,7 +106,9 @@
           <div
             class="Introduce flex justify-center items-center flex-1 px-4 md:px-8 z-10"
           >
-            <div class="myself text-white opacity-80 uppercase leading-loose">
+            <div
+              class="myself text-white opacity-80 uppercase leading-loose pt-20"
+            >
               <div
                 ref="welcome"
                 id="welcome"
@@ -113,11 +117,29 @@
                 Welcome
               </div>
               <div
-                class="myname font-extrabold text-6xl md:text-7xl xl:text-9xl mobile:text-5xl"
+                class="myname font-extrabold text-4xl md:text-5xl xl:text-7xl mobile:text-5xl"
               >
-                <p ref="myname1" id="myname1" class="myname1">i'm</p>
-                <p ref="myname2" id="myname2" class="myname2">maosusu</p>
-                <p ref="myname3" id="myname3" class="myname3">Designer</p>
+                <p
+                  ref="myname1"
+                  id="myname1"
+                  class="myname1 mix-blend-difference"
+                >
+                  i'm
+                </p>
+                <p
+                  ref="myname2"
+                  id="myname2"
+                  class="myname2 mix-blend-difference"
+                >
+                  maosusu
+                </p>
+                <p
+                  ref="myname3"
+                  id="myname3"
+                  class="myname3 mix-blend-difference"
+                >
+                  Designer
+                </p>
               </div>
             </div>
           </div>
@@ -184,7 +206,7 @@
         <div
           id="homePage2"
           ref="homePage2"
-          class="homePage2 flex items-center flex-col bg-gray-200 sm:px-24 lg:pl-24 lg:py-24 xl:pl-32 xl:py-32 3xl:pl-32 3xl:pr-60 mobile:px-8 mobile:py-8"
+          class="homePage2 flex items-center flex-col bg-gray-200 sm:px-24 lg:pl-24 lg:py-16 xl:pl-32 xl:py-16 3xl:pl-32 3xl:pr-60 mobile:px-8 mobile:py-8"
         >
           <div
             ref="el-content-one"
@@ -212,39 +234,40 @@
                 交互设计、动效、前端动画实现经验丰富；
               </div>
               <div ref="elContentOne5" class="elContentOne5 mt-8 zh">
-                最近 6 年从事 B2B 产品设计，项目经验包含:
+                最近 6 年在从事 B2B 产品设计:
               </div>
               <div ref="elContentOne6" class="elContentOne6 mt-2 zh">
-                海外仓、电商、电信运营、企业供应链、园区物业管理、
+                熟悉Vue、WordPress、GSAP、Pixi.js、THREE.js等；
               </div>
-              <div ref="elContentOne7" class="elContentOne7 mt-2 zh">
-                OA、数据大屏、Web可视化开发等；
-              </div>
-              <div ref="elContentOne8" class="elContentOne8 mt-8 zh">
-                渴望探索新知识，并能持续学习；
-              </div>
-              <div ref="elContentOne9" class="elContentOne9 mt-2 zh">
-                现已自学并熟悉VUE、WordPress、GSAP、Pixi.js、THREE.js等；
-              </div>
-              <div ref="elContentOne10" class="elContentOne10 mt-8 zh">
+              <div ref="elContentOne7" class="elContentOne7 mt-8 zh">
                 善于工作中解决实际问题，能帮助团队设计落地，
               </div>
-              <div ref="elContentOne11" class="elContentOne11 mt-2 zh">
+              <div ref="elContentOne8" class="elContentOne8 mt-2 zh">
                 乐于团队间的交流和知识分享，以提升团队效率；
               </div>
 
               <div class="mt-8 zh">
-                <span ref="elContentOne12" class="elContentOne12">
+                <span ref="elContentOne9" class="elContentOne9">
                   目前正在从事 "
                 </span>
                 <a
                   href="https://www.notion.so/246c3e8a9ae240e092bab74c3a2e7678"
                   target="_blank"
-                  ref="elContentOne13"
-                  class="elContentOne13 text-dark-blue underline hover:text-orange-500 font-bold"
+                  ref="elContentOne10"
+                  class="elContentOne10 text-dark-blue underline hover:text-orange-500 font-bold"
                   >设计资产数字化</a
                 >
-                <span ref="elContentOne14" class="elContentOne14"
+                <span ref="elContentOne11" class="elContentOne11"
+                  >🔍" 与 "</span
+                >
+                <a
+                  href="https://www.mobytang.com/#/play"
+                  target="_blank"
+                  ref="elContentOne12"
+                  class="elContentOne12 text-dark-blue underline hover:text-orange-500 font-bold"
+                  >创意代码</a
+                >
+                <span ref="elContentOne13" class="elContentOne13"
                   >🔍" 的工作。</span
                 >
               </div>
@@ -288,7 +311,7 @@
                 <span
                   ref="elContentTwo7"
                   class="elContentTwo7 text-gray-400 zh font-normal"
-                  >深圳 & 广州</span
+                  >深圳 & 广州 & 长沙</span
                 >
                 <div
                   ref="elContentTwo8"
@@ -344,310 +367,347 @@
               >
                 请向下滑 🧼 查看我的作品
               </div>
+            </div>
 
-              <div ref="el-content-four" class="w-full mt-12">
-                <div class="Portfolio-subtitle relative mb-8 z-50">
-                  <span
-                    ref="elContentFour1a"
-                    class="elContentFour1a text-base font-bold mobile:text-sm 3xl:text-xl"
-                    >02</span
-                  >
-                  <div
-                    ref="elContentFour1b"
-                    class="elContentFour1b text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-4"
-                  >
-                    Portfolio
-                  </div>
-                  <span
-                    ref="elContentFour1"
-                    class="elContentFour1 text-base font-bold mr-4 text-dark-blue"
-                    >2020 ~ New
-                  </span>
-                  <span
-                    ref="elContentFour2"
-                    class="elContentFour2 text-base font-semibold text-gray-400 mix-blend-difference"
-                    >Involve in product design</span
-                  >
+            <div ref="el-content-four" class="w-full mt-12">
+              <div class="Portfolio-subtitle relative mb-8 z-50">
+                <span
+                  ref="elContentFour1a"
+                  class="elContentFour1a text-base font-bold mobile:text-sm 3xl:text-xl"
+                  >02</span
+                >
+                <div
+                  ref="elContentFour1b"
+                  class="elContentFour1b text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-4"
+                >
+                  Portfolio
                 </div>
-
-                <main class="inspirations">
-                  <ul class="ul2">
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'segi-design-system' }">
-                        <span
-                          ref="elContentFour5"
-                          class="elContentFour5 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="SEGI设计系统"
-                          >SEGI 设计系统</span
-                        >
-                        <span
-                          ref="elContentFour5TitleType"
-                          class="elContentFour5TitleType title-type"
-                          >园区管理, 设计系统</span
-                        >
-                        <span
-                          ref="elContentFour5Subtitle"
-                          class="elContentFour5Subtitle subtitle"
-                          >UE/Motion/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentFour5Line"
-                        class="elContentFour5Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'segi-template-market' }">
-                        <span
-                          ref="elContentFour6"
-                          class="elContentFour6 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="模板市场"
-                          >模板市场</span
-                        >
-                        <span
-                          ref="elContentFour6TitleType"
-                          class="elContentFour6TitleType title-type"
-                          >组件代码, 页面模板代码</span
-                        >
-                        <span
-                          ref="elContentFour6Subtitle"
-                          class="elContentFour6Subtitle subtitle"
-                          >UE/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentFour6Line"
-                        class="elContentFour6Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'document-system' }">
-                        <span
-                          ref="elContentFour7"
-                          class="elContentFour7 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="CMS系统"
-                          >CMS 系统</span
-                        >
-                        <span
-                          ref="elContentFour7TitleType"
-                          class="elContentFour7TitleType title-type"
-                          >全栈开发</span
-                        >
-                        <span
-                          ref="elContentFour7Subtitle"
-                          class="elContentFour7Subtitle subtitle"
-                          >Motion/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentFour7Line"
-                        class="elContentFour7Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'visualized-data-platform' }">
-                        <span
-                          ref="elContentFour8"
-                          class="elContentFour8 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="数据可视化平台"
-                          >数据可视化平台</span
-                        >
-                        <span
-                          ref="elContentFour8TitleType"
-                          class="elContentFour8TitleType title-type"
-                          >数据大屏、低代码、组件设计</span
-                        >
-                        <span
-                          ref="elContentFour8Subtitle"
-                          class="elContentFour8Subtitle subtitle"
-                          >UE/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentFour8Line"
-                        class="elContentFour8Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'billing-center' }">
-                        <span
-                          ref="elContentFour9"
-                          class="elContentFour9 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="重新设计算费中心"
-                          >重新设计算费中心</span
-                        >
-                        <span
-                          ref="elContentFour9TitleType"
-                          class="elContentFour9TitleType title-type"
-                          >重构老旧系统</span
-                        >
-                        <span
-                          ref="elContentFour9Subtitle"
-                          class="elContentFour9Subtitle subtitle"
-                          >UE</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentFour9Line"
-                        class="elContentFour9Line line"
-                      ></div>
-                    </li>
-                  </ul>
-                </main>
+                <span
+                  ref="elContentFour1"
+                  class="elContentFour1 text-base font-bold mr-4 text-dark-blue"
+                  >2016 ~ 2019
+                </span>
+                <span
+                  ref="elContentFour2"
+                  class="elContentFour2 text-base font-semibold text-gray-400 mix-blend-difference"
+                  >Involve in product design</span
+                >
               </div>
 
-              <div
-                ref="elContentThree"
-                class="elContentThree w-full mt-24 text-gray-900"
-              >
-                <div class="Portfolio-subtitle relative mb-8 z-50">
-                  <span
-                    ref="elContentThree3"
-                    class="elContentThree3 text-base font-bold mr-4 text-dark-blue"
-                    >2016 ~ 2019
-                  </span>
-                  <span
-                    ref="elContentThree4"
-                    class="elContentThree4 text-base font-semibold text-gray-400 mix-blend-difference"
-                    >Involve in product design</span
-                  >
-                </div>
+              <main class="inspirations z-50">
+                <ul class="ul">
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'vodafone-conceptual-design' }">
+                      <span
+                        ref="mainOne1"
+                        class="mainOne1 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="沃达丰概念设计"
+                        >沃达丰概念设计</span
+                      >
+                      <span
+                        ref="mainOne1TitleType"
+                        class="mainOne1TitleType title-type"
+                        >移动端、客服、ChatBot</span
+                      >
+                      <span
+                        ref="mainOne1Subtitle"
+                        class="mainOne1Subtitle subtitle"
+                        >UI/UE/Motion</span
+                      >
+                    </RouterLink>
+                    <div ref="mainOne1Line" class="mainOne1Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'agile-ui' }">
+                      <span
+                        ref="mainOne2"
+                        class="mainOne2 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="敏捷营商设计系统"
+                        >Agile UI 设计系统</span
+                      >
+                      <span
+                        ref="mainOne2TitleType"
+                        class="mainOne2TitleType title-type mainOne41"
+                        >电信运营后台、设计系统</span
+                      >
+                      <span
+                        ref="mainOne2Subtitle"
+                        class="mainOne2Subtitle subtitle"
+                        >UE</span
+                      >
+                    </RouterLink>
+                    <div ref="mainOne2Line" class="mainOne2Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'HKT-motion-design' }">
+                      <span
+                        ref="mainOne3"
+                        class="mainOne3 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="香港电讯运营后台"
+                        >香港电讯运营后台</span
+                      >
+                      <span
+                        ref="mainOne3TitleType"
+                        class="mainOne3TitleType title-type"
+                        >动效设计、开发实现</span
+                      >
+                      <span
+                        ref="mainOne3Subtitle"
+                        class="mainOne3Subtitle subtitle"
+                        >Motion/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainOne3Line" class="mainOne3Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'UI-Lego' }">
+                      <span
+                        ref="mainOne4"
+                        class="mainOne4 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="华为可视化 Web 工具"
+                        >华为可视化 Web 工具</span
+                      >
+                      <span
+                        ref="mainOne4TitleType"
+                        class="mainOne4TitleType title-type"
+                        >低代码、组件设计</span
+                      >
+                      <span
+                        ref="mainOne4Subtitle"
+                        class="mainOne4Subtitle subtitle"
+                        >UE/UI</span
+                      >
+                    </RouterLink>
+                    <div ref="mainOne4Line" class="mainOne4Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'islace-mobile' }">
+                      <span
+                        ref="mainOne5"
+                        class="mainOne5 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="iSlace 体验升级"
+                        >iSlace 体验升级</span
+                      >
+                      <span
+                        ref="mainOne5TitleType"
+                        class="mainOne5TitleType title-type"
+                        >移动端、协同工具</span
+                      >
+                      <span
+                        ref="mainOne5Subtitle"
+                        class="mainOne5Subtitle subtitle"
+                        >UE/Motion</span
+                      >
+                    </RouterLink>
+                    <div ref="mainOne5Line" class="mainOne5Line line"></div>
+                  </li>
+                </ul>
+              </main>
+            </div>
 
-                <main class="inspirations z-50">
-                  <ul class="ul">
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'vodafone-conceptual-design' }">
-                        <span
-                          ref="elContentThree5"
-                          class="elContentThree5 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="沃达丰概念设计"
-                          >沃达丰概念设计</span
-                        >
-                        <span
-                          ref="elContentThree5TitleType"
-                          class="elContentThree5TitleType title-type"
-                          >移动端、客服、电商</span
-                        >
-                        <span
-                          ref="elContentThree5Subtitle"
-                          class="elContentThree5Subtitle subtitle"
-                          >UI/UE/Motion</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree5Line"
-                        class="elContentThree5Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'agile-ui' }">
-                        <span
-                          ref="elContentThree6"
-                          class="elContentThree6 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="敏捷营商设计系统"
-                          >Agile UI 设计系统</span
-                        >
-                        <span
-                          ref="elContentThree6TitleType"
-                          class="elContentThree6TitleType title-type elContentThree81"
-                          >电信运营后台、设计系统</span
-                        >
-                        <span
-                          ref="elContentThree6Subtitle"
-                          class="elContentThree6Subtitle subtitle"
-                          >UE</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree6Line"
-                        class="elContentThree6Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'HKT-motion-design' }">
-                        <span
-                          ref="elContentThree7"
-                          class="elContentThree7 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="香港电讯运营后台"
-                          >香港电讯运营后台</span
-                        >
-                        <span
-                          ref="elContentThree7TitleType"
-                          class="elContentThree7TitleType title-type"
-                          >动效设计、开发实现</span
-                        >
-                        <span
-                          ref="elContentThree7Subtitle"
-                          class="elContentThree7Subtitle subtitle"
-                          >Motion/Code</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree7Line"
-                        class="elContentThree7Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'UI-Lego' }">
-                        <span
-                          ref="elContentThree8"
-                          class="elContentThree8 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="华为可视化 Web 工具"
-                          >华为可视化 Web 工具</span
-                        >
-                        <span
-                          ref="elContentThree8TitleType"
-                          class="elContentThree8TitleType title-type"
-                          >低代码、组件设计</span
-                        >
-                        <span
-                          ref="elContentThree8Subtitle"
-                          class="elContentThree8Subtitle subtitle"
-                          >UE/UI</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree8Line"
-                        class="elContentThree8Line line"
-                      ></div>
-                    </li>
-                    <li class="portfolio-items">
-                      <RouterLink :to="{ name: 'islace-mobile' }">
-                        <span
-                          ref="elContentThree9"
-                          class="elContentThree9 main-heading"
-                          :class="{ cyberpunk: class3 }"
-                          data-text="iSlace 体验升级"
-                          >iSlace 体验升级</span
-                        >
-                        <span
-                          ref="elContentThree9TitleType"
-                          class="elContentThree9TitleType title-type"
-                          >移动端、协同工具</span
-                        >
-                        <span
-                          ref="elContentThree9Subtitle"
-                          class="elContentThree9Subtitle subtitle"
-                          >UE/Motion</span
-                        >
-                      </RouterLink>
-                      <div
-                        ref="elContentThree9Line"
-                        class="elContentThree9Line line"
-                      ></div>
-                    </li>
-                  </ul>
-                </main>
+            <div
+              ref="elContentThree"
+              class="elContentThree w-full mt-24 text-gray-900"
+            >
+              <div class="Portfolio-subtitle relative mb-8 z-50">
+                <span
+                  ref="elContentThree3"
+                  class="elContentThree3 text-base font-bold mr-4 text-dark-blue"
+                  >2020 ~ 2022
+                </span>
+                <span
+                  ref="elContentThree4"
+                  class="elContentThree4 text-base font-semibold text-gray-400 mix-blend-difference"
+                  >Involve in product design</span
+                >
               </div>
+
+              <main class="inspirations">
+                <ul class="ul2">
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'segi-design-system' }">
+                      <span
+                        ref="mainTwo1"
+                        class="mainTwo1 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="SEGI设计系统"
+                        >SEGI 设计系统</span
+                      >
+                      <span
+                        ref="mainTwo1TitleType"
+                        class="mainTwo1TitleType title-type"
+                        >园区管理, 设计系统</span
+                      >
+                      <span
+                        ref="mainTwo1Subtitle"
+                        class="mainTwo1Subtitle subtitle"
+                        >UE/Motion/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo1Line" class="mainTwo1Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'segi-template-market' }">
+                      <span
+                        ref="mainTwo2"
+                        class="mainTwo2 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="模板市场"
+                        >模板市场</span
+                      >
+                      <span
+                        ref="mainTwo2TitleType"
+                        class="mainTwo2TitleType title-type"
+                        >组件代码, 页面模板代码</span
+                      >
+                      <span
+                        ref="mainTwo2Subtitle"
+                        class="mainTwo2Subtitle subtitle"
+                        >UE/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo2Line" class="mainTwo2Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'document-system' }">
+                      <span
+                        ref="mainTwo3"
+                        class="mainTwo3 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="CMS系统"
+                        >CMS 系统</span
+                      >
+                      <span
+                        ref="mainTwo3TitleType"
+                        class="mainTwo3TitleType title-type"
+                        >全栈开发</span
+                      >
+                      <span
+                        ref="mainTwo3Subtitle"
+                        class="mainTwo3Subtitle subtitle"
+                        >Motion/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo3Line" class="mainTwo3Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'visualized-data-platform' }">
+                      <span
+                        ref="mainTwo4"
+                        class="mainTwo4 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="数据可视化平台"
+                        >数据可视化平台</span
+                      >
+                      <span
+                        ref="mainTwo4TitleType"
+                        class="mainTwo4TitleType title-type"
+                        >数据大屏、低代码、组件设计</span
+                      >
+                      <span
+                        ref="mainTwo4Subtitle"
+                        class="mainTwo4Subtitle subtitle"
+                        >UE/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo4Line" class="mainTwo4Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'IoT' }">
+                      <span
+                        ref="mainTwo5"
+                        class="mainTwo5 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="客用运载监测系统"
+                        >客用运载监测系统</span
+                      >
+                      <span
+                        ref="mainTwo5TitleType"
+                        class="mainTwo5TitleType title-type"
+                        >电梯&手扶梯监测、IoT</span
+                      >
+                      <span
+                        ref="mainTwo5Subtitle"
+                        class="mainTwo5Subtitle subtitle"
+                        >UE</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo5Line" class="mainTwo5Line line"></div>
+                  </li>
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'billing-center' }">
+                      <span
+                        ref="mainTwo6"
+                        class="mainTwo6 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="重新设计算费中心"
+                        >重新设计算费中心</span
+                      >
+                      <span
+                        ref="mainTwo6TitleType"
+                        class="mainTwo6TitleType title-type"
+                        >重构老旧系统、设计方法论</span
+                      >
+                      <span
+                        ref="mainTwo6Subtitle"
+                        class="mainTwo6Subtitle subtitle"
+                        >UE</span
+                      >
+                    </RouterLink>
+                    <div ref="mainTwo6Line" class="mainTwo6Line line"></div>
+                  </li>
+                </ul>
+              </main>
+            </div>
+
+            <div
+              ref="mainThree"
+              class="elContentThree w-full mt-24 text-gray-900"
+            >
+              <div class="Portfolio-subtitle relative mb-8 z-50">
+                <span
+                  ref="mainThreeDate"
+                  class="mainThreeDate text-base font-bold mr-4 text-dark-blue"
+                  >2023 ~ New
+                </span>
+                <span
+                  ref="mainThreeSubtitle"
+                  class="mainThreeSubtitle text-base font-semibold text-gray-400 mix-blend-difference"
+                  >Involve in product design</span
+                >
+              </div>
+
+              <main class="inspirations">
+                <ul class="ul3">
+                  <li class="portfolio-items">
+                    <RouterLink :to="{ name: 'glaze' }">
+                      <span
+                        ref="mainThree1"
+                        class="mainThree1 main-heading"
+                        :class="{ cyberpunk: class3 }"
+                        data-text="Glaze Studio 官网"
+                        >Glaze Studio 官网</span
+                      >
+                      <span
+                        ref="mainThree1TitleType"
+                        class="mainThree1TitleType title-type"
+                        >一家加拿大的镜子生产商、创意代码</span
+                      >
+                      <span
+                        ref="mainThree1Subtitle"
+                        class="mainThree1Subtitle subtitle"
+                        >UI/Code</span
+                      >
+                    </RouterLink>
+                    <div ref="mainThree1Line" class="mainTwo1Line line"></div>
+                  </li>
+                </ul>
+              </main>
 
               <div
                 ref="elContentFour10"
@@ -655,87 +715,89 @@
               >
                 更多项目请与我联系 👏 😆
               </div>
+            </div>
 
-              <div ref="elContent40" class="elContent40 mt-24">
-                <div
-                  ref="elContent41"
-                  class="elContent41 text-base font-bold mobile:text-sm 3xl:text-xl"
-                >
-                  03
+            <div ref="elContent40" class="elContent40 mt-24">
+              <div
+                ref="elContent41"
+                class="elContent41 text-base font-bold mobile:text-sm 3xl:text-xl"
+              >
+                03
+              </div>
+              <div
+                ref="elContent42"
+                class="elContent42 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-8"
+              >
+                Contact Me
+              </div>
+              <div
+                class="text-lg font-normal break-all sm:text-base md:text-lg 3xl:text-2xl mobile:text-sm"
+              >
+                <div ref="elContent43" class="elContent43">
+                  需要我成为团队中的一员吗? 😼
                 </div>
-                <div
-                  ref="elContent42"
-                  class="elContent42 text-6xl font-black mb-10 sm:text-5xl mobile:text-4xl mobile:mb-8"
-                >
-                  Contact Me
+                <div ref="elContent44" class="elContent44 mt-4">
+                  我们可以共同努力, 用工程思维建造
                 </div>
-                <div
-                  class="text-lg font-normal break-all sm:text-base md:text-lg 3xl:text-2xl mobile:text-sm"
-                >
-                  <div ref="elContent43" class="elContent43">
-                    需要我成为团队中的一员吗? 😼
-                  </div>
-                  <div ref="elContent44" class="elContent44 mt-4">
-                    我们可以共同努力, 用工程思维建造
-                  </div>
-                  <div ref="elContent45" class="elContent45 mt-4">
-                    一套更先进的工作流程, 以更有意义、
-                  </div>
+                <div ref="elContent45" class="elContent45 mt-4">
+                  一套更先进的工作流程, 以更有意义、
+                </div>
 
-                  <div
-                    ref="elContent46"
-                    class="elContent46 mt-4 mb-20 mobile:mb-12"
-                  >
-                    有效和完整的设计解决方案来为产品赋能。👏👏
-                  </div>
+                <div
+                  ref="elContent46"
+                  class="elContent46 mt-4 mb-20 mobile:mb-12"
+                >
+                  有效和完整的设计解决方案来为产品赋能。👏👏
                 </div>
-                <!-- blueBallBox -->
+              </div>
+              <!-- blueBallBox -->
+              <div
+                ref="blueBallBox"
+                class="blueBallBox z-1"
+                style="height: 400px"
+                @click="mailto"
+              >
                 <div
                   ref="blueBallBox"
-                  class="blueBallBox z-1"
-                  style="height: 400px"
+                  class="flex justify-center z-50 relative takeToMeBox"
                 >
                   <div
-                    ref="blueBallBox"
-                    class="flex justify-center z-50 relative takeToMeBox"
+                    class="takeToMeHot absolute cursor-pointer display-none"
+                  ></div>
+                  <div
+                    class="absolute w-80 h-32 flex items-center flex-col text-white font-bold"
+                    style="
+                      z-index: 51;
+                      transform: translate(-50%, -50%);
+                      top: 50%;
+                      left: 50%;
+                    "
                   >
-                    <div
-                      class="takeToMeHot absolute cursor-pointer"
-                      @click="mailto"
-                    ></div>
-                    <div
-                      class="absolute w-80 h-32 flex items-center flex-col text-white font-bold"
-                      style="
-                        z-index: 51;
-                        transform: translate(-50%, -50%);
-                        top: 50%;
-                        left: 50%;
-                      "
-                    >
-                      <div class="takeToMeText w-full text-center relative">
-                        LET ME WORK
-                      </div>
-                      <div
-                        class="takeToMeText2 w-full text-center tracking-wide relative"
-                        style="text-indent: 1rem"
-                      >
-                        TALK TO ME ✍️
-                      </div>
+                    <div class="takeToMeText w-full text-center relative">
+                      LET ME WORK
                     </div>
-                    <div class="lottie takeToMe w-80 h-80 z-10"></div>
-                  </div>
-                  <p
-                    class="w-full text-center mb-20 mt-24 relative mobile:text-xs mobile:mt-10 mobile:mt-1 text-gray-400 leading-10"
-                  >
-                    <span ref="elContent47" class="elContent47"
-                      >👆想知道蓝色的圆圈是干啥的吗?</span
+                    <div
+                      class="takeToMeText2 w-full text-center tracking-wide relative"
+                      style="text-indent: 1rem"
                     >
-                    <br />
-                    <span ref="elContent48" class="elContent48"
-                      >点一下看看吧 😆
-                    </span>
-                  </p>
+                      TALK TO ME ✍️
+                    </div>
+                  </div>
+                  <div
+                    class="lottie takeToMe w-80 h-80 z-10"
+                  ></div>
                 </div>
+                <p
+                  class="w-full text-center mb-20 mt-24 relative mobile:text-xs mobile:mt-10 mobile:mt-1 text-gray-400 leading-10"
+                >
+                  <span ref="elContent47" class="elContent47"
+                    >👆想知道蓝色的圆圈是干啥的吗?</span
+                  >
+                  <br />
+                  <span ref="elContent48" class="elContent48"
+                    >点一下看看吧 😆
+                  </span>
+                </p>
               </div>
             </div>
           </div>
@@ -748,7 +810,7 @@
   <router-view></router-view>
 </template>
 
-<script lang="ts">
+<script>
 import {
   ref,
   reactive,
@@ -806,7 +868,6 @@ export default defineComponent({
     const elContentOne11 = ref(null);
     const elContentOne12 = ref(null);
     const elContentOne13 = ref(null);
-    const elContentOne14 = ref(null);
 
     // const elContentTwo1 = ref(null);
     const elContentTwo2 = ref(null);
@@ -831,30 +892,30 @@ export default defineComponent({
     const elContentThree3 = ref(null);
     const elContentThree4 = ref(null);
 
-    const elContentThree5 = ref(null);
-    const elContentThree5TitleType = ref(null);
-    const elContentThree5Subtitle = ref(null);
-    const elContentThree5Line = ref(null);
+    const mainOne1 = ref(null);
+    const mainOne1TitleType = ref(null);
+    const mainOne1Subtitle = ref(null);
+    const mainOne1Line = ref(null);
 
-    const elContentThree6 = ref(null);
-    const elContentThree6TitleType = ref(null);
-    const elContentThree6Subtitle = ref(null);
-    const elContentThree6Line = ref(null);
+    const mainOne2 = ref(null);
+    const mainOne2TitleType = ref(null);
+    const mainOne2Subtitle = ref(null);
+    const mainOne2Line = ref(null);
 
-    const elContentThree7 = ref(null);
-    const elContentThree7TitleType = ref(null);
-    const elContentThree7Subtitle = ref(null);
-    const elContentThree7Line = ref(null);
+    const mainOne3 = ref(null);
+    const mainOne3TitleType = ref(null);
+    const mainOne3Subtitle = ref(null);
+    const mainOne3Line = ref(null);
 
-    const elContentThree8 = ref(null);
-    const elContentThree8TitleType = ref(null);
-    const elContentThree8Subtitle = ref(null);
-    const elContentThree8Line = ref(null);
+    const mainOne4 = ref(null);
+    const mainOne4TitleType = ref(null);
+    const mainOne4Subtitle = ref(null);
+    const mainOne4Line = ref(null);
 
-    const elContentThree9 = ref(null);
-    const elContentThree9TitleType = ref(null);
-    const elContentThree9Subtitle = ref(null);
-    const elContentThree9Line = ref(null);
+    const mainOne5 = ref(null);
+    const mainOne5TitleType = ref(null);
+    const mainOne5Subtitle = ref(null);
+    const mainOne5Line = ref(null);
 
     const elContentFour1a = ref(null);
     const elContentFour1b = ref(null);
@@ -862,30 +923,43 @@ export default defineComponent({
     const elContentFour1 = ref(null);
     const elContentFour2 = ref(null);
 
-    const elContentFour5 = ref(null);
-    const elContentFour5TitleType = ref(null);
-    const elContentFour5Subtitle = ref(null);
-    const elContentFour5Line = ref(null);
+    const mainTwo1 = ref(null);
+    const mainTwo1TitleType = ref(null);
+    const mainTwo1Subtitle = ref(null);
+    const mainTwo1Line = ref(null);
 
-    const elContentFour6 = ref(null);
-    const elContentFour6TitleType = ref(null);
-    const elContentFour6Subtitle = ref(null);
-    const elContentFour6Line = ref(null);
+    const mainTwo2 = ref(null);
+    const mainTwo2TitleType = ref(null);
+    const mainTwo2Subtitle = ref(null);
+    const mainTwo2Line = ref(null);
 
-    const elContentFour7 = ref(null);
-    const elContentFour7TitleType = ref(null);
-    const elContentFour7Subtitle = ref(null);
-    const elContentFour7Line = ref(null);
+    const mainTwo3 = ref(null);
+    const mainTwo3TitleType = ref(null);
+    const mainTwo3Subtitle = ref(null);
+    const mainTwo3Line = ref(null);
 
-    const elContentFour8 = ref(null);
-    const elContentFour8TitleType = ref(null);
-    const elContentFour8Subtitle = ref(null);
-    const elContentFour8Line = ref(null);
+    const mainTwo4 = ref(null);
+    const mainTwo4TitleType = ref(null);
+    const mainTwo4Subtitle = ref(null);
+    const mainTwo4Line = ref(null);
 
-    const elContentFour9 = ref(null);
-    const elContentFour9TitleType = ref(null);
-    const elContentFour9Subtitle = ref(null);
-    const elContentFour9Line = ref(null);
+    const mainTwo5 = ref(null);
+    const mainTwo5TitleType = ref(null);
+    const mainTwo5Subtitle = ref(null);
+    const mainTwo5Line = ref(null);
+
+    const mainTwo6 = ref(null);
+    const mainTwo6TitleType = ref(null);
+    const mainTwo6Subtitle = ref(null);
+    const mainTwo6Line = ref(null);
+
+    const mainThreeDate = ref(null);
+    const mainThreeSubtitle = ref(null);
+
+    const mainThree1 = ref(null);
+    const mainThree1TitleType = ref(null);
+    const mainThree1Subtitle = ref(null);
+    const mainThree1Line = ref(null);
 
     const elContentFour10 = ref(null);
 
@@ -1195,7 +1269,7 @@ export default defineComponent({
       let contentOneTimeLine = gsap.timeline({
         scrollTrigger: {
           trigger: "#homePage2",
-          start: "top 90%", // 1. trigger 的上下左右, 2. 屏幕刻度
+          start: "top 95%", // 1. trigger 的上下左右, 2. 屏幕刻度
           // end: "-=50",
           // markers: true,
           toggleActions: "play play resume pause",
@@ -1208,173 +1282,48 @@ export default defineComponent({
       contentOneTimeLine.add(useTextEnterAnime(elContentOne1));
       contentOneTimeLine.add(useTextEnterAnime(elContentOne2));
       contentOneTimeLine.add(useTextEnterAnime(elContentOne3, 0.4), "-=0.5");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne4, 0.3), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne5, 0.4), "-=0.1");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne6, 0.2), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne4, 0.3), "-=0.3");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne5, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne6, 0.2), "-=0.3");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne7, 0.4), "-=0.1");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne8, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne8, 0.4), "-=0.3");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne9, 0.3), "-=0.2");
       contentOneTimeLine.add(useTextEnterAnime(elContentOne10, 0.4), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne11, 0.4), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne12, 0.2), "-=0.2");
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne13, 0.2));
-      contentOneTimeLine.add(useTextEnterAnime(elContentOne14, 0.2));
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne11, 0.2), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne12, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentOne13, 0.2), "-=0.2");
+
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo2, 0.2));
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo3, 0.4), "-=0.2");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo4, 0.2), "-=0.3");
+      contentOneTimeLine.add(contentLineAnime(elContentTwo5, 0.4), "-=0.1");
+
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo6, 0.4), "-=0.4");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo7, 0.4), "-=0.3");
+      contentOneTimeLine.add(contentLineAnime(elContentTwo8, 0.4), "=-0.3");
+
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo9, 0.4), "-=0.4");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo10, 0.2), "-=0.3");
+      contentOneTimeLine.add(contentLineAnime(elContentTwo11, 0.4), "-=0.3");
+
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo12, 0.2), "-=0.4");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo13, 0.4), "-=0.3");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo14, 0.4), "-=0.3");
+
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo15, 0.4), "-=0.3");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo16, 0.5), "-=0.4");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo17, 0.4), "-=0.4");
+      contentOneTimeLine.add(useTextEnterAnime(elContentTwo18, 0.8), "-=0.3");
 
       //#endregion
 
-      // 02-1 EA
-      //#region
-      let contentTwoTimeLine = gsap.timeline({
-        scrollTrigger: {
-          // markers: true,
-          trigger: ".elContentTwo2",
-          start: "top 80%",
-          // end: "+=400",
-          toggleActions: "play play resume pause",
-        },
-      });
-
-      // contentTwoTimeLine.add(useTextEnterAnime(elContentTwo1, 0.2), "+=1");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo2, 0.2));
-
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo3, 0.4), "-=0.2");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo4, 0.2), "-=0.2");
-      contentTwoTimeLine.add(contentLineAnime(elContentTwo5, 0.4), "-=0.1");
-
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo6, 0.4), "-=0.4");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo7, 0.4), "-=0.2");
-      contentTwoTimeLine.add(contentLineAnime(elContentTwo8, 0.4), "=-0.3");
-
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo9, 0.4), "-=0.4");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo10, 0.2), "-=0.2");
-      contentTwoTimeLine.add(contentLineAnime(elContentTwo11, 0.4), "-=0.1");
-
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo12, 0.2), "-=0.4");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo13, 0.4), "-=0.1");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo14, 0.4), "-=0.2");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo15, 0.4), "-=0.2");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo16, 0.5), "-=0.2");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo17, 0.4), "-=0.2");
-      contentTwoTimeLine.add(useTextEnterAnime(elContentTwo18, 0.8), "-=0.2");
-      //#endregion
-
-      // 03 EA
-      //#region
-      let contentThreeTimeLine = gsap.timeline({
-        scrollTrigger: {
-          // markers: true, // 启用标尺
-          trigger: ".elContentThree3",
-          start: "top 80%",
-          toggleActions: "play play resume pause",
-        },
-        onStart: () => {
-          class3.value = true;
-        },
-      });
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree3, 0.4),
-        "-=0.3"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree4, 0.4),
-        "-=0.3"
-      );
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree5, 0.4),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree5TitleType, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree5Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        contentLineAnime(elContentThree5Line, 0.4),
-        "-=0.1"
-      );
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree6, 0.4),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree6TitleType, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree6Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        contentLineAnime(elContentThree6Line, 0.4),
-        "-=0.1"
-      );
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree7, 0.4),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree7TitleType, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree7Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        contentLineAnime(elContentThree7Line, 0.4),
-        "-=0.1"
-      );
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree8, 0.4),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree8TitleType, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree8Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        contentLineAnime(elContentThree8Line, 0.4),
-        "-=0.1"
-      );
-
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree9, 0.4),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree9TitleType, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        useTextEnterAnime(elContentThree9Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentThreeTimeLine.add(
-        contentLineAnime(elContentThree9Line, 0.4),
-        "-=0.1"
-      );
-
-      //#endregion
-
-      // 04 EA
+      // 03-1
       //#region
       let contentFourTimeLine = gsap.timeline({
         scrollTrigger: {
           // markers: true, // 启用标尺
           trigger: ".elContentFour1a",
-          start: "top 80%",
+          start: "top 95%",
           toggleActions: "play play resume pause",
         },
         onStart: () => {
@@ -1382,120 +1331,139 @@ export default defineComponent({
         },
       });
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour1a, 0.2));
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour1b), "-=0.2");
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour1a));
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour1b), 0.2);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour1, 0.4), "-=0.1");
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour2, 0.4), "-=0.2");
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour1, 0.4), 0.4);
+      contentFourTimeLine.add(useTextEnterAnime(elContentFour2, 0.4), 0.8);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour5, 0.4), "-=0.2");
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour5TitleType, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour5Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        contentLineAnime(elContentFour5Line, 0.4),
-        "-=0.1"
-      );
+      contentFourTimeLine.add(useTextEnterAnime(mainOne1, 0.4), 1);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne1TitleType, 0.2), 1.2);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne1Subtitle, 0.2), 1.3);
+      contentFourTimeLine.add(contentLineAnime(mainOne1Line, 0.4), 1.5);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour6, 0.4), "-=0.2");
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour6TitleType, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour6Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        contentLineAnime(elContentFour6Line, 0.4),
-        "-=0.1"
-      );
+      contentFourTimeLine.add(useTextEnterAnime(mainOne2, 0.4), 1.2);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne2TitleType, 0.2), 1.4);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne2Subtitle, 0.2), 1.5);
+      contentFourTimeLine.add(contentLineAnime(mainOne2Line, 0.4), 1.7);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour7, 0.4), "-=0.2");
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour7TitleType, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour7Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        contentLineAnime(elContentFour7Line, 0.4),
-        "-=0.1"
-      );
+      contentFourTimeLine.add(useTextEnterAnime(mainOne3, 0.4), 1.4);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne3TitleType, 0.2), 1.6);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne3Subtitle, 0.2), 1.7);
+      contentFourTimeLine.add(contentLineAnime(mainOne3Line, 0.4), 1.9);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour8, 0.4), "-=0.2");
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour8TitleType, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour8Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        contentLineAnime(elContentFour8Line, 0.4),
-        "-=0.1"
-      );
+      contentFourTimeLine.add(useTextEnterAnime(mainOne4, 0.4), 1.6);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne4TitleType, 0.2), 1.8);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne4Subtitle, 0.2), 1.9);
+      contentFourTimeLine.add(contentLineAnime(mainOne4Line, 0.4), 2);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour9, 0.4), "-=0.2");
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour9TitleType, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        useTextEnterAnime(elContentFour9Subtitle, 0.2),
-        "-=0.2"
-      );
-      contentFourTimeLine.add(
-        contentLineAnime(elContentFour9Line, 0.4),
-        "-=0.1"
-      );
+      contentFourTimeLine.add(useTextEnterAnime(mainOne5, 0.4), 1.8);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne5TitleType, 0.2), 2);
+      contentFourTimeLine.add(useTextEnterAnime(mainOne5Subtitle, 0.2), 2.1);
+      contentFourTimeLine.add(contentLineAnime(mainOne5Line, 0.4), 2.2);
 
-      contentFourTimeLine.add(useTextEnterAnime(elContentFour10, 0.4), "-=0.3");
-
-      // contentFourTimeLine.add(
-      //   gsap.fromTo(
-      //     ".takeToMeBox",
-      //     {
-      //       y: 10,
-      //       opacity: 0,
-      //     },
-      //     {
-      //       y: 0,
-      //       opacity: 1,
-      //       duration: 0.5,
-      //       onComplete: () => {
-      //         console.log("takeToMeBox end");
-      //       },
-      //     }
-      //   )
-      // );
       //#endregion
 
-      // Contact Us
+      // 03-2 EA
+      //#region
+      let contentThreeTimeLine = gsap.timeline({
+        scrollTrigger: {
+          // markers: true, // 启用标尺
+          trigger: ".elContentThree3",
+          start: "top 95%",
+          toggleActions: "play play resume pause",
+        },
+        onStart: () => {
+          class3.value = true;
+        },
+      });
+
+      contentThreeTimeLine.add(useTextEnterAnime(elContentThree3, 0.4), 0);
+      contentThreeTimeLine.add(useTextEnterAnime(elContentThree4, 0.4), 0.5);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo1, 0.4), 1);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo1TitleType, 0.2), 1.2);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo1Subtitle, 0.2), 1.3);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo1Line, 0.4), 1.5);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo2, 0.4), 1.2);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo2TitleType, 0.2), 1.4);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo2Subtitle, 0.2), 1.5);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo2Line, 0.4), 1.7);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo3, 0.4), 1.4);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo3TitleType, 0.2), 1.6);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo3Subtitle, 0.2), 1.7);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo3Line, 0.4), 1.9);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo4, 0.4), 1.6);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo4TitleType, 0.2), 1.8);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo4Subtitle, 0.2), 1.9);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo4Line, 0.4), 2);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo5, 0.4), 1.8);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo5TitleType, 0.2), 2);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo5Subtitle, 0.2), 2.1);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo5Line, 0.4), 2.2);
+
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo6, 0.4), 2);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo6TitleType, 0.2), 2.2);
+      contentThreeTimeLine.add(useTextEnterAnime(mainTwo6Subtitle, 0.2), 2.3);
+      contentThreeTimeLine.add(contentLineAnime(mainTwo6Line, 0.4), 2.4);
+      //#endregion
+
+      // 03-2 EA
+      //#region
+      let contentThree2TimeLine = gsap.timeline({
+        scrollTrigger: {
+          // markers: true, // 启用标尺
+          trigger: ".mainThreeDate",
+          start: "top 95%",
+          toggleActions: "play play resume pause",
+        },
+        onStart: () => {
+          class3.value = true;
+        },
+      });
+
+      contentThree2TimeLine.add(useTextEnterAnime(mainThreeDate, 0.4), 0);
+      contentThree2TimeLine.add(useTextEnterAnime(mainThreeSubtitle, 0.4), 0.5);
+
+      contentThree2TimeLine.add(useTextEnterAnime(mainThree1, 0.4), 1);
+      contentThree2TimeLine.add(
+        useTextEnterAnime(mainThree1TitleType, 0.2),
+        1.2
+      );
+      contentThree2TimeLine.add(
+        useTextEnterAnime(mainThree1Subtitle, 0.2),
+        1.3
+      );
+      contentThree2TimeLine.add(contentLineAnime(mainThree1Line, 0.4), 1.5);
+
+      contentThree2TimeLine.add(
+        useTextEnterAnime(elContentFour10, 0.4),
+        "-=0.3"
+      );
+
+      //#endregion
+
+      // 04 Contact Us
       let content4TimeLine = gsap.timeline({
         scrollTrigger: {
           // markers: true, // 启用标尺
           trigger: ".elContent40",
-          start: "top 80%",
+          start: "top 95%",
           // end: "+=400",
           toggleActions: "play play play pause", //restart
         },
       });
 
-      content4TimeLine.add(useTextEnterAnime(elContent41, 0.2), "+=1");
-      content4TimeLine.add(useTextEnterAnime(elContent42, 0.4));
-      content4TimeLine.add(useTextEnterAnime(elContent43, 0.4), "-=0.2");
-      content4TimeLine.add(useTextEnterAnime(elContent44, 0.4), "-=0.2");
-      content4TimeLine.add(useTextEnterAnime(elContent45, 0.4), "-=0.2");
-      content4TimeLine.add(useTextEnterAnime(elContent46, 0.4), "-=0.2");
+      content4TimeLine.add(useTextEnterAnime(elContent41, 0.2));
+      content4TimeLine.add(useTextEnterAnime(elContent42, 0.4), 0.1);
+      content4TimeLine.add(useTextEnterAnime(elContent43, 0.4), 0.3);
+      content4TimeLine.add(useTextEnterAnime(elContent44, 0.4), 0.5);
+      content4TimeLine.add(useTextEnterAnime(elContent45, 0.4), 0.7);
+      content4TimeLine.add(useTextEnterAnime(elContent46, 0.4), 0.9);
 
       let blueBallBox = gsap.fromTo(
         ".blueBallBox",
@@ -1617,7 +1585,6 @@ export default defineComponent({
       elContentOne11,
       elContentOne12,
       elContentOne13,
-      elContentOne14,
       // elContentTwo1,
       elContentTwo2,
       elContentTwo3,
@@ -1640,26 +1607,26 @@ export default defineComponent({
       elContentThree,
       elContentThree3,
       elContentThree4,
-      elContentThree5,
-      elContentThree5TitleType,
-      elContentThree5Subtitle,
-      elContentThree5Line,
-      elContentThree6,
-      elContentThree6TitleType,
-      elContentThree6Subtitle,
-      elContentThree6Line,
-      elContentThree7,
-      elContentThree7TitleType,
-      elContentThree7Subtitle,
-      elContentThree7Line,
-      elContentThree8,
-      elContentThree8TitleType,
-      elContentThree8Subtitle,
-      elContentThree8Line,
-      elContentThree9,
-      elContentThree9TitleType,
-      elContentThree9Subtitle,
-      elContentThree9Line,
+      mainOne1,
+      mainOne1TitleType,
+      mainOne1Subtitle,
+      mainOne1Line,
+      mainOne2,
+      mainOne2TitleType,
+      mainOne2Subtitle,
+      mainOne2Line,
+      mainOne3,
+      mainOne3TitleType,
+      mainOne3Subtitle,
+      mainOne3Line,
+      mainOne4,
+      mainOne4TitleType,
+      mainOne4Subtitle,
+      mainOne4Line,
+      mainOne5,
+      mainOne5TitleType,
+      mainOne5Subtitle,
+      mainOne5Line,
       clickHome,
       clickIntroduce,
       clickPortfolio,
@@ -1669,26 +1636,36 @@ export default defineComponent({
       elContentFour1b,
       elContentFour1,
       elContentFour2,
-      elContentFour5,
-      elContentFour5TitleType,
-      elContentFour5Subtitle,
-      elContentFour5Line,
-      elContentFour6,
-      elContentFour6TitleType,
-      elContentFour6Subtitle,
-      elContentFour6Line,
-      elContentFour7,
-      elContentFour7TitleType,
-      elContentFour7Subtitle,
-      elContentFour7Line,
-      elContentFour8,
-      elContentFour8TitleType,
-      elContentFour8Subtitle,
-      elContentFour8Line,
-      elContentFour9,
-      elContentFour9TitleType,
-      elContentFour9Subtitle,
-      elContentFour9Line,
+      mainTwo1,
+      mainTwo1TitleType,
+      mainTwo1Subtitle,
+      mainTwo1Line,
+      mainTwo2,
+      mainTwo2TitleType,
+      mainTwo2Subtitle,
+      mainTwo2Line,
+      mainTwo3,
+      mainTwo3TitleType,
+      mainTwo3Subtitle,
+      mainTwo3Line,
+      mainTwo4,
+      mainTwo4TitleType,
+      mainTwo4Subtitle,
+      mainTwo4Line,
+      mainTwo5,
+      mainTwo5TitleType,
+      mainTwo5Subtitle,
+      mainTwo5Line,
+      mainTwo6,
+      mainTwo6TitleType,
+      mainTwo6Subtitle,
+      mainTwo6Line,
+      mainThreeDate,
+      mainThreeSubtitle,
+      mainThree1,
+      mainThree1TitleType,
+      mainThree1Subtitle,
+      mainThree1Line,
       elContentFour10,
       elContent40,
       elContent41,
@@ -1727,6 +1704,11 @@ svg:hover path {
 
 .about {
   /* grid-template-rows: auto 40px; */
+}
+
+.myname {
+  color: rgba(255, 255, 255, 0.9);
+  mix-blend-mode: difference;
 }
 
 .about-describe {
@@ -1878,7 +1860,8 @@ canvas {
   bottom: 0;
   z-index: 0;
   /* display: none;  */
-  background-image: url(https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/home-big-image.png);
+  /* background-image: url(https://mtwork.oss-cn-shenzhen.aliyuncs.com/blog-assets/home-big-image.png); */
+  background-image: url(https://mobytang.com/images/mobytang_Cyberpunk_bg.png);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2061,19 +2044,23 @@ canvas {
   100% {
     opacity: 1;
     color: #ff5500;
+    /* color: #0042f6; */
   }
 }
 
 @keyframes glitch3 {
   100% {
-    opacity: 0.1;
+    opacity: 0.2;
+    color: #323232;
+    mix-blend-mode: difference;
   }
 }
 
 @keyframes glitch3-2 {
   100% {
     opacity: 0.8;
-    color: #ff5500;
+    /* color: #ff5500; */
+    /* color: #0042f6; */
   }
 }
 
@@ -2127,7 +2114,7 @@ canvas {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  transform: translateY(16px);
+  transform: translateY(100%);
   color: #fff;
   transition: 0.5s;
 }
@@ -2146,7 +2133,7 @@ canvas {
 }
 
 #dribbbleLink:hover::after {
-  transform: translateY(-16px);
+  transform: translateY(-100%);
 }
 
 @media screen and (max-width: 390px) {
