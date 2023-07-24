@@ -110,6 +110,7 @@ export default defineComponent({
     MyTag,
   },
   setup() {
+    document.body.style.overflow = "auto";
     let blogAnimeLine = gsap.timeline({
       delay: 1,
       onComplete() {

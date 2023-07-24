@@ -4,7 +4,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from "vue-router
 import HelloLoading from "../pages/HelloLoading";
 import Home from "../pages/Home2";
 import Prompt from "../pages/Prompt";
-import Blog from "../pages/Blog";
+import Blog from "../pages/Blog2";
 import Play from "../pages/Play";
 import About from "../pages/About";
 import ContentOld1 from "../pages/ContentOld1"; // vodafone-conceptual-design

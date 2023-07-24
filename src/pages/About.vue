@@ -2,7 +2,7 @@
   <div class="flex justify-center bg-gray-100">
     <div class="w-11/12 mt-24 sm:mt-40">
       <h1 class="font-bold text-4xl sm:text-5xl">Hi, I'm Maosusu</h1>
-      <h2 class="font-bold text-3xl text-gray-400 mt-2 sm:mt-4">
+      <h2 class=" font-bold text-3xl text-gray-400 mt-2 sm:mt-4 ">
         交互设计师 / 动效设计师 / 前端动画开发
       </h2>
 
@@ -34,7 +34,9 @@
               动效 与 交互 工作。
             </p>
             <p class="mt-2 text-justify">
-              20 年来到四格互联, 这是一家对接政府, 地产和园区物业的软件服务商,
+              20 年来到四格互联, 这是一家对接政府, 地产和园区物业的软件服务商。
+            </p>
+            <p class="mt-2 text-justify">
               目前正在从事 "
               <a
                 href="https://www.notion.so/246c3e8a9ae240e092bab74c3a2e7678"
@@ -116,19 +118,11 @@
           </h3>
           <div class="border-b pb-6 sm:pb-16 border-gray-300">
             <p class="font-bold">
-              设计实现(Design+code) / 前端动画开发 / WebGL 设计
+              设计实现(Design+code) / 前端动画开发 / WebGL 设计 / 服务设计
             </p>
           </div>
-
           <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">
-            在学什么?
-          </h3>
-          <div class="border-b pb-6 sm:pb-16 border-gray-300">
-            <p>WebGL, Three.js, Blender</p>
-          </div>
-
-          <h3 class="sm:pb-8 font-bold text-dark-blue text-2xl sm:text-xl">
-            经验
+            工作经历
           </h3>
           <div class="space-y-2 pb-6 sm:pb-16">
             <p class="font-bold">inke映客直播广州分公司</p>
@@ -263,6 +257,7 @@ export default defineComponent({
   name: "About",
 
   setup() {
+    document.body.style.overflow = "auto";
     gsap.registerPlugin(ScrollTrigger);
 
     const box = ref(null);
@@ -390,4 +385,5 @@ body {
     grid-template-columns: minmax(120px, 320px) auto;
   }
 }
+
 </style>

@@ -128,6 +128,7 @@ export default {
   setup() {
     const router = useRouter();
     onMounted(() => {
+      document.body.style.overflow = "auto";
       let scrollTop = document.body.scrollTop;
       scrollTop = 0;
       console.log(scrollTop);

@@ -6,7 +6,7 @@
           v-if="imgState == false"
           class="w-full h-56 text-4xl text-center font-semibold flex justify-center items-center"
         >
-          <span class="text-red-50 mix-blend-difference">404</span>
+          <span class="text-red-50 mix-blend-difference">Loading</span>
         </div>
         <img
           ref="CodeCardImg"

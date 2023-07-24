@@ -113,6 +113,7 @@ export default {
   },
   setup() {
     onMounted(() => {
+      document.body.style.overflow = "auto";
       let scrollTop = document.body.scrollTop;
       scrollTop = 0;
 

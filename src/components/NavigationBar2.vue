@@ -9,13 +9,8 @@
   <div class="fixed" style="z-index: 99">
     <div
       class="NavigationBar fixed w-full h-20 px-4 sm:px-8 flex items-center justify-between text-gray-400"
-      :class="[
-        {
-          'bg-gray-100 shadow border-b border-gray-100': $route.name == 'about' || $route.name == 'blog' || $route.name == 'play',
-        },
-      ]"
       style="zindex: 999"
-    >
+    > 
       <div class="flex items-center z-50" id="logo">
         <a href="https://mobytang.com/#/home">
           <img src="../assets/img/logo.png" alt="" class="w-8 h-8" />

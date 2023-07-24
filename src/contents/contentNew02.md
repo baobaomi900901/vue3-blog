@@ -8,7 +8,7 @@ name: SEGI设计系统
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/tm/tm.png"/>
+    <img src="../assets/tm/tm.jpg"/>
 </div>
 <br>
 <br>

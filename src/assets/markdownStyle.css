@@ -354,7 +354,4 @@ p > strong {
 }
 
 @media screen and (min-width: 1920px) {
-  .markdown-body {
-    @apply max-w-7xl;
-  }
 }

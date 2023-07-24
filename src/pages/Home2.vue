@@ -4,162 +4,168 @@
     <div id="overlay-light" class="overlay"></div>
     <div id="overlay-dark" class="overlay"></div>
     <div class="content">
-      <div class="nav row">
-        <div class="col">
-          Project name <br />
-          项目名称
+      <div class="placeholder"></div>
+      <div class="nav-box">
+        <div class="nav row">
+          <div class="col">
+            Project name <br />
+            项目名称
+          </div>
+          <div class="col">
+            Highlights <br />
+            亮点
+          </div>
+          <div class="col">
+            work <br />
+            职责
+          </div>
+          <div class="col">
+            company <br />
+            公司/甲方
+          </div>
+          <div ref="time" class="col col-time" @click="changeTime">
+            time <br />
+            时间 ( ↓ )
+          </div>
         </div>
-        <div class="col">
-          Highlights <br />
-          亮点
-        </div>
-        <div class="col">
-          work <br />
-          职责
-        </div>
-        <div class="col">
-          company <br />
-          公司/甲方
-        </div>
-        <div ref="time" class="col col-time" @click="changeTime">
-          time <br />
-          时间 ( ↑ )
-        </div>
+        <div class="divider nav-divider"></div>
       </div>
-      <div class="divider nav-divider"></div>
       <div ref="rows" class="rows">
-        <div
-          class="row"
-          @click="router.push({ name: 'vodafone-conceptual-design' })"
-        >
-          <div class="col">沃达丰移动端概念设计</div>
-          <div class="col">巴塞罗那电信展、ChatBot</div>
-          <div class="col">UI、UE、动效</div>
-          <div class="col">Huawei、Vodafone</div>
-          <div class="col">2016</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toAgileUi">
-          <div class="col">Agile Ul设计系统</div>
-          <div class="col">电信运营商中台、IF Design Award</div>
-          <div class="col">UE</div>
-          <div class="col">Huawei</div>
-          <div class="col">2017</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toHkt">
-          <div class="col">HKT 数字化改革</div>
-          <div class="col">动效、创意代码</div>
-          <div class="col">UI、动效</div>
-          <div class="col">Huawei、HKT</div>
-          <div class="col">2017</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toUiLego">
-          <div class="col">UI Lego</div>
-          <div class="col">可视化Web工具</div>
-          <div class="col">UE</div>
-          <div class="col">Huawei</div>
-          <div class="col">2018</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toISlace">
-          <div class="col">iSlace 移动端体验升级</div>
-          <div class="col">MVP、协同办公</div>
-          <div class="col">UE</div>
-          <div class="col">Huawei</div>
-          <div class="col">2019</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toDesignSystem">
-          <div class="col">四格互联设计系统</div>
-          <div class="col">组件样式代码重构</div>
-          <div class="col">UE、前端开发(CSS)</div>
-          <div class="col">SEGI</div>
-          <div class="col">2020 ~ 2021</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toTemplateMarket">
-          <div class="col">模板市场</div>
-          <div class="col">将设计稿转译成模板代码</div>
-          <div class="col">UE、前端开发(CSS)</div>
-          <div class="col">SEGI</div>
-          <div class="col">2020 ~ 2022</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toWordpress">
-          <div class="col">CMS 系统</div>
-          <div class="col">独立开发前后端</div>
-          <div class="col">全栈设计</div>
-          <div class="col">SEGI</div>
-          <div class="col">2021</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toDataview">
-          <div class="col">数据可视化平台</div>
-          <div class="col">数据大屏、低代码编辑器</div>
-          <div class="col">UE、前端开发(cavans)</div>
-          <div class="col">SEGI</div>
-          <div class="col">2021 ~ 2022</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toIot">
-          <div class="col">客用运载系统</div>
-          <div class="col">设计赋能产品</div>
-          <div class="col">UE</div>
-          <div class="col">SEGI</div>
-          <div class="col">2021</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toRedesign">
-          <div class="col">重新设计算费中心</div>
-          <div class="col">设计赋能产品</div>
-          <div class="col">UE</div>
-          <div class="col">SEGI</div>
-          <div class="col">2022</div>
-        </div>
-        <div class="divider"></div>
-        <div class="row" @click="toGlaze">
-          <div class="col">Glaze Studio官网设计</div>
-          <div class="col">海外项目、网页全栈设计</div>
-          <div class="col">全栈设计</div>
-          <div class="col">私人、Glaze</div>
-          <div class="col">2023</div>
-        </div>
-        <div class="divider"></div>
+        <Row
+          :projectName="'沃达丰移动端概念设计'"
+          :hightLights="'巴塞罗那电信展、ChatBot'"
+          :work="'UI、UE、动效'"
+          :company="'Huawei、Vodafone'"
+          :time="'2016'"
+          :url="'vodafone-conceptual-design'"
+        />
+        <Row
+          :projectName="'Agile Ul设计系统'"
+          :hightLights="'电信运营商中台、IF Design Award'"
+          :work="'UE'"
+          :company="'Huawei'"
+          :time="'2017'"
+          :url="'agile-ui'"
+        />
+        <Row
+          :projectName="'HKT 数字化改革'"
+          :hightLights="'动效、创意代码'"
+          :work="'UI、动效'"
+          :company="'Huawei、HKT'"
+          :time="'2017'"
+          :url="'HKT-motion-design'"
+        />
+        <Row
+          :projectName="'UI Lego'"
+          :hightLights="'可视化Web工具'"
+          :work="'UE'"
+          :company="'Huawei'"
+          :time="'2018'"
+          :url="'UI-Lego'"
+        />
+        <Row
+          :projectName="'iSlace 移动端体验升级'"
+          :hightLights="'MVP、协同办公'"
+          :work="'UE'"
+          :company="'Huawei'"
+          :time="'2019'"
+          :url="'islace-mobile'"
+        />
+        <Row
+          :projectName="'四格互联设计系统'"
+          :hightLights="'组件样式代码重构'"
+          :work="'UE、前端开发(CSS)'"
+          :company="'SEGI'"
+          :time="'2020 ~ 2022'"
+          :url="'segi-design-system'"
+        />
+        <Row
+          :projectName="'模板市场'"
+          :hightLights="'将设计稿转译成模板代码'"
+          :work="'UE、前端开发(CSS)'"
+          :company="'SEGI'"
+          :time="'2020 ~ 2022'"
+          :url="'segi-template-market'"
+        />
+        <Row
+          :projectName="'CMS 系统'"
+          :hightLights="'独立开发前后端、全栈设计'"
+          :work="'UE、前端开发'"
+          :company="'SEGI'"
+          :time="'2021'"
+          :url="'document-system'"
+        />
+        <Row
+          :projectName="'数据可视化平台'"
+          :hightLights="'数据大屏、低代码编辑器'"
+          :work="'UE、前端开发(cavans)'"
+          :company="'SEGI'"
+          :time="'2021 ~ 2022'"
+          :url="'visualized-data-platform'"
+        />
+        <Row
+          :projectName="'客用运载系统'"
+          :hightLights="'设计赋能产品'"
+          :work="'UE'"
+          :company="'SEGI'"
+          :time="'2021'"
+          :url="'IoT'"
+        />
+        <Row
+          :projectName="'重新设计算费中心'"
+          :hightLights="'设计赋能产品'"
+          :work="'UE'"
+          :company="'SEGI'"
+          :time="'2022'"
+          :url="'billing-center'"
+        />
+        <Row
+          :projectName="'Glaze Studio官网设计'"
+          :hightLights="'海外项目、网页全栈设计'"
+          :work="'全栈设计'"
+          :company="'私人、Glaze'"
+          :time="'2023'"
+          :url="'glaze'"
+        />
       </div>
-      <div class="divider"></div>
       <div class="scroll-prompt">
-        🖱 <span class="scroll-prompt-text">Scroll Down</span> 👆🏻
+        <div class="divider"></div>
+        <span class="scroll-prompt-text"> 🖱 Scroll Down 👆🏻</span>
       </div>
-      <br />
-      <br />
-      <div class="introduce">
-        <div class="introduce-title ic">MobyTang.</div>
-        <div class="introduce-content ic">
-          我是一个灵活的多功能(Design+Code)设计师，
+      <div class="introduce-box">
+        <div class="introduce">
+          <div class="introduce-title ic">MobyTang.</div>
+          <div class="introduce-content ic">
+            我是一个灵活的多功能(Design+Code)设计师，有丰富的交互设计、动效、前端动画实现经验；
+          </div>
+          <div class="introduce-content ic">
+            <span> 目前正在从事 " </span>
+            <a
+              href="https://www.notion.so/246c3e8a9ae240e092bab74c3a2e7678"
+              target="_blank"
+              class="text-yellow-500 underline hover:text-dark-blue font-bold"
+              >设计资产数字化</a
+            >
+            <span>🔍" 与 "</span>
+            <a
+              href="https://www.mobytang.com/#/play"
+              target="_blank"
+              class="text-yellow-500 underline hover:text-dark-blue font-bold"
+              >创意代码</a
+            >
+            <span>🔍" 的工作。</span>
+          </div>
         </div>
-        <div class="introduce-content ic">
-          有丰富的交互设计、动效、前端动画实现经验；
-        </div>
-        <div class="introduce-content ic">最近6年在从事B2B产品设计；</div>
-        <div class="introduce-content ic">
-          <span> 目前正在从事 " </span>
-          <a
-            href="https://www.notion.so/246c3e8a9ae240e092bab74c3a2e7678"
-            target="_blank"
-            class="text-yellow-500 underline hover:text-dark-blue font-bold"
-            >设计资产数字化</a
-          >
-          <span>🔍" 与 "</span>
-          <a
-            href="https://www.mobytang.com/#/play"
-            target="_blank"
-            class="text-yellow-500 underline hover:text-dark-blue font-bold"
-            >创意代码</a
-          >
-          <span>🔍" 的工作。</span>
-        </div>
+      </div>
+      <div class="marquee">
+        <span class="span1">
+          UI Design ↗ Interaction Design ↗ Motion Design ↗ Web development
+          ↗&nbsp;
+        </span>
+        <span class="span2">
+          UI Design ↗ Interaction Design ↗ Motion Design ↗ Web development
+          ↗&nbsp;
+        </span>
       </div>
     </div>
   </div>
@@ -185,58 +191,11 @@ import image10 from "../assets/img/Iot-cover.png";
 import image11 from "../assets/img/redesing.png";
 import image12 from "../assets/img/glaze.jpg";
 
+import Row from "../components/Row.vue";
+import MySwiper from "../components/MySwiper.vue";
+
 import { useRouter } from "vue-router";
 const router = useRouter();
-
-// 1
-const toVodafone = () => {
-  router.push({ name: "vodafone-conceptual-design" });
-};
-
-const toAgileUi = () => {
-  router.push({ name: "agile-ui" });
-};
-
-const toHkt = () => {
-  router.push({ name: "HKT-motion-design" });
-};
-
-const toUiLego = () => {
-  router.push({ name: "UI-Lego" });
-};
-
-const toISlace = () => {
-  router.push({ name: "islace-mobile" });
-};
-
-// 2
-const toDesignSystem = () => {
-  router.push({ name: "segi-design-system" });
-};
-
-const toTemplateMarket = () => {
-  router.push({ name: "segi-template-market" });
-};
-
-const toWordpress = () => {
-  router.push({ name: "document-system" });
-};
-
-const toDataview = () => {
-  router.push({ name: "visualized-data-platform" });
-};
-
-const toIot = () => {
-  router.push({ name: "IoT" });
-};
-
-const toRedesign = () => {
-  router.push({ name: "billing-center" });
-};
-
-const toGlaze = () => {
-  router.push({ name: "glaze" });
-};
 
 const rows = ref(); // 原始数据
 let oddRows = []; // 存储原始数据
@@ -247,17 +206,19 @@ let timeType = true;
 
 const changeTime = () => {
   if (timeType) {
-    time.value.innerHTML = `time <br /> 时间 ( ↓ )`;
+    time.value.innerHTML = `time <br /> 时间 ( ↑ )`;
     timeType = !timeType;
     rows.value.innerHTML = ""; // 清除数据
     newRows.forEach((item) => {
       rows.value.appendChild(item);
     });
   } else {
-    time.value.innerHTML = `time <br /> 时间 ( ↑ )`;
+    time.value.innerHTML = `time <br /> 时间 ( ↓ )`;
     timeType = !timeType;
     rows.value.innerHTML = ""; // 清除数据
-    rows.value.innerHTML = oddRows;
+    oddRows.forEach((item) => {
+      rows.value.appendChild(item);
+    });
   }
 };
 
@@ -275,7 +236,7 @@ function animeInput() {
     },
   });
 
-  gsap.to("#overlay-dark", 2, {
+  gsap.to("#overlay-dark", 3, {
     top: "-100%",
     ease: "power3.inOut",
     delay: 5,
@@ -287,6 +248,13 @@ function animeInput() {
     stagger: {
       amount: 1,
     },
+    onComplete:() =>{
+      let scrollPrompt = document.querySelector(".scroll-prompt");
+      scrollPrompt.style.mixBlendMode = "unset";
+      scrollPrompt.style.color = "#0a0a0a";
+      let SPdivider = document.querySelector(".scroll-prompt .divider");
+      SPdivider.style.background = "#0a0a0a";
+    }
   });
   gsap.from(".row > .col, .scroll-prompt ", 2, {
     opacity: 0,
@@ -304,6 +272,9 @@ function animeInput() {
     ease: "power3.inOut",
     delay: 5.5,
     onComplete: () => {
+      let rows = document.querySelector(".rows");
+      rows.style.pointerEvents = "unset";
+      rows.style.background = "#0a0a0a";
       let dividers = document.querySelectorAll(".rows .divider");
       dividers.forEach((divider) => {
         divider.style.background = "#444";
@@ -315,7 +286,8 @@ function animeInput() {
 // 像素化动画
 
 onMounted(() => {
-  oddRows = rows.value.innerHTML;
+  document.body.style.overflow = "hidden";
+
   animeInput();
   const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");
@@ -465,7 +437,7 @@ onMounted(() => {
       }
     });
 
-    // // 显示悬停 li
+    // 离开
     links[i].addEventListener("mouseleave", () => {
       for (let i = 0; i < links.length; i++) {
         links[i].style.opacity = 1;
@@ -497,17 +469,20 @@ onMounted(() => {
   }
   animate();
 
+  // oldRows
   // 获取 rows 里面的 row
-  let rowItem = [...document.querySelectorAll(".rows .row")];
-  // 获取 rows 里面的 divider
-  let dividers = [...document.querySelectorAll(".rows .divider")];
-  // 颠倒 rows 的顺序
-  rowItem = [...rowItem].reverse();
+  let rowItem = [...document.querySelectorAll(".row-box")];
 
   // 将 rowItem 与 dividers 交替放入 newRows 中
   for (let i = 0; i < rowItem.length; i++) {
+    oddRows.push(rowItem[i]);
+  }
+  // newRows
+  // 颠倒 rows 的顺序
+  rowItem = [...rowItem].reverse();
+  // 将 rowItem 与 dividers 交替放入 newRows 中
+  for (let i = 0; i < rowItem.length; i++) {
     newRows.push(rowItem[i]);
-    newRows.push(dividers[i]);
   }
 });
 </script>
@@ -543,7 +518,18 @@ body {
 .content {
   width: 100%;
   height: 100vh;
-  padding: 6em 0;
+  display: grid;
+  grid-template-rows: 6rem 4rem auto 40px 15vh 25vh;
+  /* grid-template-columns: 40vw auto; */
+}
+
+.placeholder {
+  /* 占两行 */
+  /* grid-column: 1 / 3; */
+}
+
+.nav-box {
+  /* grid-column: 1 / 3; */
 }
 
 .content > * {
@@ -574,25 +560,15 @@ body {
   cursor: pointer;
 }
 .rows {
-  height: 35vh;
+  height: 100%;
   overflow: hidden;
   overflow-y: auto;
-}
-.rows .row {
-  margin-bottom: 0.5rem;
-  /* 指针 */
-  cursor: pointer;
-}
-.rows .row + .divider {
-  margin-bottom: 1rem;
-}
+  /* 禁止点击事件 */
+  pointer-events: none;
 
-.rows .row:nth-child(1) {
-  margin-top: 1rem;
-}
+  transition: background 0.2s ease-in-out;
 
-.rows .divider:nth-last-child(1) {
-  margin: 0;
+  /* grid-column: 1 / 3; */
 }
 
 .row {
@@ -600,9 +576,6 @@ body {
   min-height: 24px;
   display: flex;
   padding: 0 2em;
-}
-.row:hover {
-  background: blue;
 }
 
 .col + .col {
@@ -615,7 +588,11 @@ body {
 }
 
 .row > .col:first-child {
-  flex: 2;
+  flex: 1.8;
+}
+
+.row > .col:nth-child(2) {
+  flex: 1.4;
 }
 
 canvas {
@@ -628,21 +605,135 @@ canvas {
   font-size: 0.825rem;
   text-align: center;
   width: 100%;
-  padding: 1rem;
+  height: 32px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  mix-blend-mode: unset;
+
+  /* grid-column: 1 / 3; */
+}
+
+.scroll-prompt .divider {
+  margin: 0;
+}
+
+.scroll-prompt-text {
+  width: 100%;
+}
+
+.introduce-box {
+  display: flex;
+  justify-content: center;
+  /* align-items: start; */
+  padding: 2rem 6rem 2rem 2rem;
 }
 
 .introduce {
+  width: 100%;
   font-size: 1rem;
-  padding-left: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   z-index: 10;
+  mix-blend-mode: difference;
 }
 
 .introduce-title {
   font-size: 2rem;
   font-weight: 900;
+}
+
+.img-box {
+  background: red;
+  z-index: 3;
+}
+
+.marquee {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% + 100px);
+  left: -100px;
+  padding: 0.4em 0;
+  white-space: nowrap;
+
+  z-index: 3;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.marquee span {
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  mix-blend-mode: normal !important;
+  font-size: 5vh;
+  text-transform: uppercase;
+  /* animation: marquee-animation 80s linear infinite; */
+  white-space: nowrap;
+  animation: marquee-animation 60s linear infinite;
+  animation-delay: -60s;
+}
+
+.marquee span:nth-child(2) {
+  animation: marquee-animation2 60s linear infinite;
+  animation-delay: -30s;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-animation2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .row .col:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .row .col:nth-child(2),
+  .row .col:nth-child(3),
+  .row .col:nth-child(4) {
+    display: none;
+  }
+
+  .introduce {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 10;
+    height: 20vh;
+  }
+
+  .introduce-title {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .introduce-content {
+    font-size: 0.825rem;
+  }
+  .row .col {
+    font-size: 0.825rem;
+  }
 }
 </style>

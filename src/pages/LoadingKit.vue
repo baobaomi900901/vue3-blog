@@ -1452,6 +1452,7 @@ export default {
     }
 
     onMounted(() => {
+      document.body.style.overflow = "auto";
       Anime();
     });
     return {

@@ -306,6 +306,7 @@ import anime from "animejs/lib/anime.es.js";
 export default {
   name: "Play",
   setup() {
+    document.body.style.overflow = "auto";
     let playAnimeLine = gsap.timeline({
       delay: 1,
       onComplete() {

@@ -8,7 +8,7 @@ name: UILego
 
 <br>
 <div style="display: flex; justify-content: center;">
-    <img src="../assets/UILego/UILego-01.png"/>
+    <img src="../assets/UILego/UILego-01.jpg"/>
 </div>
 <br>
 <br>
