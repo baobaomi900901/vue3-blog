@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  /* 隐藏滚动条 */
+  /* scrollbar-width: none; */
+}
+
+/* 隐藏滚动条 */
+/* *::-webkit-scrollbar {
+  display: none;
+} */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #131313;
+}
+
+.menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-item {
+  position: relative;
+  height: 20%;
+}
+
+/* .menu-item:nth-child(odd) {
+  background: blue;
+} */
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  user-select: none;
+
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.menu:hover .menu-item-inner {
+  opacity: 0.2;
+}
+
+.menu-item:hover .menu-item-inner {
+  color: red;
+  opacity: 1;
+}
+
+/* 无限 */
+.infinite {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.infinite svg {
+  transform: scale(16);
+}

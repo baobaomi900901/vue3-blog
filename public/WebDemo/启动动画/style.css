@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  top: -80px;
+  left: 0;
+  background: #ff5500;
+  /* z-index: 1; */
+
+  transition: 1s;
+}
+
+header h4 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Splash screen */
+
+.intro {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  background: #131313;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  color: #fff;
+}
+
+.logo {
+  /* 字间距 */
+  letter-spacing: 0.05em;
+}
+
+.logo-span {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.logo-span.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.logo-span.fade {
+  bottom: 10px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}

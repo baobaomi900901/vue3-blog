@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --text-title: #fff;
+  --bg-color1: #222;
+  --bg-color2: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111111;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Neue Montreal", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  line-height: 100px;
+  color: #fff;
+}
+
+.site-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.menu-item:hover {
+  color: rgb(61, 71, 255);
+  text-shadow: 0 0 20px rgba(37, 48, 254, 0.8);
+  /* 文字阴影 */
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 120vh;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  width: 90vw;
+  z-index: 2;
+  animation: bounce 5s infinite ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes bounce {
+  0% {
+    top: 35vh;
+  }
+  50% {
+    top: 40vh;
+  }
+  100% {
+    top: 35vh;
+  }
+}
+
+.hero-img img {
+  width: 100%;
+  /* 禁止选择 */
+  pointer-events: none;
+}
+
+.title {
+  margin-top: 100px;
+  text-align: center;
+  /* font-family: "Monument Extended"; */
+  font-family: "Bebas Neue", cursive;
+  font-size: 12vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  overflow: hidden;
+}
+
+.title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.prev-imgs {
+  position: fixed;
+  bottom: 12vh;
+  right: 30px;
+  display: flex;
+}
+
+.prev-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 10px;
+}
+
+.prev-1 {
+  background: url("./assets/prev-1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  border: 2px solid rgba(37, 48, 254, 1);
+}
+
+.prev-2 {
+  background: url("./assets/prev-2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.prev-3 {
+  background: url("./assets/prev-3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.buy-now-cta {
+  position: fixed;
+  bottom: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buy-now-cta button {
+  background: rgb(28, 28, 28);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  font-family: "Neue Montreal";
+  text-transform: uppercase;
+  padding: 20px 40px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.buy-now-cta button:hover {
+  background: rgb(37, 48, 254);
+  /* 阴影 */
+  box-shadow: 0 0 20px 0px rgba(37, 48, 254, 0.8);
+}
+
+.info {
+  position: fixed;
+  bottom: 12vh;
+  left: 40px;
+  width: 400px;
+}
+
+.info p {
+  color: #5e5e5e;
+  text-decoration: none;
+  font-family: "Neue Montreal";
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.marquee {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.4em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 3;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+.marquee span {
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  mix-blend-mode: normal !important;
+  font-size: 7vh;
+  text-transform: uppercase;
+  padding-left: -10%;
+  animation: marquee-animation 80s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

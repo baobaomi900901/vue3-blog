@@ -1,0 +1,188 @@
+body {
+  cursor: none !important;
+}
+
+.my-mouse {
+  z-index: 100;
+  /* transform: scale(); */
+}
+
+.my-mouse #cursor {
+  position: fixed;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  /* background: #000; */
+
+  border-radius: 50%;
+  pointer-events: none;
+
+  display: grid;
+  grid-template-columns: 30px 30px;
+  grid-template-rows: 30px 30px;
+
+  opacity: 0;
+
+  z-index: 100;
+}
+
+.my-mouse .angle {
+  background: rgba(0, 0, 0, 0.05);
+  /* background: red; */
+  width: 4px;
+  height: 4px;
+  transition: 0.2s cubic-bezier(0.17, 0.67, 0.55, 1.43) 0.005s;
+}
+
+.my-mouse .angle-t-l {
+  position: relative;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-radius: 50% 0 0 0;
+}
+.my-mouse .angle-t-r {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  justify-self: end;
+  border-radius: 0 50% 0 0;
+}
+.my-mouse .angle-b-l {
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  align-self: end;
+  border-radius: 0 0 0 50%;
+}
+.my-mouse .angle-b-r {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  justify-self: end;
+  align-self: end;
+  border-radius: 0 0 50% 0;
+}
+
+.my-mouse .aperture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: 0.2s cubic-bezier(0.17, 0.67, 0.55, 1.43);
+  box-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.01),
+    0 0 4px 0 rgba(255, 255, 255, 0.01), 0 0 1px 0 rgba(255, 255, 255, 0.01);
+}
+
+.my-mouse #rect {
+  width: 12px;
+  height: 12px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: 6px 6px;
+  grid-template-rows: 6px 6px;
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.my-mouse .round {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: 0.2s cubic-bezier(0.17, 0.67, 0.55, 1.43);
+  border-radius: 1px;
+}
+
+.my-mouse .rect-inner {
+  background: rgba(0, 0, 0, 0.05);
+  width: 6px;
+  height: 6px;
+  transition: 0.2s cubic-bezier(0.17, 0.67, 0.55, 1.43);
+  border-radius: 1px;
+}
+
+.my-mouse .rect-inner-t-l {
+  position: relative;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-radius: 50% 0 0 0;
+}
+.my-mouse .rect-inner-t-r {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  justify-self: end;
+  border-radius: 0 50% 0 0;
+}
+.my-mouse .rect-inner-b-l {
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  align-self: end;
+  border-radius: 0 0 0 50%;
+}
+.my-mouse .rect-inner-b-r {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  justify-self: end;
+  align-self: end;
+  border-radius: 0 0 50% 0;
+}
+
+.my-mouse span:hover {
+  color: red;
+}
+
+.my-mouse .cursor-A > .aperture {
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.3),
+    0 0 4px 0 rgba(255, 255, 255, 0.3), 0 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.my-mouse .cursor-A > .angle-t-l {
+  transform: translateX(11px) translateY(11px);
+}
+
+.my-mouse .cursor-A > .angle-t-r {
+  transform: translateX(-11px) translateY(11px);
+}
+
+.my-mouse .cursor-A > .angle-b-l {
+  transform: translateX(11px) translateY(-11px);
+}
+
+.my-mouse .cursor-A > .angle-b-r {
+  transform: translateX(-11px) translateY(-11px);
+}
+
+.my-mouse .rect-A > .rect-inner-t-l {
+  transform: translateX(-10px) translateY(-10px);
+}
+
+.my-mouse .rect-A > .rect-inner-t-r {
+  transform: translateX(10px) translateY(-10px);
+}
+
+.my-mouse .rect-A > .rect-inner-b-l {
+  transform: translateX(-10px) translateY(10px);
+}
+
+.my-mouse .rect-A > .rect-inner-b-r {
+  transform: translateX(10px) translateY(10px);
+}
+
+.my-mouse .rect-A > .round {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.3),
+    0 0 4px 0 rgba(255, 255, 255, 0.3), 0 0 1px 0 rgba(255, 255, 255, 0.5);
+}

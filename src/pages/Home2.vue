@@ -30,7 +30,14 @@
         </div>
         <div class="divider nav-divider"></div>
       </div>
-      <div ref="rows" class="rows">
+      <OverlayScrollbarsComponent
+        defer
+        ref="rows"
+        class="rows flex-1"
+        :options="{
+          scrollbars: { autoHide: 'scroll', theme: 'os-theme-light' },
+        }"
+      >
         <Row
           :projectName="'沃达丰移动端概念设计'"
           :hightLights="'巴塞罗那电信展、ChatBot'"
@@ -127,7 +134,7 @@
           :time="'2023'"
           :url="'glaze'"
         />
-      </div>
+      </OverlayScrollbarsComponent>
       <div class="scroll-prompt">
         <div class="divider"></div>
         <span class="scroll-prompt-text"> 🖱 Scroll Down 👆🏻</span>
@@ -194,6 +201,8 @@ import image12 from "../assets/img/glaze.jpg";
 import Row from "../components/Row.vue";
 import MySwiper from "../components/MySwiper.vue";
 
+import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
+
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -248,13 +257,13 @@ function animeInput() {
     stagger: {
       amount: 1,
     },
-    onComplete:() =>{
+    onComplete: () => {
       let scrollPrompt = document.querySelector(".scroll-prompt");
       scrollPrompt.style.mixBlendMode = "unset";
       scrollPrompt.style.color = "#0a0a0a";
       let SPdivider = document.querySelector(".scroll-prompt .divider");
       SPdivider.style.background = "#0a0a0a";
-    }
+    },
   });
   gsap.from(".row > .col, .scroll-prompt ", 2, {
     opacity: 0,

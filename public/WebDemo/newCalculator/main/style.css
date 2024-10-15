@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  /* 重命名字体名 */
+  src: url("../TitilliumWeb-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  /* 重命名字体名 */
+  src: url("../TitilliumWeb-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "digifaw";
+  /* 重命名字体名 */
+  src: url("../digifaw.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "px";
+  /* 重命名字体名 */
+  src: url("../8pinmatrix.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LcdD";
+  /* 重命名字体名 */
+  src: url("../LcdD.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: TitilliumWeb-Regular, TitilliumWeb-Bold, px, LcdD;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  background: #eee;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+#app {
+  margin: 0 auto;
+}
+.calculator {
+  --button-width: 80px;
+  --button-height: 80px;
+  margin: 10vh auto;
+  border-radius: 8px;
+  display: grid;
+  grid-template-areas:
+    "result result result result"
+    "ac plus-minus percent divide"
+    "number-7 number-8 number-9  multiply"
+    "number-4 number-5 number-6 subtract"
+    "number-1 number-2 number-3 add"
+    "number-0 number-0 dot equal";
+  grid-template-columns: repeat(4, var(--button-width));
+  grid-template-rows: repeat(6, var(--button-height));
+  box-shadow: -8px -8px 20px -10px #ffffff,
+    8px 8px 20px -10px rgba(0, 0, 0, 0.15);
+  padding: 1.75rem;
+}
+.calculator .result {
+  text-align: right;
+  line-height: var(--button-height);
+  font-size: 64px;
+  font-family: LcdD;
+  padding: 0 1rem;
+  color: #333;
+}
+.calculator button {
+  margin: 8px;
+  padding: 0;
+  border: none;
+  display: block;
+  outline: none;
+  border-radius: calc(var(--button-height) / 2);
+  font-size: 1.75rem;
+  font-weight: normal;
+  color: #999;
+  font-family: Helvetica;
+  background: linear-gradient(135deg, #e6e6e6 0%, #f6f6f6 100%);
+  box-shadow: -4px -4px 10px -8px #ffffff, 4px 4px 10px -8px rgba(0, 0, 0, 0.3),
+    -4px -4px 10px -8px rgba(255, 255, 255, 0) inset,
+    4px 4px 10px -8px rgba(0, 0, 0, 0) inset;
+  transition: 0.25s ease-in-out;
+}
+.calculator button:active {
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 0),
+    4px 4px 10px -8px rgba(0, 0, 0, 0), -4px -4px 10px -8px #ffffff inset,
+    4px 4px 10px -8px rgba(0, 0, 0, 0.3) inset;
+}
+.calculator .ac {
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+.calculator .percent {
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+.url {
+  margin: 8px auto;
+  margin-top: -60px;
+  border: none;
+  width: 160px;
+  height: 48px;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60px;
+  background-color: #38363c;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #999;
+  font-family: Helvetica;
+  box-shadow: -4px -4px 10px -8px #ffffff, 4px 4px 10px -8px #000000,
+    -4px -4px 10px -8px rgba(255, 255, 255, 0) inset,
+    4px 4px 10px -8px rgba(0, 0, 0, 0) inset;
+  transition: 0.25s ease-in-out;
+}
+.url:active {
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 0),
+    4px 4px 10px -8px rgba(0, 0, 0, 0), -4px -4px 10px -8px #ffffff inset,
+    4px 4px 10px -8px #000000 inset;
+}
+img {
+  -webkit-user-drag: none;
+}

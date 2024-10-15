@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>平滑滚动</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+      }
+      body {
+        /* background: blue; */
+      }
+
+      .container {
+        padding: 80px 60px;
+        width: 100%;
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
+
+        will-change: transform;
+
+        scroll-behavior: smooth;
+
+        /* background: red; */
+      }
+
+      .image-box {
+        width: 100%;
+        height: 40vh;
+        background: #000;
+        overflow: hidden;
+
+        position: relative;
+        will-change: transform;
+      }
+
+      .img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60vh;
+        will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-box">
+        <img src="../assets/1.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/1.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/2.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/2.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/3.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/3.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/4.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/4.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/5.jpeg" alt="" class="img" />
+      </div>
+      <div class="image-box">
+        <img src="../assets/5.jpeg" alt="" class="img" />
+      </div>
+    </div>
+  </body>
+  <script>
+    const imageBoxs = Array.from(document.querySelectorAll(".image-box"));
+    const imgs = Array.from(document.querySelectorAll(".img"));
+
+    // // 图片盒子高度
+    const imageBoxHeight = imageBoxs[0].getBoundingClientRect().height;
+
+    const myMap = (value, standardMin, standardMax, actualMin, actualMax) => {
+      value < actualMin ? (value = actualMin) : value;
+      value > actualMax ? (value = actualMax) : value;
+      return (
+        ((standardMax - standardMin) * (value - actualMin)) /
+          (actualMax - actualMin) +
+        standardMin
+      );
+    };
+
+    // 平滑滚动
+    let current = 0; // 当前页面
+    let target = 0; // 目标页面
+    let speed = 0.075; // 缓动系数
+    let containerHeight, imageHeight, skewDiff;
+
+    const container = document.querySelector(".container");
+    containerHeight = container.getBoundingClientRect().height; // 获取容器高度
+
+    // 缓动函数, 起始值, 结束值, 缓动系数
+    function lerp(start, end, t) {
+      return start * (1 - t) + end * t;
+    }
+
+    // 赋值函数, 设置变形; 元素, 变形值
+    function setTransform(element, transform) {
+      element.style.transform = transform;
+    }
+
+    function smoothScroll() {
+      // 获取最新的页面高度
+      target = window.scrollY;
+
+      // 缓动处理
+      current = lerp(current, target, speed); // current 初始为 0
+      current = parseFloat(current.toFixed(2)); // 保留两位小数
+
+      setTransform(container, `translateY(-${current}px)`);
+
+      // 更新图片位移
+      updateImage();
+
+      // 持续渲染
+      requestAnimationFrame(smoothScroll);
+    }
+
+    function updateImage() {
+      imageBoxs.forEach((imageBox, index) => {
+        // 相对屏幕位置
+        const scrollMax = (containerHeight - window.innerHeight) / 2;
+        let y = myMap(current, 5, -5, 0, scrollMax);
+        imgs[
+          index
+        ].style.transform = `translate(-50%, -50%) translateY(${y}vh)`;
+      });
+    }
+
+    smoothScroll();
+  </script>
+</html>

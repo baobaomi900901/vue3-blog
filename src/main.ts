@@ -4,6 +4,7 @@ import App from "./App.vue";
 import "./assets/index.css";
 import router from "./router";
 import CodeCard from "./components/CodeCard.vue";
+import "overlayscrollbars/styles/overlayscrollbars.css"; // 引入overlayscrollbars样式
 
 const app = createApp(App);
 

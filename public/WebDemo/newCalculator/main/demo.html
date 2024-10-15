@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #box {
+      display: -moz-box;
+      /* Firefox */
+      display: -webkit-box;
+      /* Safari and Chrome */
+      display: box;
+      width: 300px;
+      border: 1px solid black;
+    }
+
+    #p1 {
+      -moz-box-flex: 1.0;
+      /* Firefox */
+      -webkit-box-flex: 1.0;
+      /* Safari and Chrome */
+      box-flex: 1.0;
+      border: 1px solid red;
+    }
+
+    #p2 {
+      -moz-box-flex: 2.0;
+      /* Firefox */
+      -webkit-box-flex: 2.0;
+      /* Safari and Chrome */
+      box-flex: 2.0;
+      border: 1px solid blue;
+    }
+
+    #p3 {
+      -moz-box-flex: 2.0;
+      /* Firefox */
+      -webkit-box-flex: 2.0;
+      /* Safari and Chrome */
+      box-flex: 1.0;
+      border: 1px solid blue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="grid">
+    <div id="box">
+      <div id="p1">Hello</div>
+      <div id="p2">W3School</div>
+      <div id="p3">W3School</div>
+    </div>
+  </div>
+  <p><b>注释：</b>IE 不支持 box-flex 属性。</p>
+
+</body>
+
+</html>

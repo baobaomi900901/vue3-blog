@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #131313;
+  height: 6000px;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 200px;
+  top: 20vh;
+
+  width: 6000px;
+
+  transition: transform 0.15s;
+  will-change: transform; /* 浏览器提前准备好过渡动画 */
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+
+  background: red;
+}
+
+.box-1 {
+  background-image: url("./assets/1.jpeg");
+}
+.box-2 {
+  background-image: url("./assets/2.jpeg");
+}
+.box-3 {
+  background-image: url("./assets/3.jpeg");
+}
+.box-4 {
+  background-image: url("./assets/4.jpeg");
+}
+.box-5 {
+  background-image: url("./assets/5.jpeg");
+}
+.box-6 {
+  background-image: url("./assets/6.jpeg");
+}

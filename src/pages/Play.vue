@@ -103,18 +103,18 @@
           <div class="play-content-item mb-16">
             <CodeCard
               :bgColor="'#232323'"
-              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/glaze.jpg'"
+              :imgSrc="'../WebDemo/preview-image/glaze.jpg'"
               :title="'Glaze Studio'"
               :subTitle="'镜子生产商、门户网站'"
-              :href="'https://www.mobytang.com/WebDemo/private-project/glazeSTD/index.html'"
+              :href="'../WebDemo/private-project/glazeSTD/index.html'"
             />
 
             <CodeCard
               :bgColor="'#232323'"
-              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9.jpg'"
+              :imgSrc="'../WebDemo/preview-image/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9.jpg'"
               :title="'无人机站点'"
               :subTitle="'门户网站动效'"
-              :href="'https://www.mobytang.com/WebDemo/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9/index.html'"
+              :href="'../WebDemo/%E6%97%A0%E4%BA%BA%E6%9C%BA%E7%AB%99%E7%82%B9/index.html'"
             />
           </div>
         </div>
@@ -138,7 +138,9 @@
               style="background: #d5e0e1"
             >
               <router-link class="relative" to="/loadingKit">
-                <div class="item-content-preview h-full w-full flex justify-center items-center">
+                <div
+                  class="item-content-preview h-full w-full flex justify-center items-center"
+                >
                   <div class="spinner"></div>
                 </div>
                 <div class="item-content-textBox">
@@ -154,14 +156,15 @@
               </router-link>
             </div>
 
-            
             <div
               class="item-content"
               data-title="View Project"
               style="background: #f1e9ca"
             >
               <router-link class="relative" to="/textKit">
-                <div class="item-content-preview flex justify-center items-center">
+                <div
+                  class="item-content-preview flex justify-center items-center"
+                >
                   <div class="textAnime">
                     <span class="letters letters-1">Ready</span>
                     <span class="letters letters-2">Set</span>
@@ -183,10 +186,10 @@
 
             <CodeCard
               :bgColor="'#131313'"
-              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E5%8A%A8%E6%95%88.jpg'"
+              :imgSrc="'../WebDemo/preview-image/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E5%8A%A8%E6%95%88.jpg'"
               :title="'自定义鼠标指针动效'"
               :subTitle="'开箱即用的 hooks'"
-              :href="'https://mobytang.com/WebDemo/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E5%87%86%E6%98%9F/index.html'"
+              :href="'../WebDemo/%E9%BC%A0%E6%A0%87%E6%8C%87%E9%92%88%E5%87%86%E6%98%9F/index.html'"
             />
           </div>
         </div>
@@ -212,82 +215,82 @@
           >
             <CodeCard
               :bgColor="'#38363c'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/3d%20%E5%8D%A1%E7%89%87.png'"
+              :imgSrc="'../WebDemo/preview-image/3d%20%E5%8D%A1%E7%89%87.png'"
               :title="'3D卡片'"
               :subTitle="'鼠标交互控制 CSS 样式模拟按压卡片'"
-              :href="'https://mobytang.com/WebDemo/CSS%E5%8A%A8%E7%94%BB/3D%E5%8D%A1%E7%89%87/index.html'"
+              :href="'../WebDemo/CSS%E5%8A%A8%E7%94%BB/3D%E5%8D%A1%E7%89%87/index.html'"
             />
 
             <CodeCard
               :bgColor="'#c5b7a8'"
-              :imgSrc="'https://www.mobytang.com/WebDemo/preview-image/%E9%9F%B3%E9%A2%91%E6%B3%A2%E6%B5%AA%E7%BA%BF.jpg'"
+              :imgSrc="'../WebDemo/preview-image/%E9%9F%B3%E9%A2%91%E6%B3%A2%E6%B5%AA%E7%BA%BF.jpg'"
               :title="'音频波浪线'"
               :subTitle="'canvas'"
-              :href="'https://www.mobytang.com/WebDemo/canvas/canvas%E9%9F%B3%E4%B9%90%E6%B3%A2%E6%B5%AA%E7%BA%BF/index.html'"
+              :href="'../WebDemo/canvas/canvas%E9%9F%B3%E4%B9%90%E6%B3%A2%E6%B5%AA%E7%BA%BF/index.html'"
             />
 
             <CodeCard
               :bgColor="'#131313'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%97%A0%E9%99%90.png'"
+              :imgSrc="'../WebDemo/preview-image/%E6%97%A0%E9%99%90.png'"
               :title="'无限循环滚动2'"
               :subTitle="'JS 实现菜单无限循环'"
-              :href="'https://mobytang.com/WebDemo/%E6%97%A0%E9%99%90%E6%BB%9A%E5%8A%A8/index.html'"
+              :href="'../WebDemo/%E6%97%A0%E9%99%90%E6%BB%9A%E5%8A%A8/index.html'"
             />
 
             <CodeCard
               :bgColor="'#161616'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8C%87%E7%A4%BA%E5%99%A8.png'"
+              :imgSrc="'../WebDemo/preview-image/%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%8C%87%E7%A4%BA%E5%99%A8.png'"
               :title="'滚动条指示器'"
               :subTitle="'鼠标跟随、hsl 颜色渐变实例'"
-              :href="'https://mobytang.com/WebDemo/%E6%BB%9A%E5%8A%A8%E8%BF%9B%E5%BA%A6%E6%8C%87%E7%A4%BA%E5%99%A8/index.html'"
+              :href="'../WebDemo/%E6%BB%9A%E5%8A%A8%E8%BF%9B%E5%BA%A6%E6%8C%87%E7%A4%BA%E5%99%A8/index.html'"
             />
 
             <CodeCard
               :bgColor="'#181818'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/IntObs%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB.png'"
+              :imgSrc="'../WebDemo/preview-image/IntObs%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB.png'"
               :title="'滚动触发动画事件'"
               :subTitle="'IntersectionObserver'"
-              :href="'https://mobytang.com/WebDemo/%E6%BB%9A%E5%8A%A8%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB%E4%BA%8B%E4%BB%B6/index.html'"
+              :href="'../WebDemo/%E6%BB%9A%E5%8A%A8%E8%A7%A6%E5%8F%91%E5%8A%A8%E7%94%BB%E4%BA%8B%E4%BB%B6/index.html'"
             />
 
             <CodeCard
               :bgColor="'#eaeaea'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/svg%E6%BB%A4%E9%95%9C.png'"
+              :imgSrc="'../WebDemo/preview-image/svg%E6%BB%A4%E9%95%9C.png'"
               :title="'SVG滤镜图片变形'"
               :subTitle="'噪点背景、svg 滤镜'"
-              :href="'https://mobytang.com/WebDemo/%E6%B0%B4%E5%B9%B3%E6%BB%91%E5%8A%A8%E5%B9%B6%E4%BD%BF%E7%94%A8SVG%E6%BB%A4%E9%95%9C/index.html'"
+              :href="'../WebDemo/%E6%B0%B4%E5%B9%B3%E6%BB%91%E5%8A%A8%E5%B9%B6%E4%BD%BF%E7%94%A8SVG%E6%BB%A4%E9%95%9C/index.html'"
             />
 
             <CodeCard
               :bgColor="'#262525'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E5%83%8F%E7%B4%A0%E5%8C%96.png'"
+              :imgSrc="'../WebDemo/preview-image/%E5%83%8F%E7%B4%A0%E5%8C%96.png'"
               :title="'图片像素化'"
               :subTitle="'canvas、像素化'"
-              :href="'https://mobytang.com/WebDemo/%E5%9B%BE%E7%89%87%E5%83%8F%E7%B4%A0%E5%8C%96/index.html'"
+              :href="'../WebDemo/%E5%9B%BE%E7%89%87%E5%83%8F%E7%B4%A0%E5%8C%96/index.html'"
             />
 
             <CodeCard
               :bgColor="'#fff'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/canvas%20%E7%B2%92%E5%AD%90.png'"
+              :imgSrc="'../WebDemo/preview-image/canvas%20%E7%B2%92%E5%AD%90.png'"
               :title="'Particle & Line'"
               :subTitle="'ccanvas、粒子、鼠标干扰'"
-              :href="'https://mobytang.com/WebDemo/canvas/%E7%B2%92%E5%AD%90%E8%BF%9E%E7%BA%BF/index.html'"
+              :href="'../WebDemo/canvas/%E7%B2%92%E5%AD%90%E8%BF%9E%E7%BA%BF/index.html'"
             />
 
             <CodeCard
               :bgColor="'#38363c'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94.png'"
+              :imgSrc="'../WebDemo/preview-image/%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94.png'"
               :title="'模拟水蒸气'"
               :subTitle="'CSS模拟水蒸气'"
-              :href="'https://mobytang.com/WebDemo/CSS%E5%8A%A8%E7%94%BB/css%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94/index.html'"
+              :href="'../WebDemo/CSS%E5%8A%A8%E7%94%BB/css%E6%A8%A1%E6%8B%9F%E6%B0%B4%E8%92%B8%E6%B0%94/index.html'"
             />
 
             <CodeCard
               :bgColor="'#eeeeee'"
-              :imgSrc="'https://mobytang.com/WebDemo/preview-image/%E6%96%B0%E6%A8%A1%E6%80%81%E8%AE%A1%E7%AE%97%E5%99%A8.png'"
+              :imgSrc="'../WebDemo/preview-image/%E6%96%B0%E6%A8%A1%E6%80%81%E8%AE%A1%E7%AE%97%E5%99%A8.png'"
               :title="'新拟态UI'"
               :subTitle="'基本运算计算器'"
-              :href="'https://mobytang.com/WebDemo/newCalculator/main/index.html'"
+              :href="'../WebDemo/newCalculator/main/index.html'"
             />
           </div>
         </div>
