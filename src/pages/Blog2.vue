@@ -105,6 +105,7 @@ import { ref, onMounted } from "vue";
 import { gsap } from "gsap";
 
 import Row from "../components/RowA.vue";
+import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
 
 import { useRouter } from "vue-router";
 const router = useRouter();
