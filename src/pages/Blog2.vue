@@ -22,7 +22,15 @@
         </div>
         <div class="divider nav-divider"></div>
       </div>
-      <div ref="rows" class="rows">
+
+      <OverlayScrollbarsComponent
+        defer
+        ref="rows"
+        class="rows flex-1"
+        :options="{
+          scrollbars: { autoHide: 'scroll', theme: 'os-theme-light' },
+        }"
+      >
         <Row
           :projectName="'Design+Code提升用户体验实践'"
           :hightLights="'code、用户体验'"
@@ -65,7 +73,7 @@
           :time="'2020.10'"
           :url="'https://iodized-samba-a1b.notion.site/2a19c8949cb34393a75dcda4ebee8a64'"
         />
-      </div>
+      </OverlayScrollbarsComponent>
       <div class="scroll-prompt">
         <div class="divider"></div>
         <span class="scroll-prompt-text"> 🖱 Scroll Down 👆🏻</span>

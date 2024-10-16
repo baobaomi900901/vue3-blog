@@ -155,7 +155,7 @@
             >
             <span>🔍" 与 "</span>
             <a
-              href="https://www.mobytang.com/#/play"
+              href="https://www.moby-tang.top/#/play"
               target="_blank"
               class="text-yellow-500 underline hover:text-dark-blue font-bold"
               >创意代码</a
